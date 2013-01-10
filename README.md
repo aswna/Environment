@@ -3,17 +3,17 @@ Environment
 
 Overview
 --------
-Configuration files for my [1] (shell), [2] (terminal multiplexer) and
-[3] (text editor) environment on Unix used from [4] (ssh client) on Windows.
-I plan to try [5] and save some configuration settings if possible.
+Configuration files for my [tcsh (shell)][1], [GNU screen (terminal multiplexer)][2] and
+[Vim (text editor)][3] environment on Unix used from [PuTTY (ssh client)[4] on Windows.
+I plan to try [portable PuTTY][5] and save some configuration settings if possible.
 
 Markup used in this file
 ------------------------
-In this file [6] (GitHub Flavored Markdown) is used.
+In this file [GitHub Flavored Markdown][6] is used.
 
 Cloning repository
 ------------------
-See more more info about cloning in [7].
+See more info about [cloning on GitHub][7].
 
 * For read-only access it is easy to use the git:// URL.
  git clone git://github.com/aswna/Environment.git
@@ -21,8 +21,7 @@ See more more info about cloning in [7].
 * For read/write access it is best to setup ssh keys and use SSH.
  git clone git@github.com:aswna/Environment.git
 
-Troubleshooting
-~~~~~~~~~~~~~~~
+### Troubleshooting ###
 * warning: templates not found /some/path/git-core/templates
 Set the correct templates path explicitly:
  git clone --template=/path/to/git-core/templates git@github.com:aswna/Environment.git
