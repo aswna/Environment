@@ -10,22 +10,17 @@ In this file [GitHub Flavored Markdown][6] is used.
 ## Cloning repository ##
 See more info about [cloning on GitHub][7].
 
-* For read-only access it is easy to use the git:// URL.
-
+### For read-only access it is easy to use the git:// URL. ###
     git clone git://github.com/aswna/Environment.git
 
-
-* For read/write access it is best to setup ssh keys and use SSH.
-
+### For read/write access it is best to setup ssh keys and use SSH. ###
     git clone git@github.com:aswna/Environment.git
-
 
 ### Troubleshooting ###
 #### warning: templates not found /some/path/git-core/templates ####
 Set the correct templates path explicitly.
 
     git clone --template=/path/to/git-core/templates git@github.com:aswna/Environment.git
-
 
 [1]: http://www.tcsh.org/Home "tcsh"
 [2]: http://www.gnu.org/software/screen/ "GNU screen"
