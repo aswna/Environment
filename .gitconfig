@@ -1,0 +1,9 @@
+[user]
+	name = aswna
+	email = aswna@server.fake
+[core]
+	editor = vim
+	autocrlf = input
+	pager = less -FSRX
+[color]
+	ui = true
