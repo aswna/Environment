@@ -16,7 +16,9 @@ See more info about [cloning on GitHub][7].
 
 
 * For read/write access it is best to setup ssh keys and use SSH.
+
     git clone git@github.com:aswna/Environment.git
+
 
 ### Troubleshooting ###
 #### warning: templates not found /some/path/git-core/templates ####
