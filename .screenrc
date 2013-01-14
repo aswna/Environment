@@ -1,0 +1,91 @@
+# See http://www.gnu.org/software/screen/manual/screen.html#Redisplay
+# Set all windows to partial refresh.
+allpartial off
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Redisplay
+# If set to on, "alternate screen" support is enabled in virtual terminals, just like in xterm.
+altscreen on
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Detach
+# Automatically detach the session on SIGHUP.
+autodetach on
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Backtick
+# Read file every 5 minutes.
+backtick 10 300 300 cat $HOME/tmp/weather_report.txt
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Bind
+# Examples:
+#bind e screen -t "elinks" /bin/tcsh -c '/path/to/elinks http://your.home.page/here'
+#bind r screen -t "rxyz" ssh rxyz@0
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
+# Alt-Right changes to next window
+bindkey ^[^[[C next
+bindkey ^[[1;3C next
+
+# Alt-Left changes to previous window
+bindkey ^[^[[D prev
+bindkey ^[[1;3D prev
+
+# Alt-PageUp enters copy mode full page up
+bindkey ^[^[[5~ eval "copy" "stuff \"^b\""
+bindkey ^[[5;3~ eval "copy" "stuff \"^b\""
+
+# Alt-PageDown enters copy mode full page down
+bindkey ^[^[[6~ eval "copy" "stuff \"^f\""
+bindkey ^[[6;3~ eval "copy" "stuff \"^f\""
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
+blankerprg /bin/tcsh -f -c $HOME/bin/quote
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
+# Turn compacting "on" to hold more useful lines in your scrollback buffer.
+compacthist on
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Flow-Control
+defflow auto
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
+# Set default lines of scrollback.
+defscrollback 100000
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Hardware-Status-Line
+# Use the hardware status line.
+hardstatus alwayslastline
+
+# See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
+# [hostname in green][server load in blue][window list, active window title is highlighted in red][weather in blue][date and time in green]
+hardstatus string '%{= g}[%H]%{B}[%l]%{g}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{g}]%{B}[%10`]%{g}[%Y-%m-%d %c:%s]'
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
+idle 600
+
+### See http://www.gnu.org/software/screen/manual/screen.html#Searching
+# Tell screen to ignore the case of characters in searches.
+ignorecase on
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Bindkey-Control
+# Set inter-character timeout used for keymapping to 0 (f.i.: Esc should not behave like Alt).
+maptimeout 0
+
+# Set display where my vnc server or Citrix session is running 
+# Example:
+#setenv DISPLAY host_where_my_display_is_available:number.0
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Shell
+# Set the default program for new windows.
+# If the command begins with a '-' character, the shell will be started as a login-shell.
+shell -$SHELL
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Startup-Message
+# Turn off startup message about copyright.
+startup_message off
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Termcap-Syntax
+# Not sure about this hack anyway. :)
+#termcapinfo xterm-256color|gnome* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+
+# See http://www.gnu.org/software/screen/manual/screen.html#Bell
+# Turn off visual bell.
+vbell off
