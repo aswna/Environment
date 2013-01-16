@@ -15,9 +15,7 @@ autodetach on
 backtick 10 300 300 cat $HOME/tmp/weather_report.txt
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bind
-# Examples:
-#bind e screen -t "elinks" /bin/tcsh -c '/path/to/elinks http://your.home.page/here'
-#bind r screen -t "rxyz" ssh rxyz@0
+source $HOME/.screenrc.bindings.private
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-Right changes to next window
@@ -55,13 +53,13 @@ defscrollback 100000
 hardstatus alwayslastline
 
 # See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
-# [hostname in green][server load in blue][window list, active window title is highlighted in red][weather in blue][date and time in green]
+# [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue (see backtick above)][date and time in green]
 hardstatus string '%{= g}[%H]%{B}[%l]%{g}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{g}]%{B}[%10`]%{g}[%Y-%m-%d %c:%s]'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
 
-### See http://www.gnu.org/software/screen/manual/screen.html#Searching
+# See http://www.gnu.org/software/screen/manual/screen.html#Searching
 # Tell screen to ignore the case of characters in searches.
 ignorecase on
 
@@ -69,9 +67,8 @@ ignorecase on
 # Set inter-character timeout used for keymapping to 0 (f.i.: Esc should not behave like Alt).
 maptimeout 0
 
-# Set display where my vnc server or Citrix session is running 
-# Example:
-#setenv DISPLAY host_where_my_display_is_available:number.0
+# Environment variable settings (e.g.: DISPLAY)
+source $HOME/.screenrc.setenvs.private
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Shell
 # Set the default program for new windows.
