@@ -1,6 +1,6 @@
 " See http://vimdoc.sourceforge.net/htmldoc/options.html#'nocompatible'
 " Make Vim behave in a more useful way.
-set nocompatible "
+set nocompatible
 
 let myscriptsfile="$HOME/.vim/scripts.vim"
 let spellfile="$HOME/.vim/spellfile.add"
@@ -106,7 +106,7 @@ if $TERM==#"vt100" || $TERM==#"xterm-256color"
 endif
 
 "let &t_Co=8
-" Set foreground and background colors
+" Set foreground and background colors (might be needed for Solaris 8/9?)
 "if has("terminfo")
 "  let &t_Sf="\e[3%p1%dm"
 "  let &t_Sb="\e[4%p1%dm"
@@ -128,7 +128,6 @@ set softtabstop=2
 set shiftwidth=2
 " In Insert mode: Use the appropriate number of spaces to insert a <Tab>.
 set expandtab
-
 
 " Maximum number of tab pages to be opened by the '-p' command line argument.
 set tabpagemax=20
