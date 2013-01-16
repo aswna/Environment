@@ -1,0 +1,125 @@
+#echo " Starting (~/.cshrc.user)"
+
+if ($?JOB_NAME) then
+  #echo "Sun/Oracle Grid Engine spooled job $JOB_NAME"
+  # No need to continue.
+  exit 0
+endif
+
+#set autocorrect
+#set autoexpand
+
+# If set, possibilities are listed after an ambiguous completion. If set to
+# "ambiguous", possibilities are listed only when no new characters are added
+# by completion.
+set autolist
+
+if ( "$shell" =~ *tcsh ) then
+  # csh does not know bindkey
+  bindkey      i-search-back
+  bindkey      i-search-fwd
+  bindkey      backward-delete-word
+  bindkey      backward-kill-line
+  bindkey ^[[3~  delete-char
+  bindkey [1~  beginning-of-line
+  bindkey [4~  end-of-line
+endif
+
+# Enable color display for the built-in ls-F and it passes --color=auto to ls.
+set color
+
+# Display colorful NLS messages.
+set colorcat
+
+#set complete=enhance
+
+#set correct=all
+
+# In tcsh, completion is always used and this variable is ignored by default.
+# If edit is unset, then the traditional csh completion is used.
+# If set in csh, filename completion is used.
+set filec
+
+#History related stuff -->
+# Controls handling of duplicate entries in the history list.
+set histdup='all'
+
+set history=1000
+
+#echo "  Getting history"
+# Merge history list with the existing history file instead of replacing it
+# (if there is one), sort it by time stamp and retain the most recent events.
+set savehist=($history merge)
+#echo "  Got history"
+
+if ( "$shell" =~ *tcsh ) then
+  set histfile = ~/.tcsh_history
+  # Save history (to above file)
+  history -S
+endif
+#History related stuff --|
+
+# Do not ignore EOF (^D).
+unset ignoreeof
+
+# Insure that files are not accidentally destroyed.
+set noclobber
+
+#echo "  Getting completions"
+# completions for interactive shells
+if (-r $HOME/.tcshrc.complete ) then
+  source $HOME/.tcshrc.complete
+endif
+#echo "  Got completions"
+
+# Used for overriding the prompt
+if ( $?CLEARCASE_ROOT ) then
+  setenv CCVIEW `basename $CLEARCASE_ROOT`
+else
+  setenv CCVIEW ""
+endif
+
+# Dynamically set screen window title. When no view is set
+# then use machine name (%m) as screen window title.
+setenv SCREEN_WINDOW_TITLE  `echo "$CCVIEW" | sed 's/^$/%m/'`
+
+if (-r $HOME/.cshrc.user.private ) then
+  # private stuff (*_proxy settings, even more customizes SCREEN_WINDOW_TITLE)
+  source $HOME/.cshrc.user.private
+endif
+
+setenv TERMINFO $HOME/.terminfo
+
+if ( "$shell" =~ *tcsh ) then
+  if ( $?STY ) then
+    # we are running in 'screen'
+    setenv TERM xterm-256color
+
+    if ( "$CCVIEW" == "" ) then
+      set prompt="%n@%m%{\ek$SCREEN_WINDOW_TITLE\e\\%} %~> "
+    else
+      set prompt="%n@%m%{\ek$SCREEN_WINDOW_TITLE\e\\%} [$CCVIEW] %~> "
+    endif
+  else
+    if ( ! $?TERM ) then
+      setenv TERM "vt100"
+    endif
+
+    if ( "$CCVIEW" == "" ) then
+      set prompt="%n@%m %~> "
+    else
+      set prompt="%n@%m [$CCVIEW] %~> "
+    endif
+  endif
+else
+  # in csh (to make cwd up-to-date in the prompt)
+  if ( "$CCVIEW" == "" ) then
+    alias doprompt 'set prompt="`whoami`@`hostname` `pwd`> "'
+  else
+    alias doprompt 'set prompt="`whoami`@`hostname` [$CCVIEW] `pwd`> "'
+  endif
+  doprompt
+  alias cd 'chdir \!*; doprompt'
+endif
+
+#echo " Sourced (~/.cshrc.user)"
