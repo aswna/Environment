@@ -42,9 +42,9 @@ set filec
 
 #History related stuff -->
 # Controls handling of duplicate entries in the history list.
-set histdup='all'
+set histdup='prev'
 
-set history=1000
+set history=5000
 
 #echo "  Getting history"
 # Merge history list with the existing history file instead of replacing it
@@ -90,21 +90,17 @@ endif
 
 setenv TERMINFO $HOME/.terminfo
 
+# Needed for 256-color GNU screen to be set before starting screen itself
+setenv TERM xterm-256color
+
 if ( "$shell" =~ *tcsh ) then
   if ( $?STY ) then
-    # we are running in 'screen'
-    setenv TERM xterm-256color
-
     if ( "$CCVIEW" == "" ) then
       set prompt="%n@%m%{\ek$SCREEN_WINDOW_TITLE\e\\%} %~> "
     else
       set prompt="%n@%m%{\ek$SCREEN_WINDOW_TITLE\e\\%} [$CCVIEW] %~> "
     endif
   else
-    if ( ! $?TERM ) then
-      setenv TERM "vt100"
-    endif
-
     if ( "$CCVIEW" == "" ) then
       set prompt="%n@%m %~> "
     else
