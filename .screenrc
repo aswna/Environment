@@ -10,10 +10,6 @@ altscreen on
 # Automatically detach the session on SIGHUP.
 autodetach on
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Backtick
-# Read file every 5 minutes.
-backtick 10 300 300 cat $HOME/tmp/weather_report.txt
-
 # See http://www.gnu.org/software/screen/manual/screen.html#Bind
 source $HOME/.screenrc.bindings.private
 
@@ -53,8 +49,8 @@ defscrollback 100000
 hardstatus alwayslastline
 
 # See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
-# [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue (see backtick above)][date and time in green]
-hardstatus string '%{= g}[%H]%{B}[%l]%{g}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{g}]%{B}[%10`]%{g}[%Y-%m-%d %c:%s]'
+# [hostname in green][server load in blue][window list with active window title is highlighted in red][date and time in green]
+hardstatus string '%{= g}[%H]%{B}[%l]%{g}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{g}][%Y-%m-%d %c:%s]'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
