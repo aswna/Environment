@@ -153,24 +153,64 @@ set number
 " When there is a previous search pattern, highlight all its matches.
 set hlsearch
 
+" PERSISTENCY --->
+" Number of command-lines to be remembered.
+set history=1000
+
 " Write the contents of the file, if it has been modified, in case of several
 " commands, buffer changes.
 set autowriteall
 
-" where to put swap files and where to find them
+let s:my_tmp_dir = $HOME . "/tmp"
+let s:my_tmp_vim_dir = s:my_tmp_dir . "/vim"
+let s:my_tmp_vim_ccview_dir = s:my_tmp_vim_dir . "/" . $CCVIEW
+if !isdirectory(s:my_tmp_vim_ccview_dir)
+  call mkdir(s:my_tmp_vim_ccview_dir, "p")
+endif
+
 " For Unix and Win32, if a directory ends in two path separators "//"
 " or "\\", the swap file name will be built from the complete path
 " to the file with all path separators substituted to percent '%' signs.
 " This will ensure file name uniqueness in the preserve directory.
-set directory=~/tmp/vim//,~/tmp//,/var/tmp//,/tmp//
+let s:base_backup_directory=s:my_tmp_vim_dir . "//"
+let s:base_backup_directory=s:base_backup_directory . "," . s:my_tmp_dir . "//"
+let s:base_backup_directory=s:base_backup_directory . "," . "/var/tmp"   . "//"
+let s:base_backup_directory=s:base_backup_directory . "," . "/tmp"       . "//"
+
+" Where to put swap files and where to find them.
+let &directory=s:my_tmp_vim_ccview_dir . "//," . s:base_backup_directory
 
 " List of directories for the backup file, separated with commas.
-set backupdir=~/tmp/vim
+let &backupdir=&directory
+
 " Create backups.
 set backup
 
-" Number of command-lines to be remembered.
-set history=1000
+if has("persistent_undo")
+    let &undodir=&directory
+    set undofile
+else
+   " Do not unload buffer, when abandoned
+    set hidden
+endif
+
+augroup SetPersistencyDirAccordingToFileLocation
+  au!
+  autocmd BufEnter * call SetPersistencyDirs()
+
+  function! SetPersistencyDirs()
+    if (match(expand("%:p"), "^/vobs/") == 0)
+      let &directory=s:my_tmp_vim_ccview_dir . "//," . s:base_backup_directory
+    else
+      let &directory=s:base_backup_directory
+    endif
+    let &backupdir=&directory
+    if has("persistent_undo")
+      let &undodir=&directory
+    endif
+  endfunction
+augroup END
+" PERSISTENCY ---|
 
 " Show the line and column number of the cursor position, separated by a comma.
 set ruler
@@ -434,7 +474,7 @@ func! MyTextModeStatusLine()
   " Setting window width for TagList dynamically
   let g:Tlist_WinWidth = &columns / 4
 
-  let statusline = "%<" . expand("%t") . "\ %h%w%m%r%y\ [%{&ff}]\ " . '[%{(&fenc==""?&enc:&fenc)}] ' . "%=C:%c%V\ L:%l/%L\ (%p%%)\ B:%o"
+  let statusline = "%<" . expand("%:p") . "\ %h%w%m%r%y\ [%{&ff}]\ " . '[%{(&fenc==""?&enc:&fenc)}] ' . "%=C:%c%V\ L:%l/%L\ (%p%%)\ B:%o"
   let barWidth = 10 " &columns / 4 " / winnr("$")
   let barWidth = barWidth < 3 ? 3 : barWidth
 
@@ -456,7 +496,7 @@ if has("gui_running")
   set guitabtooltip=%{GuiTabToolTip()}
   augroup SetTitleStringAtEnteringBufferForGUI
     au!
-    autocmd BufEnter * let &titlestring = "[" . expand($CCVIEW) . "] " . expand("%t")
+    autocmd BufEnter * let &titlestring = "[" . expand($CCVIEW) . "] " . expand("%:t")
   augroup END
   set statusline=%<%t\ %h%w%m%r%y\ [%{&ff}]%=C:%c%V\ L:%l/%L\ (%p%%)\ B:%o
 else
