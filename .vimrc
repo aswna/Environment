@@ -1,3 +1,6 @@
+" This .vimrc file is not compatible with older vim versions.
+" At the moment at least 7.3 is required.
+
 " See http://vimdoc.sourceforge.net/htmldoc/options.html#'nocompatible'
 " Make Vim behave in a more useful way.
 set nocompatible
@@ -212,8 +215,6 @@ augroup SetPersistencyDirAccordingToFileLocation
 augroup END
 " PERSISTENCY ---|
 
-" Show the line and column number of the cursor position, separated by a comma.
-set ruler
 " Show (partial) command in the last line of the screen.
 set showcmd
 " Lines will not wrap and only part of long lines will be displayed.
@@ -235,22 +236,20 @@ set splitbelow
 
 " draw a nice margin (colorcolumn is available since 7.3),
 " unfortunately it wraps the text (?)
-"if version >= 703
-"  set textwidth=79
-"  set formatoptions-=t
-"  set formatoptions+=c
-"  set formatoptions-=r
-"  set formatoptions-=o
-"  set formatoptions-=a
-"  set formatoptions-=v
-"  set formatoptions-=b
-"  set formatoptions-=l
-"  set formatoptions-=m
-"  set formatoptions-=M
-"  set formatoptions-=B
-"  set formatoptions+=1
-"  set colorcolumn=+1
-"endif
+"set textwidth=79
+"set formatoptions-=t
+"set formatoptions+=c
+"set formatoptions-=r
+"set formatoptions-=o
+"set formatoptions-=a
+"set formatoptions-=v
+"set formatoptions-=b
+"set formatoptions-=l
+"set formatoptions-=m
+"set formatoptions-=M
+"set formatoptions-=B
+"set formatoptions+=1
+"set colorcolumn=+1
 
 set runtimepath=$HOME/.vim,$VIMRUNTIME,/usr/share/vim/vimfiles/after,$HOME/.vim/after
 
@@ -312,10 +311,8 @@ set laststatus=2
 
 " Highlighted status line (?)
 hi StatusLine ctermfg=white ctermbg=none
-if version >= 700
-  au InsertEnter * hi StatusLine ctermbg=1
-  au InsertLeave * hi StatusLine ctermfg=white ctermbg=none
-endif
+au InsertEnter * hi StatusLine ctermbg=1
+au InsertLeave * hi StatusLine ctermfg=white ctermbg=none
 
 " Set up tab labels with buffer name, number of windows.
 function! GuiTabLabel()
@@ -654,7 +651,7 @@ augroup CheckoutReadOnlyFileInVOBBeforeEditingIt
   au!
   autocmd FileChangedRO *
     \ let filename = expand("%:p") |
-    \ if match(filename, "/vobs") >= 0 |
+    \ if (match(filename, "^/vobs/") == 0) |
     \   silent! call system("/usr/atria/bin/cleartool checkout -unre -nc " . filename) |
     \   redraw! |
     \   set noreadonly |
