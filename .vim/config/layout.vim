@@ -23,7 +23,7 @@ set cpoptions+=$
 
 " draw a nice margin (colorcolumn is available since 7.3),
 " unfortunately it wraps the text (?)
-set textwidth=79
+set textwidth=99
 set formatoptions-=t
 set formatoptions+=c
 set formatoptions-=r
