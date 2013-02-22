@@ -51,6 +51,11 @@ endif
 
 if has("gui_running")
   colorscheme aswna256
+  if $OSTYPE==#"linux"
+    set guifont=DejaVu\ Sans\ Mono\ 10
+  elseif $OS==#"Windows_NT"
+    set guifont=Consolas:h11:cANSI
+  endif
 else
   " for PuTTY (or screen?)
   if $TERM==#"vt100"
@@ -83,7 +88,11 @@ if has("gui_running")
   set guitabtooltip=%{GuiTabToolTip()}
   augroup SetTitleStringAtEnteringBufferForGUI
     au!
-    autocmd BufEnter * let &titlestring = "[" . expand($CCVIEW) . "] " . expand("%:t")
+    if empty(expand($CCVIEW))
+      autocmd BufEnter * let &titlestring = expand("%:t")
+    else
+      autocmd BufEnter * let &titlestring = "[" . expand($CCVIEW) . "] " . expand("%:t")
+    endif
   augroup END
   set statusline=%<%t\ %h%w%m%r%y\ [%{&ff}]%=C:%c%V\ L:%l/%L\ (%p%%)\ B:%o
 else
