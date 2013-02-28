@@ -7,9 +7,15 @@ set autowriteall
 
 let s:my_tmp_dir = $HOME . "/tmp"
 let s:my_tmp_vim_dir = s:my_tmp_dir . "/vim"
-let s:my_tmp_vim_ccview_dir = s:my_tmp_vim_dir . "/" . $CCVIEW
+let s:my_tmp_vim_ccview_dir = s:my_tmp_vim_dir
+if IsEnvVarSet($CCVIEW)
+  let s:my_tmp_vim_ccview_dir = s:my_tmp_vim_ccview_dir . "/" . $CCVIEW
+endif
 if !isdirectory(s:my_tmp_vim_ccview_dir)
-  call mkdir(s:my_tmp_vim_ccview_dir, "p")
+  if exists("*mkdir")
+    echom "Creating tmp vim (ccview = " . $CCVIEW . ") dir: " . s:my_tmp_vim_ccview_dir
+    call mkdir(s:my_tmp_vim_ccview_dir, "p")
+  endif
 endif
 
 " For Unix and Win32, if a directory ends in two path separators "//"
