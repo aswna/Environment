@@ -57,11 +57,10 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 else
-  " for PuTTY (or screen?)
   if $TERM==#"vt100"
     set t_Co=8
     colorscheme aswna
-  elseif $TERM==#"xterm-256color"
+  elseif $TERM=~"-256color"
     set t_Co=256
     colorscheme aswna256
   else
