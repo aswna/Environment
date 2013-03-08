@@ -8,7 +8,6 @@ set nocompatible
 set runtimepath=$HOME/.vim
 set runtimepath+=$VIMRUNTIME
 set runtimepath+=$HOME/.vim/after
-set runtimepath+=$HOME/git/github/vim-addon-manager
 
 " Loop through the function definition files and source them
 for function_file in split(globpath("$HOME/.vim/functions", "*"), "\n")
