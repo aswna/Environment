@@ -126,6 +126,9 @@ map <F6> :silent! ctunco \| :redraw!<CR>
 " \d: Diff to previous verion (ClearCase).
 nmap <silent> <Leader>d :Ctpdif<CR>
 
+" \o: call Rexplore (similar to CTRL-O)
+map <silent> <Leader>o :Rexplore<CR>
+
 " \t: Switch to test code file from production source code file (or vice versa).
 " Switch from ../src/.../Thing.cc to ../bt_src/.../TestThing.cc (or vice versa).
 " TODO: refactor to a function and update for current project?
@@ -140,7 +143,7 @@ nmap <silent> <Leader>d :Ctpdif<CR>
 map <F8> gf
 
 " Create tag files.
-map <F9> :!(myptags; myjtags; myctags)>/dev/null&<CR>
+"map <F9> :!(myptags; myjtags; myctags)>/dev/null&<CR>
 
 " Execute code formatting on current file.
 "map <F10> :!$HOME/bin/code_formatting.sh %<CR>
