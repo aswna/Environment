@@ -64,7 +64,18 @@ fun! SetupVAM()
   "    ..ActivateAddons(["github:user/repo", .. => github://user/repo
   " Also see section "2.2. names of addons and addon sources" in VAM's documentation
 endfun
-call SetupVAM()
+
+if g:win
+  let git_dir = 'C:\Program Files (x86)\Git\bin'
+  if isdirectory(git_dir)
+    let $PATH = git_dir . ';' . $PATH
+    call SetupVAM()
+  else
+    echom "Git is needed for VAM."
+  endif
+else
+  call SetupVAM()
+endif
 " experimental [E1]: load plugins lazily depending on filetype, See
 " NOTES
 " experimental [E2]: run after gui has been started (gvim) [3]
