@@ -31,8 +31,8 @@ if $TERM==#"vt100" || $TERM=~"-256color"
   noremap <PageDown> [6~
 
   " Ctrl-Up / Ctrl-Down: move the current tab to the left / right
-  nnoremap <silent> OA :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-  nnoremap <silent> OB :execute 'silent! tabmove ' . tabpagenr()<CR>
+  "nnoremap <silent> OA :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+  "nnoremap <silent> OB :execute 'silent! tabmove ' . tabpagenr()<CR>
 endif
 
 if $TERM==#"vt100"
@@ -89,19 +89,76 @@ if $TERM=~"-256color"
   noremap <F12> [24~
 endif
 
+" several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
+" It is time to learn Vim motions in the hard way
+inoremap <Up> <nop>
+nnoremap <Up> <nop>
+inoremap <Down> <nop>
+nnoremap <Down> <nop>
+inoremap <Left> <nop>
+nnoremap <Left> <nop>
+inoremap <Right> <nop>
+nnoremap <Right> <nop>
+
 " Ctrl-Left / Ctrl-Right: go to the previous / next tab
-nnoremap <silent> <C-Left>  :tabprevious<CR>
-nnoremap <silent> <C-Right> :tabnext<CR>
+"nnoremap <silent> <C-Left>  :tabprevious<CR>
+"nnoremap <silent> <C-Right> :tabnext<CR>
 
 " Map space to center on line
 nmap <space> zz
 
-" Centering the search on next / previous
-"nmap n nzz
-"nmap N Nzz
+" Make Y consistent with C and D.  See :help Y.
+nnoremap Y y$
 
-" Hitting 'Enter' breaks line
-map  i
+" Move non linewise in wrapped text
+nnoremap j gj
+nnoremap k gk
+
+" Very magic search
+nnoremap / /\v
+vnoremap / /\v
+
+" No need to press Shift, real optimization for almost all Vim commands.
+nnoremap ; :
+nnoremap <leader>; ;
+
+" Toggle show/hide invisible chars
+nnoremap <silent> <Leader>i :set list!<CR>
+
+" Toggle line numbers
+nnoremap <silent> <Leader>N :setlocal number!<CR>
+
+" Toggle the foldcolumn
+nnoremap <silent> <Leader>f :call FoldColumnToggle()<CR>
+let g:last_fold_column_width = 4  " Pick a sane default for the foldcolumn
+
+" make p in Visual mode replace the selected text with the yank register
+vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+
+" Quickly get out of insert mode without your fingers having to leave the home row
+inoremap jk <Esc>
+
+" Quote words under cursor
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
+" Quote current selection
+" TODO: This only works for selections that are created "forwardly"
+vnoremap <leader>" <esc>a"<esc>gvo<esc>i"<esc>gvo<esc>ll
+vnoremap <leader>' <esc>a'<esc>gvo<esc>i'<esc>gvo<esc>ll
+
+" Use shift-H and shift-L for move to beginning/end
+nnoremap H 0
+nnoremap L $
+
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tl :tablast<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnext<Space>
+nnoremap tm :tabm<Space>
+nnoremap td :tabclose<CR>
 
 " Execute macro q
 map <F1> @q
@@ -126,8 +183,7 @@ map <F6> :silent! ctunco \| :redraw!<CR>
 " \d: Diff to previous verion (ClearCase).
 nmap <silent> <Leader>d :Ctpdif<CR>
 
-" \o: call Rexplore (similar to CTRL-O)
-map <silent> <Leader>o :Rexplore<CR>
+set pastetoggle=<F7>
 
 " \t: Switch to test code file from production source code file (or vice versa).
 " Switch from ../src/.../Thing.cc to ../bt_src/.../TestThing.cc (or vice versa).
@@ -148,11 +204,5 @@ map <F8> gf
 " Execute code formatting on current file.
 "map <F10> :!$HOME/bin/code_formatting.sh %<CR>
 
-" Delete all trailing whitespace from each line,
-" Remove spaces after '(' and before ')'
-" Replace consecutive blank lines with a single blank line
-" Remove blank lines after trailing '{' or before leading '}'
-" Remove some decorator lines
-" TODO: improve
 "inoremap <silent> <F12> <c -O>:call BeatutifySourceCode()<CR>
 "map <silent> <F12> :call BeatutifySourceCode()<CR>

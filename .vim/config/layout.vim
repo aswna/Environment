@@ -41,6 +41,20 @@ set colorcolumn=+1
 " When 'wildmenu' is on, command-line completion operates in an enhanced mode.
 set wildmenu
 
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+if &termencoding ==# 'utf-8' || &encoding ==# 'utf-8'
+  set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:·
+endif
+set list
+
 " It seems, this resolves comment un-indent issues
 filetype plugin indent on
 syntax enable
@@ -49,23 +63,17 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
-if has("gui_running")
-  colorscheme aswna256
-  if $OSTYPE==#"linux"
-    set guifont=DejaVu\ Sans\ Mono\ 10
-  elseif $OS==#"Windows_NT"
-    set guifont=Consolas:h11:cANSI
-  endif
-else
-  if $TERM==#"vt100"
-    set t_Co=8
-    colorscheme aswna
-  elseif $TERM=~"-256color"
-    set t_Co=256
-    colorscheme aswna256
-  else
-    colorscheme aswna
-  endif
+" Colorscheme
+set background=dark
+let g:solarized_contrast="high"
+let g:solarized_diffmode="high"
+colorscheme solarized
+
+" GUI font setting
+if $OSTYPE==#"linux"
+  set guifont=DejaVu\ Sans\ Mono\ 10
+elseif $OS==#"Windows_NT"
+  set guifont=Consolas:h11:cANSI
 endif
 
 " Last window will have a status line always.
