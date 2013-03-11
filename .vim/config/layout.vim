@@ -58,15 +58,10 @@ set list
 " It seems, this resolves comment un-indent issues
 filetype plugin indent on
 syntax enable
-
-if &t_Co > 2 || has("gui_running")
-  syntax on
-endif
+syntax on
 
 " Colorscheme
 set background=dark
-let g:solarized_contrast="high"
-let g:solarized_diffmode="high"
 colorscheme solarized
 
 " GUI font setting
