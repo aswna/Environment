@@ -3,11 +3,13 @@
 Configuration files for my [zsh][1] (shell), [GNU screen][2] (terminal multiplexer) and
 [Vim][3] (text editor) environment on Unix used from [PuTTY][4] (ssh client) on Windows.
 
+I use the [Solarized color scheme][5] in [Vim][6], [PuTTY][7] and [Gnome terminal][8].
+
 ## Markup used in this file ##
-In this file [GitHub Flavored Markdown][6] is used.
+In this file [GitHub Flavored Markdown][9] is used.
 
 ## Cloning repository ##
-See more info about [cloning on GitHub][7].
+See more info about [cloning on GitHub][10].
 
 ### For read-only access it is easy to use the git:// URL. ###
     git clone git://github.com/aswna/Environment.git
@@ -39,6 +41,9 @@ See above.
 [2]: http://www.gnu.org/software/screen/ "GNU screen"
 [3]: http://www.vim.org/ "Vim"
 [4]: http://www.chiark.greenend.org.uk/~sgtatham/putty/ "PuTTY"
-[5]: http://sourceforge.net/projects/portableapps/files/PuTTY%20Portable/ "PuTTY portable"
-[6]: http://github.github.com/github-flavored-markdown/ "GFM"
-[7]: https://help.github.com/articles/which-remote-url-should-i-use "Which remote URL should I use?"
+[5]: http://ethanschoonover.com/solarized "Solarized"
+[6]: https://github.com/altercation/vim-colors-solarized "Vim colors solarized"
+[7]: https://github.com/brantb/solarized/tree/master/putty-colors-solarized "PuTTY colors solarized"
+[8]: https://github.com/sigurdga/gnome-terminal-colors-solarized "Gnome terminal colors solarized"
+[9]: http://github.github.com/github-flavored-markdown/ "GFM"
+[10]: https://help.github.com/articles/which-remote-url-should-i-use "Which remote URL should I use?"
