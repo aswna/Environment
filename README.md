@@ -1,6 +1,6 @@
 # Environment #
 ## Overview ##
-Configuration files for my [tcsh][1] (shell), [GNU screen][2] (terminal multiplexer) and
+Configuration files for my [zsh][1] (shell), [GNU screen][2] (terminal multiplexer) and
 [Vim][3] (text editor) environment on Unix used from [PuTTY][4] (ssh client) on Windows.
 
 ## Markup used in this file ##
@@ -21,6 +21,13 @@ Set the correct templates path explicitly.
 
     git clone --template=/path/to/git-core/templates git@github.com:aswna/Environment.git
 
+#### Cannot clone/sync with git on Windows ####
+Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
+Client Management settings: Current location to "Out of ... premises".
+
+### Troubleshooting (obsolete) ###
+Following troubles are obsolete, since my way of use changed.
+
 #### Alt-Left/Alt-Right do not switch between GNU screen windows in PuTTY
 Use default PuTTY config options, except for Terminal->Features->Disable application cursor keys mode.
 Its default setting is off, and it must be turned on.
@@ -28,7 +35,7 @@ Its default setting is off, and it must be turned on.
 #### Vim key bindings do not work as expected in PuTTY
 See above.
 
-[1]: http://www.tcsh.org/Home "tcsh"
+[1]: http://www.zsh.org/ "zsh"
 [2]: http://www.gnu.org/software/screen/ "GNU screen"
 [3]: http://www.vim.org/ "Vim"
 [4]: http://www.chiark.greenend.org.uk/~sgtatham/putty/ "PuTTY"
