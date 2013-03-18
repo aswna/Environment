@@ -4,3 +4,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = git@github.com:crashmaster/zsh.git
+[submodule ".vim/bundle/vim-scripts-matchit"]
+	path = .vim/bundle/vim-scripts-matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
