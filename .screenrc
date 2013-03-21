@@ -10,28 +10,18 @@ altscreen on
 # Automatically detach the session on SIGHUP.
 autodetach on
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Bind
-source $HOME/.screenrc.bindings.private
-
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
-# Alt-Right changes to next window
-bindkey ^[^[[C next
-bindkey ^[[1;3C next
+# Alt-l changes to next window
+bindkey ^[l next
 
-# Alt-Left changes to previous window
-bindkey ^[^[[D prev
-bindkey ^[[1;3D prev
+# Alt-h changes to previous window
+bindkey ^[h prev
 
-# Alt-PageUp enters copy mode full page up
-bindkey ^[^[[5~ eval "copy" "stuff \"^b\""
-bindkey ^[[5;3~ eval "copy" "stuff \"^b\""
+# Alt-k enters copy mode full page up
+bindkey ^[k eval "copy" "stuff \"^b\""
 
-# Alt-PageDown enters copy mode full page down
-bindkey ^[^[[6~ eval "copy" "stuff \"^f\""
-bindkey ^[[6;3~ eval "copy" "stuff \"^f\""
-
-# See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
-blankerprg /bin/tcsh -f -c $HOME/bin/quote
+# Alt-j enters copy mode full page down
+bindkey ^[j eval "copy" "stuff \"^f\""
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
@@ -50,7 +40,7 @@ hardstatus alwayslastline
 
 # See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
 # [hostname in green][server load in blue][window list with active window title is highlighted in red][date and time in green]
-hardstatus string '%{= g}[%H]%{B}[%l]%{g}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{g}][%Y-%m-%d %c:%s]'
+hardstatus string '%{= g}[%H]%{B}[%l]%{g}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{g}][%Y-%m-%d %c]'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
@@ -63,9 +53,6 @@ ignorecase on
 # Set inter-character timeout used for keymapping to 0 (f.i.: Esc should not behave like Alt).
 maptimeout 0
 
-# Environment variable settings (e.g.: DISPLAY)
-source $HOME/.screenrc.setenvs.private
-
 # See http://www.gnu.org/software/screen/manual/screen.html#Shell
 # Set the default program for new windows.
 # If the command begins with a '-' character, the shell will be started as a login-shell.
@@ -75,10 +62,9 @@ shell -$SHELL
 # Turn off startup message about copyright.
 startup_message off
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Termcap-Syntax
-# Not sure about this hack anyway. :)
-#termcapinfo xterm-256color|gnome* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
-
 # See http://www.gnu.org/software/screen/manual/screen.html#Bell
 # Turn off visual bell.
 vbell off
+
+# Private settings (bindings, environment variable settings, f.i. DISPLAY, etc)
+source $HOME/.screenrc.private
