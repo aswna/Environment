@@ -1,3 +1,6 @@
+" decrease default timeout for key sequences
+set timeoutlen=500
+
 " for PuTTY (or screen)
 if $TERM==#"vt100" || $TERM=~"-256color"
   set <Up>=[A
@@ -117,6 +120,8 @@ nnoremap k gk
 " Very magic search
 nnoremap / /\v
 vnoremap / /\v
+nnoremap ? ?\v
+vnoremap ?j ?\v
 
 " No need to press Shift, real optimization for almost all Vim commands.
 nnoremap ; :
@@ -129,13 +134,14 @@ nnoremap <silent> <Leader>i :set list!<CR>
 nnoremap <silent> <Leader>N :setlocal number!<CR>
 
 " Toggle the foldcolumn
-nnoremap <silent> <Leader>f :call FoldColumnToggle()<CR>
+nnoremap <silent> _f :call FoldColumnToggle()<CR>
 let g:last_fold_column_width = 4  " Pick a sane default for the foldcolumn
 
 " make p in Visual mode replace the selected text with the yank register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
 " Quickly get out of insert mode without your fingers having to leave the home row
+" Probably we should use CTRL-[.
 inoremap jk <Esc>
 
 " Quote words under cursor
@@ -159,6 +165,9 @@ nnoremap tt :tabedit<Space>
 nnoremap tn :tabnext<Space>
 nnoremap tm :tabm<Space>
 nnoremap td :tabclose<CR>
+
+" echo current function
+map <Leader>f :se lz<CR>:sp<CR>mx[[?^\i<CR>yt(`x:q<CR>:se nolz<CR>:echo "Function: " . @"<CR>
 
 " Execute macro q
 map <F1> @q
