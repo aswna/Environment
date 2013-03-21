@@ -1,7 +1,7 @@
 # Environment #
 ## Overview ##
 Configuration files for my [zsh][1] (shell), [GNU screen][2] (terminal multiplexer) and
-[Vim][3] (text editor) environment on Unix used from [PuTTY][4] (ssh client) on Windows.
+[Vim][3] (text editor) environment on Linux, used from [PuTTY][4] (ssh client) on Windows.
 
 I use the [Solarized color scheme][5] in [Vim][6], [PuTTY][7] and [Gnome terminal][8].
 
@@ -28,13 +28,13 @@ Check whether you are using Symantec Endpoint Protection. If so, the you may wan
 Client Management settings: Current location to "Out of ... premises".
 
 ### Troubleshooting (obsolete) ###
-Following troubles are obsolete, since my way of use changed.
+Following troubles are obsolete, since my way of use has changed.
 
-#### Alt-Left/Alt-Right do not switch between GNU screen windows in PuTTY
+#### Alt-Left/Alt-Right do not switch between GNU screen windows using from PuTTY
 Use default PuTTY config options, except for Terminal->Features->Disable application cursor keys mode.
 Its default setting is off, and it must be turned on.
 
-#### Vim key bindings do not work as expected in PuTTY
+#### Vim key bindings do not work as expected using from PuTTY
 See above.
 
 [1]: http://www.zsh.org/ "zsh"
