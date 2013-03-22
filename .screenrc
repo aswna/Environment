@@ -11,17 +11,17 @@ altscreen on
 autodetach on
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
-# Alt-l changes to next window
-bindkey ^[l next
+# Alt-j changes to previous window
+bindkey ^[j prev
 
-# Alt-h changes to previous window
-bindkey ^[h prev
+# Alt-k changes to next window
+bindkey ^[k next
 
-# Alt-k enters copy mode full page up
-bindkey ^[k eval "copy" "stuff \"^b\""
+# Alt-h enters copy mode full page up
+bindkey ^[h eval "copy" "stuff \"^b\""
 
-# Alt-j enters copy mode full page down
-bindkey ^[j eval "copy" "stuff \"^f\""
+# Alt-l enters copy mode full page down
+bindkey ^[l eval "copy" "stuff \"^f\""
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
