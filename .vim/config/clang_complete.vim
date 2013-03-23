@@ -8,7 +8,6 @@ let g:clang_conceal_snippets = 1
 let g:clang_hl_errors = 1
 let g:clang_periodic_quickfix = 1
 let g:clang_snippets = 1
-let g:clang_snippets_engine = 'ultisnips'
 let g:clang_trailing_placeholder = 0
 let g:clang_use_library = 1
 let g:clang_user_options = "-Wall"
