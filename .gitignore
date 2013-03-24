@@ -1,5 +1,2 @@
 *.site*
-*\.pyc
-\.vim/\.VimballRecord
-\.vim/\.netrwhist
-\.vim/vim-addons
+.vim/.netrwhist
