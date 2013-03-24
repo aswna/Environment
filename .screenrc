@@ -10,18 +10,15 @@ altscreen on
 # Automatically detach the session on SIGHUP.
 autodetach on
 
+# Alt-u enters copy mode full page up
+#bindkey ^[u eval "copy" "stuff \"^b\""
+
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j changes to previous window
 bindkey ^[j prev
 
 # Alt-k changes to next window
 bindkey ^[k next
-
-# Alt-h enters copy mode full page up
-bindkey ^[h eval "copy" "stuff \"^b\""
-
-# Alt-l enters copy mode full page down
-bindkey ^[l eval "copy" "stuff \"^f\""
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
