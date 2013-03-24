@@ -1,5 +1,8 @@
 let g:syntastic_check_on_open = 1
 
+if g:running_on_windows_os
+  set encoding=utf-8
+endif
 let g:syntastic_error_symbol = 'E▸'
 let g:syntastic_warning_symbol = 'W▸'
 let g:syntastic_style_error_symbol = 'e▸'
