@@ -157,14 +157,10 @@ vnoremap <leader>' <esc>a'<esc>gvo<esc>i'<esc>gvo<esc>ll
 nnoremap H 0
 nnoremap L $
 
-nnoremap th :tabfirst<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tk :tabnext<CR>
-nnoremap tl :tablast<CR>
-nnoremap tt :tabedit<Space>
-nnoremap tn :tabnext<Space>
+nnoremap tt :tabnew<Space>
 nnoremap tm :tabm<Space>
-nnoremap td :tabclose<CR>
 
 " echo current function
 map <Leader>f :se lz<CR>:sp<CR>mx[[?^\i<CR>yt(`x:q<CR>:se nolz<CR>:echo "Function: " . @"<CR>
