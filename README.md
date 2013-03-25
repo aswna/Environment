@@ -37,6 +37,10 @@ or simply
 
     git submodule update --init
 
+I also use
+
+     git submodule foreach git pull
+
 ### Deleting a submodule ###
 1. Delete the relevant line from the .gitmodules file.
 2. Delete the relevant section from .git/config.
@@ -55,6 +59,16 @@ Set the correct templates path explicitly.
 #### Cannot clone/sync with git on Windows ####
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
+
+#### You are not currently on a branch... ####
+Sometimes git pull cannot succeed. Example:
+
+    Stopping at 'zsh'; script returned non-zero status.
+    > cd zsh
+    > git branch
+    * (no branch)
+      master
+    > git checkout master
 
 ### Troubleshooting (obsolete) ###
 Following troubles are obsolete, since my way of use has changed.
