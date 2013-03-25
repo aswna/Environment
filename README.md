@@ -20,6 +20,7 @@ See more info about [cloning on GitHub][10].
 ## Submodules ##
 ### Adding new submodule ###
 Adding a new Git submodule is easy.
+
     git submodule add <git repo> <directory to clone submodule into>
 
 ### Cloning, updating a submodule ###
