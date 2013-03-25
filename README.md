@@ -28,18 +28,10 @@ You can clone the repository in a way, which clones the submodules, too, with Gi
 
     git clone --recursive <git repo>
 
-In an already existing (cloned) repository, you need to initialize the submodules first.
+In an already existing (cloned) repository, you need to initialize the submodules first and -usually - switch to the main branch. The best I could find it the following:
 
-    git submodule init
-    git submodule update
-
-or simply
-
-    git submodule update --init
-
-I also use
-
-     git submodule foreach git pull
+    git submodule update --init --recursive
+    git submodule foreach --recursive git checkout master
 
 ### Deleting a submodule ###
 1. Delete the relevant line from the .gitmodules file.
@@ -60,16 +52,6 @@ Set the correct templates path explicitly.
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
 
-#### You are not currently on a branch... ####
-Sometimes git pull cannot succeed. Example:
-
-    Stopping at 'zsh'; script returned non-zero status.
-    > cd zsh
-    > git branch
-    * (no branch)
-      master
-    > git checkout master
-
 ### Troubleshooting (obsolete) ###
 Following troubles are obsolete, since my way of use has changed.
 
@@ -79,6 +61,18 @@ Its default setting is off, and it must be turned on.
 
 #### Vim key bindings do not work as expected using from PuTTY
 See above.
+
+#### You are not currently on a branch... ####
+Sometimes git pull cannot succeed. Example:
+
+    Stopping at 'zsh'; script returned non-zero status.
+    > cd zsh
+    > git branch
+    * (no branch)
+      master
+    > git checkout master
+See above "Cloning, updating a submodule".
+
 
 [1]: http://www.zsh.org/ "zsh"
 [2]: http://www.gnu.org/software/screen/ "GNU screen"
