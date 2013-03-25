@@ -24,12 +24,16 @@ Adding a new Git submodule is easy.
 
 ### Cloning, updating a submodule ###
 You can clone the repository in a way, which clones the submodules, too, with Git 1.6.5 and later.
+
     git clone --recursive <git repo>
 
 In an already existing (cloned) repository, you need to initialize the submodules first.
+
     git submodule init
     git submodule update
+
 or simply
+
     git submodule update --init
 
 ### Deleting a submodule ###
