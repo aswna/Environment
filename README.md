@@ -17,6 +17,30 @@ See more info about [cloning on GitHub][10].
 ### For read/write access it is best to setup ssh keys and use SSH. ###
     git clone git@github.com:aswna/Environment.git
 
+## Submodules ##
+### Adding new submodule ###
+Adding a new Git submodule is easy.
+    git submodule add <git repo> <directory to clone submodule into>
+
+### Cloning, updating a submodule ###
+You can clone the repository in a way, which clones the submodules, too, with Git 1.6.5 and later.
+    git clone --recursive <git repo>
+
+In an already existing (cloned) repository, you need to initialize the submodules first.
+    git submodule init
+    git submodule update
+or simply
+    git submodule update --init
+
+### Deleting a submodule ###
+1. Delete the relevant line from the .gitmodules file.
+2. Delete the relevant section from .git/config.
+3. Run git rm --cached <path_to_submodule> (no trailing slash).
+4. Commit the "superproject".
+5. Delete the now untracked submodule files.
+
+For more details see the [Git submodule tutorial][11].
+
 ### Troubleshooting ###
 #### warning: templates not found /some/path/git-core/templates ####
 Set the correct templates path explicitly.
@@ -47,3 +71,4 @@ See above.
 [8]: https://github.com/sigurdga/gnome-terminal-colors-solarized "Gnome terminal colors solarized"
 [9]: http://github.github.com/github-flavored-markdown/ "GFM"
 [10]: https://help.github.com/articles/which-remote-url-should-i-use "Which remote URL should I use?"
+[11]: https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial "Git submodule tutorial"
