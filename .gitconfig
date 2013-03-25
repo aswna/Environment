@@ -7,3 +7,7 @@
 	pager = less -FSRX
 [color]
 	ui = true
+[alias]
+	ci = commit
+	st = status
+	stat = status
