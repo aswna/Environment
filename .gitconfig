@@ -9,5 +9,6 @@
 	ui = true
 [alias]
 	ci = commit
+	co = checkout
 	st = status
 	stat = status
