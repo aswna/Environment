@@ -1,8 +1,8 @@
 setlocal colorcolumn=""
 
-au FileType qf call AdjustWindowHeight(2, 5)
+au FileType qf call AdjustWindowHeight(1, 5)
 function! AdjustWindowHeight(minheight, maxheight)
-    exe max([min([line("$"), a:maxheight]), a:minheight]) . "wincmd _"
+    exe max([min([line("$")+1, a:maxheight]), a:minheight]) . "wincmd _"
 endfunction
 
 if exists("*SourceSiteConfig")
