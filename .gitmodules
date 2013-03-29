@@ -14,6 +14,3 @@
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = git@github.com:aswna/syntastic.git
