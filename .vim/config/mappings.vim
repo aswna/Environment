@@ -144,7 +144,7 @@ vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 " Probably we should use CTRL-[.
 inoremap jk <Esc>
 
-" Quote words under cursor
+" Quote word under cursor
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
