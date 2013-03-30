@@ -10,9 +10,6 @@ altscreen on
 # Automatically detach the session on SIGHUP.
 autodetach on
 
-# Alt-u enters copy mode full page up
-#bindkey ^[u eval "copy" "stuff \"^b\""
-
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j changes to previous window
 bindkey ^[j prev
