@@ -48,10 +48,10 @@ For more details see the [Git submodule tutorial][11].
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
 
-#### After deleting a submodule an adding it back Git gets confused ####
-Sometimes I replace an official submodule with my own fork until the fix gets merged into the official repository. Even when I follow the above recipe for the submodule deletion, Git gets confused.
-I could not find out a better solution than creating a new clone of the whole repository containing all the submodules. Note: take care of the non-tracked private files!
-There must be a flaw in my Git usage.
+#### After deleting a submodule and adding back another with the same name, Git gets confused ####
+Sometimes I replace an official submodule with my own fork until the fix gets merged into the official repository. Even, when I follow the above recipe for the submodule deletion, Git gets confused.
+I could not find out a better solution than creating a new clone of the superproject repository (containing all the submodules). Note: take care of the non-tracked private files!
+Is there a flaw in my Git usage? Deleting the out-dated entry from <code>.git/config</code> might help.
 
 ### Troubleshooting (obsolete) ###
 Following troubles are obsolete, since my way of use has changed.
