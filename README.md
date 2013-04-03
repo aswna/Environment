@@ -28,29 +28,30 @@ You can clone the repository in a way, which clones the submodules, too, with Gi
 
     git clone --recursive <git repo>
 
-In an already existing (cloned) repository, you need to initialize the submodules first and -usually - switch to the main branch. The best I could find it the following:
+In an already existing (cloned) repository, you need to initialize the submodules first and -- usually -- switch to the main branch. The best I could find is the following:
 
     git submodule update --init --recursive
     git submodule foreach --recursive git checkout master
+    git submodule foreach --recursive git pull
 
 ### Deleting a submodule ###
-1. Delete the relevant line from the .gitmodules file.
-2. Delete the relevant section from .git/config.
-3. Run git rm --cached &lt;path_to_submodule&gt; (no trailing slash).
+1. Delete the relevant line from the <code>.gitmodules</code> file.
+2. Delete the relevant section from <code>.git/config</code>.
+3. Run <code>git rm --cached &lt;path_to_submodule&gt;</code> (no trailing slash).
 4. Commit the "superproject".
 5. Delete the now untracked submodule files.
 
 For more details see the [Git submodule tutorial][11].
 
 ### Troubleshooting ###
-#### warning: templates not found /some/path/git-core/templates ####
-Set the correct templates path explicitly.
-
-    git clone --template=/path/to/git-core/templates git@github.com:aswna/Environment.git
-
-#### Cannot clone/sync with git on Windows ####
+#### Cannot clone/sync with Git on Windows ####
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
+
+#### After deleting a submodule and adding back another with the same name, Git gets confused ####
+Sometimes I replace an official submodule with my own fork until the fix gets merged into the official repository. Even, when I follow the above recipe for the submodule deletion, Git gets confused.
+I could not find out a better solution than creating a new clone of the superproject repository (containing all the submodules). Note: take care of the non-tracked private files!
+Is there a flaw in my Git usage? Deleting the out-dated entry from <code>.git/config</code> might help.
 
 ### Troubleshooting (obsolete) ###
 Following troubles are obsolete, since my way of use has changed.
@@ -73,6 +74,10 @@ Sometimes git pull cannot succeed. Example:
     > git checkout master
 See above "Cloning, updating a submodule".
 
+#### warning: templates not found /some/path/git-core/templates ####
+Set the correct templates path explicitly.
+
+    git clone --template=/path/to/git-core/templates git@github.com:aswna/Environment.git
 
 [1]: http://www.zsh.org/ "zsh"
 [2]: http://www.gnu.org/software/screen/ "GNU screen"
