@@ -92,8 +92,8 @@ if $TERM=~"-256color"
   noremap <F12> [24~
 endif
 
-" several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
-" It is time to learn Vim motions in the hard way
+" Several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
+" It is time to learn Vim motions in the hard way.
 inoremap <Up> <nop>
 nnoremap <Up> <nop>
 inoremap <Down> <nop>
@@ -190,24 +190,5 @@ nmap <silent> <Leader>d :Ctpdif<CR>
 
 set pastetoggle=<F7>
 
-" \t: Switch to test code file from production source code file (or vice versa).
-" Switch from ../src/.../Thing.cc to ../bt_src/.../TestThing.cc (or vice versa).
-" TODO: refactor to a function and update for current project?
-"map <Leader>t :e %:p:s,\(.*\)/src/\(.*\)/\(.*\).cc$,\1/xxxxxx/\2/Xxxx\3.cc,:s,\(.*\)/bt_src/\(.*\)/Test\(.*\).cc$,\1/src/\2/\3.cc,:s,\(.*\)/xxxxxx/\(.*\)/Xxxx\(.*\).cc$,\1/bt_src/\2/Test\3.cc,<CR>
-
-" \h: Switch to header file from a C/C++ source code file (or vice versa).
-" Switch from foo.c(c) to foo.h(h) (or vice versa).
-" TODO: refactor to a function and update for current project?
-"map <Leader>h :e %:p:s,.hh$,.X123X,:s,.cc$,.hh,:s,.X123X$,.cc,<CR>
-
 " Open file name under the cursor on a new tab.
 map <F8> gf
-
-" Create tag files.
-"map <F9> :!(myptags; myjtags; myctags)>/dev/null&<CR>
-
-" Execute code formatting on current file.
-"map <F10> :!$HOME/bin/code_formatting.sh %<CR>
-
-"inoremap <silent> <F12> <c -O>:call BeatutifySourceCode()<CR>
-"map <silent> <F12> :call BeatutifySourceCode()<CR>
