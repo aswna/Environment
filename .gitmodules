@@ -21,3 +21,6 @@
 	path = .vim/bundle/OutlookVim
 	url = git://github.com/vim-scripts/OutlookVim.git
 	ignore = dirty
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
