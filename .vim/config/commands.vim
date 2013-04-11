@@ -9,3 +9,9 @@ command! -nargs=0 WQa wqa
 command! -nargs=0 Wqa wqa
 command! -nargs=0 Wq wq
 command! -nargs=0 W w
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made since the last save.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | 0r # | diffthis | wincmd p | diffthis
+endif
