@@ -24,3 +24,7 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule ".vim/bundle/ccase"]
+	path = .vim/bundle/ccase
+	url = git://github.com/vim-scripts/ccase.vim.git
+	ignore = dirty
