@@ -7,3 +7,7 @@ if g:running_on_windows_os
   " Outlook-vim needs cscript.exe
   let $PATH = "C:\\Windows\\System32" . ';' . $PATH
 endif
+
+if g:running_on_windows_os
+  set encoding=utf-8
+endif

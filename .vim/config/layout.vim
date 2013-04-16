@@ -49,9 +49,6 @@ if !&sidescrolloff
 endif
 set display+=lastline
 
-if g:running_on_windows_os
-  set encoding=utf-8
-endif
 set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:·
 set list
 
