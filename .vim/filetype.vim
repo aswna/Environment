@@ -6,4 +6,6 @@ augroup filetypedetect
   au! BufRead,BufNewFile prototype          setfiletype prototype
   au! BufRead,BufNewFile *.prototype        setfiletype prototype
   au! BufRead,BufNewFile prototype.template setfiletype prototype
+
+  au! BufRead,BufNewFile FT_config.lst setfiletype ftconfig
 augroup END
