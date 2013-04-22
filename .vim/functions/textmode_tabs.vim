@@ -54,7 +54,7 @@ endfunction
 " Set up the tab line. Try to fill up the whole line as much as possible.
 function! MyTextModeTabLine()
   " You might optimize this value for your needs
-  let ABSOLUTE_MAXLENGTH = 64
+  let ABSOLUTE_MAXLENGTH = 32
 
   " The aim is to determine the optimal (max)length used as max tab label (title) length
   let tries = 0
