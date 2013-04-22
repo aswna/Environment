@@ -20,8 +20,8 @@ let g:syntastic_c_include_dirs = ['/usr/include/mysql']
 let g:syntastic_cpp_checkers = ['gcc']
 let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
 
-" Python
-let g:syntastic_python_checkers = ['python', 'pyflakes', 'pylint']
+" Python (flake8 uses: PyFlakes, pep8 and Ned Batchelder's McCabe script)
+let g:syntastic_python_checkers = ['python', 'flake8', 'pylint']
 
 " Shell
 let g:syntastic_sh_checkers = ['sh', 'checkbashisms']
