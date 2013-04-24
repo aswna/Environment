@@ -14,7 +14,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " C
 let g:syntastic_c_checkers = ['gcc', 'checkpatch']
 let g:syntastic_c_include_dirs = ['/usr/include/mysql']
-"let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-summary --no-tree --terse --file'
+let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-summary --no-tree --terse --file'
 
 " C++
 let g:syntastic_cpp_checkers = ['gcc']
