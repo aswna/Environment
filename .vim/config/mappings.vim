@@ -148,7 +148,9 @@ vnoremap <leader>' <esc>a'<esc>gvo<esc>i'<esc>gvo<esc>ll
 nnoremap H 0
 nnoremap L $
 
-nnoremap tj :tabprev<CR>
+nnoremap <silent> <C-Left>  :tabprevious<CR>
+nnoremap <silent> <C-Right> :tabnext<CR>
+nnoremap tj :tabprevious<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tt :tabnew<Space>
 nnoremap tm :tabm<Space>
