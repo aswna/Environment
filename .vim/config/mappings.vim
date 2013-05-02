@@ -93,15 +93,6 @@ if $TERM=~"-256color"
 endif
 
 " Several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
-" It is time to learn Vim motions in the hard way.
-inoremap <Up> <nop>
-nnoremap <Up> <nop>
-inoremap <Down> <nop>
-nnoremap <Down> <nop>
-inoremap <Left> <nop>
-nnoremap <Left> <nop>
-inoremap <Right> <nop>
-nnoremap <Right> <nop>
 
 " Ctrl-Left / Ctrl-Right: go to the previous / next tab
 "nnoremap <silent> <C-Left>  :tabprevious<CR>
