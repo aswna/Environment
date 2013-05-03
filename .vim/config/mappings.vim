@@ -135,15 +135,6 @@ vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 " Probably we should use CTRL-[.
 inoremap jk <Esc>
 
-" Quote word under cursor
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
-
-" Quote current selection
-" TODO: This only works for selections that are created "forwardly"
-vnoremap <leader>" <esc>a"<esc>gvo<esc>i"<esc>gvo<esc>ll
-vnoremap <leader>' <esc>a'<esc>gvo<esc>i'<esc>gvo<esc>ll
-
 " Use shift-H and shift-L for move to beginning/end
 nnoremap H 0
 nnoremap L $
@@ -153,10 +144,7 @@ nnoremap <silent> <C-Right> :tabnext<CR>
 nnoremap tj :tabprevious<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tt :tabnew<Space>
-nnoremap tm :tabm<Space>
-
-" echo current function
-map <Leader>f :se lz<CR>:sp<CR>mx[[?^\i<CR>yt(`x:q<CR>:se nolz<CR>:echo "Function: " . @"<CR>
+nnoremap tm :tabmove<Space>
 
 " Execute macro q
 map <F1> @q
@@ -164,7 +152,7 @@ map <F1> @q
 " Open new tab with the next file
 map <silent> <F2> :tabnew<CR>:silent! n<CR>
 
-" Using <F3> to toggle spellcheck in vim 7
+" Using <F3> to toggle spellcheck (Vim version >= 7)
 inoremap <silent> <F3> <c -O>:set spell!<CR>
 map <silent> <F3> :set spell!<CR>
 
