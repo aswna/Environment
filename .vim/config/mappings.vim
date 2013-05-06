@@ -108,12 +108,6 @@ nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
 
-" Very magic search
-nnoremap / /\v
-vnoremap / /\v
-nnoremap ? ?\v
-vnoremap ?j ?\v
-
 " No need to press Shift, real optimization for almost all Vim commands.
 nnoremap ; :
 nnoremap <leader>; ;
