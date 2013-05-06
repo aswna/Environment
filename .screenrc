@@ -11,11 +11,15 @@ altscreen on
 autodetach on
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
-# Alt-j changes to previous window
+# Alt-j / Alt-Left changes to previous window
 bindkey ^[j prev
+bindkey ^[^[[D prev
+bindkey ^[[1;3D prev
 
-# Alt-k changes to next window
+# Alt-k / Alt-Right changes to next window
 bindkey ^[k next
+bindkey ^[^[[C next
+bindkey ^[[1;3C next
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
