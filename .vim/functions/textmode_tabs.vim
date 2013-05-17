@@ -3,7 +3,12 @@ function! MyTextModeTabLabel(n, maxlength)
   let buflist = tabpagebuflist(a:n)
   let winnr = tabpagewinnr(a:n)
   let name = bufname(buflist[winnr - 1])
-  let tablabel = fnamemodify(name, ':t')
+  if match(name, '@@') > 1
+    " ClearCase versioned file name
+    let tablabel = substitute(name, '.*/\(.*@@.*\)', '\1', '')
+  else
+    let tablabel = fnamemodify(name, ':t')
+  endif
   let tablabel = strpart(tablabel, 0, a:maxlength)
   return tablabel
 endfunction
@@ -54,7 +59,7 @@ endfunction
 " Set up the tab line. Try to fill up the whole line as much as possible.
 function! MyTextModeTabLine()
   " You might optimize this value for your needs
-  let ABSOLUTE_MAXLENGTH = 32
+  let ABSOLUTE_MAXLENGTH = 42
 
   " The aim is to determine the optimal (max)length used as max tab label (title) length
   let tries = 0
