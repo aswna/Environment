@@ -3,10 +3,18 @@ function! MyTextModeTabLabel(n, maxlength)
   let buflist = tabpagebuflist(a:n)
   let winnr = tabpagewinnr(a:n)
   let name = bufname(buflist[winnr - 1])
-  if match(name, '@@') > 1
+  if name == ''
+    " give name to no-name documents
+    if &buftype=='quickfix'
+      let tablabel = '[Quickfix List]'
+    else
+      let tablabel = '[No Name]'
+    endif
+  elseif match(name, '@@') > 1
     " ClearCase versioned file name
     let tablabel = substitute(name, '.*/\(.*@@.*\)', '\1', '')
   else
+    " regular files
     let tablabel = fnamemodify(name, ':t')
   endif
   let tablabel = strpart(tablabel, 0, a:maxlength)
