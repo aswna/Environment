@@ -1,4 +1,4 @@
-"let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 1
 
 let g:syntastic_error_symbol = 'E▸'
 let g:syntastic_warning_symbol = 'W▸'
@@ -26,6 +26,6 @@ let g:syntastic_python_checkers = ['python', 'pep8', 'pyflakes', 'flake8', 'pyli
 " Shell
 let g:syntastic_sh_checkers = ['sh', 'checkbashisms']
 
-" Tcl (Do NOT use tclsh checker, it executes the script!)
+" Tcl
 let g:syntastic_tcl_checkers = ['nagelfar']
 let g:syntastic_tcl_nagelfar_conf = '$HOME/usr/src/nagelfar12/nagelfar.syntax'
