@@ -13,5 +13,5 @@ command! -nargs=0 W w
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made since the last save.
 if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | 0r # | diffthis | wincmd p | diffthis
+  command DiffOrig vert new | set bt=nofile | 0r # | Gdd | diffthis | wincmd p | diffthis | wincmd p
 endif
