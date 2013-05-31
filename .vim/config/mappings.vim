@@ -129,16 +129,18 @@ vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 " Probably we should use CTRL-[.
 inoremap jk <Esc>
 
-" Use shift-H and shift-L for move to beginning/end
-nnoremap H 0
-nnoremap L $
-
 nnoremap <silent> <C-Left>  :tabprevious<CR>
 nnoremap <silent> <C-Right> :tabnext<CR>
 nnoremap tj :tabprevious<CR>
 nnoremap tk :tabnext<CR>
 nnoremap tt :tabnew<Space>
 nnoremap tm :tabmove<Space>
+
+" Easy split navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Execute macro q
 map <F1> @q
