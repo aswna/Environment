@@ -53,6 +53,20 @@ Sometimes I replace an official submodule with my own fork until the fix gets me
 I could not find out a better solution than creating a new clone of the superproject repository (containing all the submodules). Note: take care of the non-tracked private files!
 Is there a flaw in my Git usage? Deleting the out-dated entry from <code>.git/config</code> might help.
 
+#### error: SSL certificate problem, verify that the CA cert is OK. ####
+Error during the pull of YouCompleteMe:
+
+    Entering '.vim/bundle/YouCompleteMe/python/ycm/completers/python/jedi'
+    error: SSL certificate problem, verify that the CA cert is OK. Details:
+    error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed while accessing https://github.com/davidhalter/jedi.git/info/refs?service=git-upload-pack
+    fatal: HTTP request failed
+    Stopping at 'python/ycm/completers/python/jedi'; script returned non-zero status.
+    Stopping at '.vim/bundle/YouCompleteMe'; script returned non-zero status.
+
+Solution (workaround):
+
+    env GIT_SSL_NO_VERIFY=true git submodule foreach --recursive git pull
+
 ### Troubleshooting (obsolete) ###
 Following troubles are obsolete, since my way of use has changed.
 
