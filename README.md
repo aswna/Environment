@@ -43,17 +43,17 @@ In an already existing (cloned) repository, you need to initialize the submodule
 
 For more details see the [Git submodule tutorial][11].
 
-### Troubleshooting ###
-#### Cannot clone/sync with Git on Windows ####
+## Troubleshooting ##
+### Cannot clone/sync with Git on Windows ###
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
 
-#### After deleting a submodule and adding back another with the same name, Git gets confused ####
+### After deleting a submodule and adding back another with the same name, Git gets confused ###
 Sometimes I replace an official submodule with my own fork until the fix gets merged into the official repository. Even, when I follow the above recipe for the submodule deletion, Git gets confused.
 I could not find out a better solution than creating a new clone of the superproject repository (containing all the submodules). Note: take care of the non-tracked private files!
 Is there a flaw in my Git usage? Deleting the out-dated entry from <code>.git/config</code> might help.
 
-#### error: SSL certificate problem, verify that the CA cert is OK. ####
+### error: SSL certificate problem, verify that the CA cert is OK. ###
 Error during the pull of YouCompleteMe:
 
     Entering '.vim/bundle/YouCompleteMe/python/ycm/completers/python/jedi'
@@ -67,17 +67,17 @@ Solution (workaround):
 
     env GIT_SSL_NO_VERIFY=true git submodule foreach --recursive git pull
 
-### Troubleshooting (obsolete) ###
+## Troubleshooting (obsolete) ##
 Following troubles are obsolete, since my way of use has changed.
 
-#### Alt-Left/Alt-Right do not switch between GNU screen windows using from PuTTY
+### Alt-Left/Alt-Right do not switch between GNU screen windows using from PuTTY ###
 Use default PuTTY config options, except for Terminal->Features->Disable application cursor keys mode.
 Its default setting is off, and it must be turned on.
 
-#### Vim key bindings do not work as expected using from PuTTY
+### Vim key bindings do not work as expected using from PuTTY ###
 See above.
 
-#### You are not currently on a branch... ####
+### You are not currently on a branch... ###
 Sometimes git pull cannot succeed. Example:
 
     Stopping at 'zsh'; script returned non-zero status.
@@ -88,7 +88,7 @@ Sometimes git pull cannot succeed. Example:
     > git checkout master
 See above "Cloning, updating a submodule".
 
-#### warning: templates not found /some/path/git-core/templates ####
+### warning: templates not found /some/path/git-core/templates ###
 Set the correct templates path explicitly.
 
     git clone --template=/path/to/git-core/templates git@github.com:aswna/Environment.git
