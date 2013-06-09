@@ -43,6 +43,22 @@ In an already existing (cloned) repository, you need to initialize the submodule
 
 For more details see the [Git submodule tutorial][11].
 
+## Notes for usage on Windows ##
+On Windows -- currently -- the only interesting thing here is the Vim configuration, settings.
+
+### How to install syntax checkers for Python (used by Syntastic) ###
+I assume Python (2.7) is already installed. Download and execute [distribute_setup.py][12],
+then install [pip][13] with the following command:
+
+    C:\Python27\Scripts\easy_install pip
+
+After having pip, it is easy to install the Python syntax checkers. Namely
+
+    C:\Python27\Scripts\pip install flake8
+    C:\Python27\Scripts\pip install pylint
+
+Note: [flake8][14] installs [pep8][15], [pyflakes][16] and [mccabe][17].
+
 ## Troubleshooting ##
 ### Cannot clone/sync with Git on Windows ###
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
@@ -104,3 +120,9 @@ Set the correct templates path explicitly.
 [9]: http://github.github.com/github-flavored-markdown/ "GFM"
 [10]: https://help.github.com/articles/which-remote-url-should-i-use "Which remote URL should I use?"
 [11]: https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial "Git submodule tutorial"
+[12]: http://python-distribute.org/distribute_setup.py "distribute_setup.py"
+[13]: https://pypi.python.org/pypi/pip "pip"
+[14]: https://pypi.python.org/pypi/flake8 "flake8"
+[15]: https://pypi.python.org/pypi/pep8 "pep8"
+[16]: https://pypi.python.org/pypi/pyflakes "pyflakes"
+[17]: https://pypi.python.org/pypi/mccabe "mccabe"
