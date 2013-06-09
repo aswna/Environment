@@ -4,6 +4,13 @@ if g:running_on_windows_os
   if isdirectory(python_dir)
     let $PATH =  python_dir . ';' . $PATH
   endif
+
+  " Python\Scripts contains flake8, pep8, pyflakes, pylint, ...
+  let python_scripts_dir = 'C:\\Python27\\Scripts'
+  if isdirectory(python_scripts_dir)
+    let $PATH =  python_scripts_dir . ';' . $PATH
+  endif
+
   " Outlook-vim needs cscript.exe
   let $PATH = "C:\\Windows\\System32" . ';' . $PATH
 endif
