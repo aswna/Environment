@@ -33,5 +33,4 @@
 	url = git://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/OutlookVim"]
 	path = .vim/bundle/OutlookVim
-	url = git@github.com:aswna/OutlookVim.git
-	ignore = dirty
+	url = git://github.com/aswna/OutlookVim.git
