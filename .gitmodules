@@ -14,10 +14,6 @@
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-[submodule ".vim/bundle/OutlookVim"]
-	path = .vim/bundle/OutlookVim
-	url = git://github.com/vim-scripts/OutlookVim.git
-	ignore = dirty
 [submodule ".vim/bundle/ccase"]
 	path = .vim/bundle/ccase
 	url = git://github.com/vim-scripts/ccase.vim.git
