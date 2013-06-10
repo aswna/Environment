@@ -1,6 +1,6 @@
 [submodule "zsh"]
 	path = zsh
-	url = git@github.com:crashmaster/zsh.git
+	url = git://github.com/crashmaster/zsh.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
