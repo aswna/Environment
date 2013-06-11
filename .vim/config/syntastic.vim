@@ -1,4 +1,6 @@
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"let g:syntastic_debug = 1
 
 let g:syntastic_error_symbol = 'E▸'
 let g:syntastic_warning_symbol = 'W▸'
@@ -21,7 +23,7 @@ let g:syntastic_cpp_checkers = ['gcc', 'cpplint']
 let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
 
 " Python (flake8 uses: PyFlakes, pep8 and Ned Batchelder's McCabe script)
-let g:syntastic_python_checkers = ['python', 'pep8', 'pyflakes', 'flake8', 'pylint']
+let g:syntastic_python_checkers = ['python', 'pyflakes', 'pep8', 'flake8', 'pylint']
 
 " Shell
 let g:syntastic_sh_checkers = ['sh', 'checkbashisms']
