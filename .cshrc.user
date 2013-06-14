@@ -94,18 +94,10 @@ setenv TERMINFO $HOME/.terminfo
 setenv TERM xterm-256color
 
 if ( "$shell" =~ *tcsh ) then
-  if ( $?STY ) then
-    if ( "$CCVIEW" == "" ) then
-      set prompt="%n@%m%{\ek$SCREEN_WINDOW_TITLE\e\\%} %~> "
-    else
-      set prompt="%n@%m%{\ek$SCREEN_WINDOW_TITLE\e\\%} [$CCVIEW] %~> "
-    endif
+  if ( "$CCVIEW" == "" ) then
+    set prompt="%n@%m [%T] (%?) %~> "
   else
-    if ( "$CCVIEW" == "" ) then
-      set prompt="%n@%m %~> "
-    else
-      set prompt="%n@%m [$CCVIEW] %~> "
-    endif
+    set prompt="%n@%m [$CCVIEW] [%T] (%?) %~> "
   endif
 else
   # in csh (to make cwd up-to-date in the prompt)
