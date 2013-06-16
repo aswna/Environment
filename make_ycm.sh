@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 . make_ycm.site.conf
 echo "PATH_TO_PYTHON_LIBRARY = ${PATH_TO_PYTHON_LIBRARY}"
