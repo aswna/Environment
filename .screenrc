@@ -21,6 +21,11 @@ bindkey ^[k next
 bindkey ^[^[[C next
 bindkey ^[[1;3C next
 
+# See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
+# -i should not be necessary. Default Python does not have curses installed in corporate
+# environment.
+blankerprg zsh -i -c '$HOME/bin/quote.py'
+
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
 compacthist on
