@@ -10,6 +10,10 @@ altscreen on
 # Automatically detach the session on SIGHUP.
 autodetach on
 
+# See http://www.gnu.org/software/screen/manual/screen.html#Backtick
+# Execute every 30 minutes.
+backtick 10 1800 1800 zsh -i -c '$HOME/bin/wunderground.py -s -l pws:IBUDAPES26'
+
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j / Alt-Left changes to previous window
 bindkey ^[j prev
@@ -42,8 +46,8 @@ defscrollback 100000
 hardstatus alwayslastline
 
 # See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
-# [hostname in green][server load in blue][window list with active window title is highlighted in red][date and time in green]
-hardstatus string '%{= g}[%H]%{b}[%l]%{w}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{w}]%{g}[%Y-%m-%d %c]'
+# [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue][date and time in green]
+hardstatus string '%{= g}[%H]%{b}[%l]%{w}[%=%{= w}%-w%{r}%n %t%{w}%+w%=%{w}]%{b}[%10`]%{g}[%Y-%m-%d %c]'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
