@@ -61,6 +61,11 @@ Note: [flake8][14] installs [pep8][15], [pyflakes][16] and [mccabe][17].
 
 ## Troubleshooting ##
 ### Cannot clone/sync with Git on Windows ###
+Make sure, you have the correct proxy settings in the shell, where the git commands are invoked.
+
+    set http_proxy="<your proxy:port>"
+    set https_proxy="<your proxy:port>"
+
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
 
