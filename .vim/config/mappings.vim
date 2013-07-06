@@ -94,10 +94,6 @@ endif
 
 " Several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
 
-" Ctrl-Left / Ctrl-Right: go to the previous / next tab
-"nnoremap <silent> <C-Left>  :tabprevious<CR>
-"nnoremap <silent> <C-Right> :tabnext<CR>
-
 " Map space to center on line
 nmap <space> zz
 
