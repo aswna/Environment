@@ -32,9 +32,6 @@ function! MyTextModeInternalTabLine(maxlength)
       let s .= '%#TabLine#'
     endif
 
-    " set the tab page number (for mouse clicks)
-    "let s .= '%' . (i + 1) . 'T'
-
     " the label is made by MyTextModeTabLabel()
     let s .= '%{MyTextModeTabLabel(' . (i + 1) . ',' . a:maxlength . ')}%#TabLineFill#|'
   endfor
