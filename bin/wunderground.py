@@ -15,8 +15,8 @@ import urllib2
 
 from wunderground_site import API_KEY
 
-BASE_URL = 'http://api.wunderground.com/api/'
-LOOKUP = '/geolookup/conditions/lang:HU/q/'
+URL_TEMPLATE = ('http://api.wunderground.com/api/'
+                '%s/geolookup/conditions/lang:%s/q/%s.json')
 
 
 def parse_arguments():
@@ -24,8 +24,10 @@ def parse_arguments():
     parser = argparse.ArgumentParser(
         description=description,
         formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('-l', '--location', required=True,
+    parser.add_argument('-l', '--location', default='pws:IBUDAPES26',
                         help='location identifier (f.i.: pws:IBUDAPES26)')
+    parser.add_argument('-L', '--language', default='HU',
+                        help='language code (f.i.: HU)')
 
     return parser.parse_args()
 
@@ -35,8 +37,8 @@ def main():
 
     response = None
     try:
-        query = args.location + '.json'
-        response = urllib2.urlopen(BASE_URL+API_KEY+LOOKUP+query)
+        url_to_query = URL_TEMPLATE % (API_KEY, args.language, args.location)
+        response = urllib2.urlopen(url_to_query)
     except urllib2.URLError:
         pass
 

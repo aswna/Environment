@@ -12,7 +12,7 @@ autodetach on
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Backtick
 # Execute every 30 minutes.
-backtick 10 1800 1800 zsh -i -c '$HOME/bin/wunderground.py -l pws:IBUDAPES26'
+backtick 10 1800 1800 zsh -i -c '$HOME/bin/wunderground.py'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j / Alt-Left changes to previous window
@@ -47,7 +47,7 @@ hardstatus alwayslastline
 
 # See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
 # [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue][date and time in green]
-hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%-w%{= Kr}%n %t%{= Kw}%+w%=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %c]'
+hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%=%-w%{= Kr}%n %t%{= Kw}%+w%=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %c]'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
