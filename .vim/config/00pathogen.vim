@@ -1,1 +1,2 @@
 execute pathogen#infect()
+Helptags
