@@ -86,9 +86,13 @@ set showtabline=2
 set statusline=%!MyStatusLine()
 
 if has("gui_running")
-  " remove scrolbars (currently needs += then -= to work)
-  set guioptions+=LlRrb
-  set guioptions-=LlRrb
+  set guioptions-=L " remove left-hand scrollbar in vertically split window
+  set guioptions-=l " remove left-hand scrollbar
+  set guioptions-=R " remove right-hand scrollbar in vertically split window
+  set guioptions-=r " remove right-hand scrollbar
+  set guioptions-=b " remove bottom (horizontal) scrollbar
+  set guioptions-=m " remove menu bar
+  set guioptions-=T " remove tool bar
 
   set guitablabel=%{GuiTabLabel()}
   set guitabtooltip=%{GuiTabToolTip()}
