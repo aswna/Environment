@@ -15,10 +15,6 @@ if strlen($USERNAME) > 0
   "echom "My forced HOME = " . $HOME
 endif
 
-set runtimepath=$HOME/.vim
-set runtimepath+=$VIMRUNTIME
-set runtimepath+=$HOME/.vim/after
-
 " Loop through the function definition files and source them
 for function_file in split(globpath("$HOME/.vim/functions", "*"), "\n")
   execute "source " . function_file
