@@ -41,8 +41,8 @@ In an already existing (cloned) repository, you need to initialize the submodule
 4. Commit the "superproject".
 5. Delete the now untracked submodule files.
 6. Remove the submodule cache(?) from <code>.git/modules/</code>. Example:
-   <code>.vim/bundle/vim-cccs</code>. Otherwise, I was not be able to add back a different
-   submodule with the same name.
+   <code>.git/modules/.vim/bundle/vim-cccs</code>. Otherwise, I was not be able to add back
+   a different submodule with the same name.
 
 For more details see the [Git submodule tutorial][11].
 
