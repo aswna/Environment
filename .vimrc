@@ -5,15 +5,22 @@
 " Make Vim behave in a more useful way.
 set nocompatible
 
-" Redefine HOME environment variable, since - on Windows - the company group policy
-" sets it to be on a network drive, which is not available, when not connected to
-" the company network. This leaves Vim with the default settings.
-" On the other hand, we can start Vim with the -u option,
-" see http://vimdoc.sourceforge.net/htmldoc/starting.html#-u.
-if strlen($USERNAME) > 0
+let g:running_on_windows_os = has("win32") || has("win64")
+if g:running_on_windows_os
+  " Redefine HOME environment variable, since - on Windows - the company group policy
+  " sets it to be on a network drive, which is not available, when not connected to
+  " the company network. This leaves Vim with the default settings.
+  " On the other hand, we can start Vim with the -u option,
+  " see http://vimdoc.sourceforge.net/htmldoc/starting.html#-u.
   let $HOME="C:\\Users\\" . $USERNAME
   "echom "My forced HOME = " . $HOME
+
+  " Needed on Windows
+  set runtimepath=$HOME/.vim
+  set runtimepath+=$VIMRUNTIME
+  set runtimepath+=$HOME/.vim/after
 endif
+
 
 " Loop through the function definition files and source them
 for function_file in split(globpath("$HOME/.vim/functions", "*"), "\n")
