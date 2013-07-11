@@ -7,6 +7,12 @@ DESCRIPTION
   You will need an API key registered at the following site. See API details at
   http://api.wunderground.com/weather/api/d/docs for specifying the location,
   too.
+
+BUGS
+  GNU Screen 4.00.03 and latest development version (4.1.0devel) still cannot
+  handle UTF-8 correctly in the status line.
+  Some relevant bug reports: http://savannah.gnu.org/bugs/?39330,
+  http://savannah.gnu.org/bugs/?18505, http://savannah.gnu.org/bugs/?36172.
 """
 
 import argparse
@@ -24,16 +30,27 @@ def parse_arguments():
     parser = argparse.ArgumentParser(
         description=description,
         formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('-s', '--screen', action='store_true',
+                        help='use degree sign for the buggy GNU Screen status'
+                             'line (default: %(default)s)')
     parser.add_argument('-l', '--location', default='pws:IBUDAPES26',
-                        help='location identifier (f.i.: pws:IBUDAPES26)')
-    parser.add_argument('-L', '--language', default='HU',
-                        help='language code (f.i.: HU)')
+                        help='location identifier (default: %(default)s)')
+    parser.add_argument('-L', '--language', default='EN',
+                        help='language code (default: %(default)s)')
 
     return parser.parse_args()
 
 
+def get_degree_sign(degree_sign_for_screen):
+    if degree_sign_for_screen:
+        return '\xb0'
+    else:
+        return '\xc2\xb0'
+
+
 def main():
     args = parse_arguments()
+    degree_sign = get_degree_sign(args.screen)
 
     response = None
     try:
@@ -49,7 +66,8 @@ def main():
         temp_c = parsed_json['current_observation']['temp_c']
         weather = parsed_json['current_observation']['weather']
 
-        print('%s°C (%s)' % (str(temp_c), weather.encode('utf-8')))
+        print('%s%sC (%s)' % (str(temp_c), degree_sign,
+                              weather.encode('utf-8')))
 
         response.close()
     else:

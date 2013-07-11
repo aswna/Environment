@@ -12,7 +12,7 @@ autodetach on
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Backtick
 # Execute every 30 minutes.
-backtick 10 1800 1800 zsh -i -c '$HOME/bin/wunderground.py'
+backtick 10 1800 1800 zsh -i -c '$HOME/bin/wunderground.py -s'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j / Alt-Left changes to previous window
