@@ -8,7 +8,7 @@ set showcmd
 set nowrap
 set whichwrap+=b,s,<,>
 
-" When set, the screen contents is restored when exiting Vim.  This also
+" When set, the screen contents is restored when exiting Vim. This also
 " happens when executing external commands.
 set restorescreen
 
@@ -70,12 +70,6 @@ endif
 
 " Last window will have a status line always.
 set laststatus=2
-
-" Set status line fg color to white and bg color to  none,
-" independent from the current color scheme
-hi StatusLine ctermfg=white ctermbg=none
-au InsertEnter * hi StatusLine ctermbg=1
-au InsertLeave * hi StatusLine ctermfg=white ctermbg=none
 
 " Maximum number of tab pages to be opened by the '-p' command line argument.
 set tabpagemax=20
