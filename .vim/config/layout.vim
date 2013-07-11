@@ -60,6 +60,8 @@ syntax on
 " Colorscheme
 set background=dark
 colorscheme solarized
+" For Syntastic with Solarized
+highlight! link SignColumn Error
 
 " GUI font setting
 if $OSTYPE==#"linux"
@@ -99,7 +101,7 @@ if has("gui_running")
     endif
   augroup END
 else
-  hi def link User1 Tabline
-  hi def link User2 TablineSel
+  highlight def link User1 Tabline
+  highlight def link User2 TablineSel
   set tabline=%!MyTextModeTabLine()
 endif
