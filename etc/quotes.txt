@@ -17,7 +17,7 @@ As Will Rogers would have said, "There is no such thing as a free variable." -- 
 A year spent in artificial intelligence is enough to make one believe in God. -- Alan J. Perlis, Epigrams in Programming, 1982
 Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defence against complexity. -- David Gelernter
 Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves. -- Alan J. Perlis, Epigrams in Programming, 1982
-Being really good at C++ is like being really good at using rocks to sharpen sticks. -- Thant Tessman 
+Being really good at C++ is like being really good at using rocks to sharpen sticks. -- Thant Tessman
 Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy. -- Alan J. Perlis, Epigrams in Programming, 1982
 Bringing computers into the home won't change either one, but may revitalize the corner saloon. -- Alan J. Perlis, Epigrams in Programming, 1982
 C++: an octopus made by nailing extra legs onto a dog. -- Steve Taylor
@@ -270,3 +270,28 @@ You think you know when you can learn, are more sure when you can write, even mo
 17. If the implementation is hard to explain, it's a bad idea. -- The Zen of Python, by Tim Peters
 18. If the implementation is easy to explain, it may be a good idea. -- The Zen of Python, by Tim Peters
 19. Namespaces are one honking great idea -- let's do more of those! -- The Zen of Python, by Tim Peters
+A consumer doesn't take anything away: he doesn't actually consume anything. Giving the same thing to a thousand consumers is not really any more expensive than giving it to just one. -- Linus Torvalds
+Any program is only as good as it is useful. -- Linus Torvalds
+Artists usually don't make all that much money, and they often keep their artistic hobby despite the money rather than due to it. -- Linus Torvalds
+Finnish companies tend to be very traditional, not taking many risks. Silicon Valley is completely different: people here really live on the edge. -- Linus Torvalds
+Helsinki isn't all that bad. It's a very nice city, and it's cold really only in wintertime. -- Linus Torvalds
+I do get my pizzas paid for by Linux indirectly. -- Linus Torvalds
+I don't try to be a threat to MicroSoft, mainly because I don't really see MS as competition. Especially not Windows-the goals of Linux and Windows are simply so different. -- Linus Torvalds
+If Microsoft ever does applications for Linux it means I've won. -- Linus Torvalds
+I'm generally a very pragmatic person: that which works, works. -- Linus Torvalds
+In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary. -- Linus Torvalds
+In my opinion MS is a lot better at making money than it is at making good operating systems. -- Linus Torvalds
+Intelligence is the ability to avoid doing work, yet getting the work done. -- Linus Torvalds
+I try to avoid long-range plans and visions - that way I can more easily deal with anything new that comes up. -- Linus Torvalds
+Making Linux GPL'd was definitely the best thing I ever did. -- Linus Torvalds
+Microsoft isn't evil, they just make really crappy operating systems. -- Linus Torvalds
+Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. -- Linus Torvalds
+Programmers are in the enviable position of not only getting to do what they want to, but because the end result is so important they get paid to do it. There are other professions like that, but not that many. -- Linus Torvalds
+See, you not only have to be a good coder to create a system like Linux, you have to be a sneaky bastard too. -- Linus Torvalds
+Software is like sex: it's better when it's free. -- Linus Torvalds
+That's what makes Linux so good: you put in something, and that effort multiplies. It's a positive feedback cycle. -- Linus Torvalds
+The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it. -- Linus Torvalds
+The memory management on the PowerPC can be used to frighten small children. -- Linus Torvalds
+There are lots of Linux users who don't care how the kernel works, but only want to use it. That is a tribute to how good Linux is. -- Linus Torvalds
+When you say 'I wrote a program that crashed Windows,' people just stare at you blankly and say 'Hey, I got those with the system, for free.' -- Linus Torvalds
+You won't get sued for anticompetitive behavior. -- Linus Torvalds
