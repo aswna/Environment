@@ -7,6 +7,16 @@
 	pager = less -FSRX
 [color]
 	ui = true
+[color "diff"]
+	frag = blue
+	meta = white
+	new = green
+	old = red
+	whitespace = bold normal red
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = blue
 [alias]
 	ci = commit
 	co = checkout
