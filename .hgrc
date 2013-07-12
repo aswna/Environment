@@ -1,0 +1,34 @@
+[hooks]
+changegroup = hg update
+
+[extensions]
+color =
+pager =
+
+[defaults]
+color = always
+
+[pager]
+pager = less -FRSX
+quiet = True
+attend = outgoing,incoming,diff,status,log,qdiff,blame,annotate,pdiff,glog
+
+[color]
+status.added = green
+status.deleted = red
+status.ignored = black
+status.modified = yellow
+status.removed = red
+status.unknown = blue
+
+diff.changed = yellow
+diff.deleted = red
+diff.diffline = white
+diff.extended = green
+diff.file_a = red
+diff.file_b = green
+diff.hunk = blue
+diff.inserted = green
+diff.trailingwhitespace = bold red_background
+
+%include ~/.site.hgrc
