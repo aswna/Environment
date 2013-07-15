@@ -1,7 +1,7 @@
 # Environment #
 ## Overview ##
 Configuration files for my [zsh][1] (shell), [GNU screen][2] (terminal multiplexer) and
-[Vim][3] (text editor) environment on Linux, used from [PuTTY][4] (ssh client) on Windows.
+[Vim][3] (text editor) environment on Linux/Windows, used from [PuTTY][4] (ssh client) on Windows.
 
 I use the [Solarized color scheme][5] in [Vim][6], [PuTTY][7] and [Gnome terminal][8].
 
@@ -9,7 +9,7 @@ I use the [Solarized color scheme][5] in [Vim][6], [PuTTY][7] and [Gnome termina
 In this file [GitHub Flavored Markdown][9] is used.
 
 ## Cloning repository ##
-See more info about [cloning on GitHub][10].
+See more info about [cloning on GitHub][10]. See below Submodules section, too.
 
 ### For read-only access it is easy to use the git:// URL. ###
     git clone git://github.com/aswna/Environment.git
@@ -40,25 +40,29 @@ In an already existing (cloned) repository, you need to initialize the submodule
 3. Run <code>git rm --cached &lt;path_to_submodule&gt;</code> (no trailing slash).
 4. Commit the "superproject".
 5. Delete the now untracked submodule files.
-6. Remove the submodule cache(?) from <code>.git/modules/</code>. Example:
-   <code>.git/modules/.vim/bundle/vim-cccs</code>. Otherwise, I was not be able to add back
-   a different submodule with the same name.
+6. Remove the submodule cache from <code>.git/modules/</code>. Example:
+   <code>.git/modules/.vim/bundle/vim-cccs</code>. Otherwise, it does not seem possible to add a
+   different submodule with the same name, to the same place.
 
 For more details see the [Git submodule tutorial][11].
 
 ## Notes for usage on Windows ##
 On Windows -- currently -- the only interesting thing here is the Vim configuration, settings.
+Add Python scripts directory to System Path: Computer -> Right-click -> Properties -> Advanced System
+settings -> Advanced (in System Propertied) -> Environment variables -> System variables -> Path.
+
+    Path = ...;C:\Program Files (x86)\Git\bin;C:\Python27\Scripts
 
 ### How to install syntax checkers for Python (used by Syntastic) ###
 I assume Python (2.7) is already installed. Download and execute [distribute_setup.py][12],
 then install [pip][13] with the following command:
 
-    C:\Python27\Scripts\easy_install pip
+    easy_install pip
 
 After having pip, it is easy to install the Python syntax checkers. Namely
 
-    C:\Python27\Scripts\pip install flake8
-    C:\Python27\Scripts\pip install pylint
+    pip install flake8
+    pip install pylint
 
 Note: [flake8][14] installs [pep8][15], [pyflakes][16] and [mccabe][17].
 
@@ -73,9 +77,7 @@ Check whether you are using Symantec Endpoint Protection. If so, the you may wan
 Client Management settings: Current location to "Out of ... premises".
 
 ### After deleting a submodule and adding back another with the same name, Git gets confused ###
-Sometimes I replace an official submodule with my own fork until the fix gets merged into the official repository. Even, when I follow the above recipe for the submodule deletion, Git gets confused.
-I could not find out a better solution than creating a new clone of the superproject repository (containing all the submodules). Note: take care of the non-tracked private files!
-Is there a flaw in my Git usage? Deleting the out-dated entry from <code>.git/config</code> might help.
+See step 6. in Deleting a submodule section above.
 
 ### error: SSL certificate problem, verify that the CA cert is OK. ###
 Error during the pull of YouCompleteMe:
@@ -87,7 +89,12 @@ Error during the pull of YouCompleteMe:
     Stopping at 'python/ycm/completers/python/jedi'; script returned non-zero status.
     Stopping at '.vim/bundle/YouCompleteMe'; script returned non-zero status.
 
-Solution (workaround):
+Solution (workaround 1): Edit below files, to contain the git protocol and not https for Jedi.
+
+    .git/modules/.vim/bundle/YouCompleteMe/modules/python/ycm/completers/python/jedi/config
+    .vim/bundle/YouCompleteMe/.gitmodules
+
+Solution (workaround 2):
 
     env GIT_SSL_NO_VERIFY=true git submodule foreach --recursive git pull
 
@@ -95,7 +102,7 @@ Solution (workaround):
 Following troubles are obsolete, since my way of use has changed.
 
 ### Alt-Left/Alt-Right do not switch between GNU screen windows using from PuTTY ###
-Use default PuTTY config options, except for Terminal->Features->Disable application cursor keys mode.
+Use default PuTTY config options, except for Terminal -> Features -> Disable application cursor keys mode.
 Its default setting is off, and it must be turned on.
 
 ### Vim key bindings do not work as expected using from PuTTY ###
