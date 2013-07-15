@@ -32,6 +32,16 @@ import os
 import ycm_core
 from clang_helpers import PrepareClangFlags
 
+successfully_imported_site_settings = False
+try:
+    SITE_CONF_DIR = os.path.expanduser('~/etc')
+    import sys
+    sys.path.insert(0, SITE_CONF_DIR)
+    import ycm_extra_conf_site
+    successfully_imported_site_settings = True
+except ImportError as ie:
+    pass
+
 # These are the compilation flags that will be used in case there's no
 # compilation database set (by default, one is not set).
 # CHANGE THIS LIST OF FLAGS. YES, THIS IS THE DROID YOU HAVE BEEN LOOKING FOR.
@@ -57,6 +67,9 @@ flags = [
     '-x', 'c++',
     # Extra paths that don't exist are not harmful
 ]
+
+if successfully_imported_site_settings:
+    ycm_extra_conf_site.add_site_flags(flags)
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
 # compile_commands.json file to use that instead of 'flags'. See here for
