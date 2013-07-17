@@ -147,6 +147,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+nnoremap <leader>q :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>e :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>w :YcmCompleter GoToDeclaration<CR>
+
 " Execute macro q
 map <F1> @q
 
