@@ -38,10 +38,10 @@ In an already existing (cloned) repository, you need to initialize the submodule
 1. Delete the relevant line from the <code>.gitmodules</code> file.
 2. Delete the relevant section from <code>.git/config</code>.
 3. Run <code>git rm --cached &lt;path_to_submodule&gt;</code> (no trailing slash).
-4. Commit the "superproject".
-5. Delete the now untracked submodule files.
+4. Delete the now untracked submodule directory.
+5. Commit the "superproject" (modified <code>.gitmodules</code> file and deleted submodule directory).
 6. Remove the submodule cache from <code>.git/modules/</code>. Example:
-   <code>.git/modules/.vim/bundle/vim-cccs</code>. Otherwise, it does not seem possible to add a
+   <code>rm -rf .git/modules/.vim/bundle/vim-cccs</code>. Otherwise, it does not seem possible to add a
    different submodule with the same name, to the same place.
 
 For more details see the [Git submodule tutorial][11].
@@ -49,7 +49,7 @@ For more details see the [Git submodule tutorial][11].
 ## Notes for usage on Windows ##
 On Windows -- currently -- the only interesting thing here is the Vim configuration, settings.
 Add Python scripts directory to System Path: Computer -> Right-click -> Properties -> Advanced System
-settings -> Advanced (in System Propertied) -> Environment variables -> System variables -> Path.
+settings -> Advanced (in System Properties) -> Environment variables -> System variables -> Path.
 
     Path = ...;C:\Program Files (x86)\Git\bin;C:\Python27\Scripts
 
