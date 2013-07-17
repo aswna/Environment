@@ -63,15 +63,20 @@ After having pip, it is easy to install the Python syntax checkers. Namely
 
     pip install flake8
     pip install pylint
+    pip install pep257
+    pip install pylama
 
-Note: [flake8][14] installs [pep8][15], [pyflakes][16] and [mccabe][17].
+Note: [flake8][14] installs [pep8][15], [pyflakes][16] and [mccabe][17]. [Pylama][18] is a wrapper
+around pep8, [pep257][19], pyflakes, pylint and maccabe. Pylama seems to be a better alternative
+compared to flake8.
 
 ## Troubleshooting ##
 ### Cannot clone/sync with Git on Windows ###
 Make sure, you have the correct proxy settings in the shell, where the git commands are invoked.
+(There are no quotes around <your proxy:port>)
 
-    set http_proxy="<your proxy:port>"
-    set https_proxy="<your proxy:port>"
+    set http_proxy=<your proxy:port>
+    set https_proxy=<your proxy:port>
 
 Check whether you are using Symantec Endpoint Protection. If so, the you may want to change
 Client Management settings: Current location to "Out of ... premises".
@@ -141,3 +146,5 @@ Set the correct templates path explicitly.
 [15]: https://pypi.python.org/pypi/pep8 "pep8"
 [16]: https://pypi.python.org/pypi/pyflakes "pyflakes"
 [17]: https://pypi.python.org/pypi/mccabe "mccabe"
+[18]: https://pypi.python.org/pypi/pylama "pylama"
+[19]: https://pypi.python.org/pypi/pep257 "pep257"
