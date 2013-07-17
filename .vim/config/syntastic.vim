@@ -22,8 +22,9 @@ let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-sum
 let g:syntastic_cpp_checkers = ['gcc', 'cpplint']
 let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
 
-" Python (flake8 uses: PyFlakes, pep8 and Ned Batchelder's McCabe script)
-let g:syntastic_python_checkers = ['python', 'pyflakes', 'pep8', 'pylint', 'flake8', 'py3kwarn']
+" Python (PyLama can use pep8, PyFlakes, PyLint, McCabe and pep257)
+let g:syntastic_python_pylama_args = '-l pep257,mccabe,pylint'
+let g:syntastic_python_checkers = ['python', 'pyflakes', 'pep8', 'pylama', 'py3kwarn']
 
 " Shell
 let g:syntastic_sh_checkers = ['sh', 'checkbashisms']
