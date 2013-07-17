@@ -32,10 +32,6 @@
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule ".vim/bundle/OutlookVim"]
-	path = .vim/bundle/OutlookVim
-	url = git://github.com/aswna/OutlookVim.git
-	ignore = dirty
 [submodule ".vim/bundle/tcomment_vim"]
 	path = .vim/bundle/tcomment_vim
 	url = git://github.com/tomtom/tcomment_vim.git
