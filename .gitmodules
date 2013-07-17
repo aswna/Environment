@@ -44,3 +44,4 @@
 [submodule ".vim/bundle/OutlookVim"]
 	path = .vim/bundle/OutlookVim
 	url = git://github.com/vim-scripts/OutlookVim
+	ignore = dirty
