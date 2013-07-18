@@ -9,7 +9,7 @@ pager =
 color = always
 
 [pager]
-pager = less -FRSX
+pager = less -FRX
 quiet = True
 attend = outgoing,incoming,diff,status,log,qdiff,blame,annotate,pdiff,glog
 
