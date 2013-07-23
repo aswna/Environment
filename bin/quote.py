@@ -18,6 +18,7 @@ CURSOR_VISIBILITY_NORMAL = 1
 
 
 def init_curses():
+    """ Initialize curses session. """
     stdscr = curses.initscr()
 
     stdscr.keypad(True)
@@ -30,6 +31,7 @@ def init_curses():
 
 
 def end_curses(stdscr):
+    """ End our curses session. """
     curses.curs_set(CURSOR_VISIBILITY_NORMAL)
 
     curses.nocbreak()
@@ -40,6 +42,7 @@ def end_curses(stdscr):
 
 
 def wait_for_keypress(stdscr):
+    """ Wait for keypress in stdscr curses session. """
     try:
         stdscr.getch()
     except KeyboardInterrupt:
@@ -47,6 +50,7 @@ def wait_for_keypress(stdscr):
 
 
 def get_random_line(file_path):
+    """ Get random line from file at file_path. """
     lines = []
     try:
         for line in open(os.path.expanduser(file_path)):
@@ -65,10 +69,11 @@ def get_random_line(file_path):
 
 
 def split_line(original_line, max_length):
-    """
-    Split the original line to an array of lines with max_length specified.
+    """ Split the original line to an array of lines with max_length specified.
+
     The original line is split by whitespace (at word boundaries).
     Return an array containing the lines.
+
     """
 
     line = ''
@@ -95,18 +100,20 @@ def split_line(original_line, max_length):
 
 
 def print_centered(stdscr, lines):
+    """ Print given lines centered on stdscr curses session. """
     (rows, columns) = stdscr.getmaxyx()
 
     number_of_lines = len(lines)
-    vertical_offset = (rows - number_of_lines) / 2
+    vertical_offset = int((rows - number_of_lines) / 2)
 
     for line in lines:
-        horizontal_offset = (columns - len(line)) / 2
+        horizontal_offset = int((columns - len(line)) / 2)
         stdscr.addstr(vertical_offset, horizontal_offset, line)
         vertical_offset += 1
 
 
 def main():
+    """ Select random quote from file and print it centered on screen. """
     selected_line = get_random_line(QUOTE_FILE_PATH)
     selected_line_split = split_line(selected_line, MAX_TEXT_WIDTH)
 
