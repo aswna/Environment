@@ -620,11 +620,7 @@ When building a complex system, having crackerjack programmers (who can make any
 Don't tell people how to do things. Tell them what to do and let them surprise you with their results. -- G. Patton
 The best way to get a good idea is to get a lot of ideas. -- L. Pauling
 A good programming language is a conceptual universe for thinking about programming. -- A. Perlis
-Fools ignore complexity; pragmatists suffer it; experts avoid it; geniuses remove it. -- A. Perlis
 I think that it's extraordinarily important that we in computer science keep fun in computing. When it started out, it was an awful lot of fun. Of course, the paying customers got shafted every now and then, and after a while we began to take their complaints seriously. We began to feel as if we really were responsible for the successful, error-free perfect use of these machines. I don't think we are. I think we're responsible for stretching them, setting them off in new directions, and keeping fun in the house. I hope the field of computer science never loses its sense of fun. -- A. Perlis
-Optimization hinders evolution. -- A. Perlis
-Simplicity does not precede complexity, but follows it. -- A. Perlis
-There are two ways to write error-free programs, but only the third one works. -- A. Perlis
 Computers are useless. They only give you answers. -- P. Picasso
 I am always doing that which I cannot do, in order that I may learn how to do it. -- P. Picasso
 Fancy algorithms are slow when N is small, and N is usually small. -- R. Pike
