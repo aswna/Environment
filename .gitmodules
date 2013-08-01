@@ -45,3 +45,6 @@
 	path = .vim/bundle/OutlookVim
 	url = git://github.com/vim-scripts/OutlookVim
 	ignore = dirty
+[submodule ".vim/bundle/gundo.vim"]
+	path = .vim/bundle/gundo.vim
+	url = git://github.com/sjl/gundo.vim.git
