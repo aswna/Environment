@@ -49,8 +49,8 @@ For more details see the [Git submodule tutorial][11].
 ## Notes for usage on Windows ##
 On Windows -- currently -- the only interesting thing here is the Vim configuration, settings.
 
-Add Python directories to System Path: <code>Computer -> Right-click -> Properties -> Advanced System
-settings -> Advanced (in System Properties) -> Environment variables -> System variables -> Path</code>.
+Add Python directories to System Path: Computer -> Right-click -> Properties -> Advanced System
+settings -> Advanced (in System Properties) -> Environment variables -> System variables -> Path.
 
     Path = ...;C:\Python27;C:\Python27\Scripts;C:\Python27\Lib\site-packages
 
