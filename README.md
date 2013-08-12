@@ -48,10 +48,15 @@ For more details see the [Git submodule tutorial][11].
 
 ## Notes for usage on Windows ##
 On Windows -- currently -- the only interesting thing here is the Vim configuration, settings.
-Add Python scripts directory to System Path: Computer -> Right-click -> Properties -> Advanced System
-settings -> Advanced (in System Properties) -> Environment variables -> System variables -> Path.
 
-    Path = ...;C:\Program Files (x86)\Git\bin;C:\Python27\Scripts
+Add Python directories to System Path: <code>Computer -> Right-click -> Properties -> Advanced System
+settings -> Advanced (in System Properties) -> Environment variables -> System variables -> Path</code>.
+
+    Path = ...;C:\Python27;C:\Python27\Scripts;C:\Python27\Lib\site-packages
+
+Add some Unix-like utilities from Git install path:
+
+    Path = ...;C:\Program Files (x86)\Git\bin
 
 ### How to install syntax checkers for Python (used by Syntastic) ###
 I assume Python (2.7) is already installed. Download and execute [distribute_setup.py][12],
@@ -73,7 +78,7 @@ compared to flake8.
 ## Troubleshooting ##
 ### Cannot clone/sync with Git on Windows ###
 Make sure, you have the correct proxy settings in the shell, where the git commands are invoked.
-(There are no quotes around <your proxy:port>)
+(There are no quotes around &lt;your proxy:port&gt;)
 
     set http_proxy=<your proxy:port>
     set https_proxy=<your proxy:port>
