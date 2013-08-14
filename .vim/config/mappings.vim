@@ -95,7 +95,7 @@ endif
 " Several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
 
 " Map space to center on line
-nmap <space> zz
+nmap <space> z<CR>
 
 " Make Y consistent with C and D.  See :help Y.
 nnoremap Y y$
