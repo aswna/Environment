@@ -689,7 +689,7 @@ We shall do a much better programming job, provided we approach the task with a 
 He [John von Neumann] had the invaluable faculty of being able to take the most difficult problem and separate it into its components, whereupon everything looked brilliantly simple. -- S. Ulam (Bull. of American Mathematical Society, May 1958)
 It's easy to cry "bug" when the truth is that you've got a complex system and sometimes it takes a while to get all the components to co-exist peacefully. -- D. Vargas
 The outcome of any serious research can only be to make two questions grow where only one grew before. -- T. Veblen
-The best is the enemy of the good. -- Voltaire ("Dramatic Art" in _Philosophical Dictionary, 1764)
+The best is the enemy of the good. -- Voltaire ("Dramatic Art" in Philosophical Dictionary, 1764)
 Judge a man by his questions, rather than his answers. -- Voltaire
 The problem with using C++... is that there's already a strong tendency in the language to require you to know everything before you can do anything. -- L. Wall
 The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires. -- W. A. Ward
