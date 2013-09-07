@@ -3,7 +3,7 @@
 Configuration files for my [zsh][1] (shell), [GNU screen][2] (terminal multiplexer) and
 [Vim][3] (text editor) environment on Linux/Windows, used from [PuTTY][4] (ssh client) on Windows.
 
-I use the [Solarized color scheme][5] in [Vim][6], [PuTTY][7] and [Gnome terminal][8].
+I use the [Solarized color scheme][5] in [Vim][6], [PuTTY][7], [Gnome terminal][8] and for [GNU dircolors][20].
 
 ## Markup used in this file ##
 In this file [GitHub Flavored Markdown][9] is used.
@@ -153,3 +153,4 @@ Set the correct templates path explicitly.
 [17]: https://pypi.python.org/pypi/mccabe "mccabe"
 [18]: https://pypi.python.org/pypi/pylama "pylama"
 [19]: https://pypi.python.org/pypi/pep257 "pep257"
+[20]: https://github.com/seebi/dircolors-solarized "dircolors-solarized"
