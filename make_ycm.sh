@@ -6,8 +6,10 @@ echo "PATH_TO_PYTHON_INCLUDE_DIR = ${PATH_TO_PYTHON_INCLUDE_DIR}"
 echo "PATH_TO_GCC = ${PATH_TO_GCC}"
 echo "PATH_TO_LIBCLANG = ${PATH_TO_LIBCLANG}"
 
-mkdir -p ~/tmp/ycm_build &&
-cd ~/tmp/ycm_build &&
+TMP_YCM_BUILD_DIR=~/tmp/ycm_build
+
+mkdir -p ${TMP_YCM_BUILD_DIR} &&
+cd ${TMP_YCM_BUILD_DIR} &&
 cmake -G "Unix Makefiles" \
       -DPYTHON_LIBRARY=${PATH_TO_PYTHON_LIBRARY}/libpython2.7.so \
       -DPYTHON_INCLUDE_DIR=${PATH_TO_PYTHON_INCLUDE_DIR}/python2.7 \
