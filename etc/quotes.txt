@@ -464,7 +464,6 @@ Habitability is the characteristic of source code that enables programmers comin
 All truths are easy to understand once they are discovered; the point is to discover them. -- G. Galilei
 A complex system that works in invariably found to have evolved from a simple system that worked. -- J. Gall
 An excellent plumber is infinitely more admirable than an incompetent philosopher. The society that scorns excellence in plumbing because plumbing is a humble activity and tolerates shoddiness in philosophy because it is exalted activity will have neither good plumbing or good philosophy. Neither its pipes or its theories will hold water. -- J. Gardner
-640K [of main memory] ought to be enough for anybody. -- W. Gates (Founder and CEO Microsoft), 1981 - disclaimed
 A great lathe operator commands several times the wage of an average lathe operator, but a great writer of software code is worth 10,000 times the price of an average software writer. -- W. Gates
 The best way to prepare [to be a programmer] is to write programs, and to study great programs that other people have written. In my case, I went to the garbage cans at the Computer Science Center and fished out listings of their operating systems. -- W. Gates
 We flew down weekly to meet with IBM, but they thought the way to measure software was the amount of code we wrote, when really the better the software, the fewer lines of code. -- W. Gates
