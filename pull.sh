@@ -5,6 +5,7 @@
 # Extended regular expression:
 EXCLUDE_MODULES='YouCompleteMe'
 
+
 execute_git_pull()
 {
     repo_dir="$1"
@@ -12,6 +13,7 @@ execute_git_pull()
     echo "Pull in ${repo_dir}"
     git pull
 }
+
 
 pull_all_submodules_in_repository()
 {
@@ -33,4 +35,11 @@ pull_all_submodules_in_repository()
     cd ${old_pwd}
 }
 
+
+get_status()
+{
+    git status
+}
+
 pull_all_submodules_in_repository `pwd`
+get_status
