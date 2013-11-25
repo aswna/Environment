@@ -9,3 +9,6 @@ set backspace=indent,eol,start
 
 " filename completion
 set wildmode=longest:full
+
+" Enable autoselect: visually highlighted text is available for pasting.
+set guioptions+=a
