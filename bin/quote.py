@@ -81,16 +81,16 @@ def split_line(original_line, max_length):
     for word in original_line.split():
         line_length = len(line)
         word_length = len(word)
-        if line_length + 1 + word_length > max_length:
-            # no more words fit on this line
-            array_of_lines_to_return.append(line)
-            # initialize the new line
-            line = word
-        else:
+        if line_length + 1 + word_length <= max_length:
             # word fits on this line, append this word to the end of line
             line = line + ' ' + word
             if line.startswith(' '):
                 line = line.lstrip()
+        else:
+            # no more words fit on this line
+            array_of_lines_to_return.append(line)
+            # initialize the next line
+            line = word
 
     if line:
         # hanging line
