@@ -22,3 +22,4 @@
 	co = checkout
 	st = status
 	stat = status
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
