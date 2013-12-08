@@ -2,7 +2,7 @@
 set timeoutlen=500
 
 " for PuTTY (or screen)
-if $TERM==#"vt100" || $TERM=~"-256color"
+if $TERM==#"vt100" || $TERM=~"screen-256color"
   set <Up>=[A
   noremap <Up> [A
   set <Down>=[B
@@ -65,7 +65,7 @@ if $TERM==#"vt100"
   noremap <F12> [24~
 endif
 
-if $TERM=~"-256color"
+if $TERM=~"screen-256color"
   set <F1>=[11~
   noremap <F1> [11~
   set <F2>=[12~
