@@ -13,7 +13,7 @@ syn match pEqual            '='
 syn match pDelimiter        ',' contained
 syn match pSpecialDelimiter ';' contained
 syn match pVariableValue    '[A-Za-z_0-9\-\.\ ]\+' contained
-syn match pNodeName         'node[0-9]\+A\?' contained
+syn match pNodeName         'node[0-9]\+[A-Z]\?' contained
 syn match pNumber           '[0-9]\+' contained
 
 syn region pModuleRegion        start=/^\[/ end=/\]/ contains=pModule
