@@ -274,7 +274,6 @@ A consumer doesn't take anything away: he doesn't actually consume anything. Giv
 Any program is only as good as it is useful. -- Linus Torvalds
 Artists usually don't make all that much money, and they often keep their artistic hobby despite the money rather than due to it. -- Linus Torvalds
 Finnish companies tend to be very traditional, not taking many risks. Silicon Valley is completely different: people here really live on the edge. -- Linus Torvalds
-Helsinki isn't all that bad. It's a very nice city, and it's cold really only in wintertime. -- Linus Torvalds
 I do get my pizzas paid for by Linux indirectly. -- Linus Torvalds
 I don't try to be a threat to MicroSoft, mainly because I don't really see MS as competition. Especially not Windows-the goals of Linux and Windows are simply so different. -- Linus Torvalds
 If Microsoft ever does applications for Linux it means I've won. -- Linus Torvalds
