@@ -24,7 +24,7 @@ let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
 
 " Python (PyLama can use pep8, PyFlakes, PyLint, McCabe and pep257)
 let g:syntastic_python_pylama_args = '-l pep8,pyflakes,pep257,mccabe,pylint'
-let g:syntastic_python_checkers = ['python', 'pyflakes', 'pep8', 'pylama', 'py3kwarn']
+let g:syntastic_python_checkers = ['python', 'pylama', 'py3kwarn']
 
 " Shell
 let g:syntastic_sh_checkers = ['sh', 'checkbashisms']
