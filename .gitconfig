@@ -23,3 +23,5 @@
 	st = status
 	stat = status
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+[push]
+	default = simple
