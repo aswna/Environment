@@ -99,25 +99,42 @@ def split_line(original_line, max_length):
     return array_of_lines_to_return
 
 
-def print_centered(stdscr, lines):
-    """ Print given lines centered on stdscr curses session. """
-    (rows, columns) = stdscr.getmaxyx()
-
+def calculate_vertical_offset(stdscr, lines):
+    """ Calculate vertical offset for the first (top) line to be printed. """
+    (rows, _columns) = stdscr.getmaxyx()
     number_of_lines = len(lines)
     vertical_offset = int((rows - number_of_lines) / 2)
+    if vertical_offset < 0:
+        vertical_offset = 0
+    return vertical_offset
 
+
+def print_lines_centered_at_vertical_offset(stdscr, lines, vertical_offset):
+    """ Print given lines centered. Start at given positions. """
+    (rows, columns) = stdscr.getmaxyx()
     for line in lines:
         horizontal_offset = int((columns - len(line)) / 2)
         stdscr.addstr(vertical_offset, horizontal_offset, line)
         vertical_offset += 1
+        if vertical_offset >= rows:
+            break
+
+
+def print_centered(stdscr, lines):
+    """ Print given lines centered on stdscr curses session. """
+    vertical_offset = calculate_vertical_offset(stdscr, lines)
+    print_lines_centered_at_vertical_offset(stdscr, lines, vertical_offset)
 
 
 def main():
     """ Select random quote from file and print it centered on screen. """
-    selected_line = get_random_line(QUOTE_FILE_PATH)
-    selected_line_split = split_line(selected_line, MAX_TEXT_WIDTH)
-
     stdscr = init_curses()
+    (_rows, columns) = stdscr.getmaxyx()
+    max_text_width = min(MAX_TEXT_WIDTH, columns - 1)
+
+    selected_line = get_random_line(QUOTE_FILE_PATH)
+    selected_line_split = split_line(selected_line, max_text_width)
+
     print_centered(stdscr, selected_line_split)
     wait_for_keypress(stdscr)
     end_curses(stdscr)
