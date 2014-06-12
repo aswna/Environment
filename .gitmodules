@@ -51,3 +51,6 @@
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = git://github.com/honza/vim-snippets.git
+[submodule "dircolors-solarized"]
+	path = dircolors-solarized
+	url = git://github.com/seebi/dircolors-solarized.git
