@@ -165,15 +165,6 @@ map <silent> <F3> :set spell!<CR>
 inoremap <silent> <F4> <c -O>:set hlsearch!<CR>
 map <silent> <F4> :set hlsearch!<CR>
 
-" Check-out file (ClearCase)
-map <F5> :Ctcou<CR>
-
-" Undo check-out file (ClearCase)
-map <F6> :Ctunco<CR>
-
-" \d: Diff to previous verion (ClearCase).
-nmap <silent> <Leader>d :Ctpdif<CR>
-
 set pastetoggle=<F7>
 
 " Open file name under the cursor on a new tab.

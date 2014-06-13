@@ -94,11 +94,7 @@ if has("gui_running")
   set guitabtooltip=%{GuiTabToolTip()}
   augroup SetTitleStringAtEnteringBufferForGUI
     au!
-    if empty(expand($CCVIEW))
-      autocmd BufEnter * let &titlestring = expand("%:t")
-    else
-      autocmd BufEnter * let &titlestring = "[" . expand($CCVIEW) . "] " . expand("%:t")
-    endif
+    autocmd BufEnter * let &titlestring = expand("%:t")
   augroup END
 else
   highlight def link User1 Tabline

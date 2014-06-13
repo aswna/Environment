@@ -10,9 +10,6 @@ function! MyTextModeTabLabel(n, maxlength)
     else
       let tablabel = '[No Name]'
     endif
-  elseif match(name, '@@') > 1
-    " ClearCase versioned file name
-    let tablabel = substitute(name, '.*/\(.*@@.*\)', '\1', '')
   else
     " regular files
     let tablabel = fnamemodify(name, ':t')

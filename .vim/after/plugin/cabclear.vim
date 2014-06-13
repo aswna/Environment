@@ -1,2 +1,2 @@
-" Remove all abbreviations for Command-line mode (esp. get rid of ccase plugin abbreviations)
+" Remove all abbreviations for Command-line mode
 cabclear
