@@ -26,7 +26,7 @@ Some examples:
     .gitconfig -> <repo dir>/.gitconfig
     .hgrc      -> <repo dir>/.hgrc
     .screenrc  -> <repo dir>/.screenrc
-    .vim       -> <repo dir>/.vim/
+    .vim       -> <repo dir>/.vim
     .vimrc     -> <repo dir>/.vimrc
     .zsh       -> <repo dir>/.zsh
     .zshrc     -> <repo dir>/.zshrc
