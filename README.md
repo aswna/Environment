@@ -17,6 +17,21 @@ See more info about [cloning on GitHub][10]. See below Submodules section, too.
 ### For read/write access it is best to setup ssh keys and use SSH. ###
     git clone git@github.com:aswna/Environment.git
 
+## Using this repository ##
+Create symbolic links in your home directory to the configuration files in this repository.
+Some examples:
+
+    .dircolors -> <repo dir>/dircolors-solarized/dircolors.256dark
+    etc        -> <repo dir>/etc
+    .gitconfig -> <repo dir>/.gitconfig
+    .hgrc      -> <repo dir>/.hgrc
+    .screenrc  -> <repo dir>/.screenrc
+    .vim       -> <repo dir>/.vim/
+    .vimrc     -> <repo dir>/.vimrc
+    .zsh       -> <repo dir>/.zsh
+    .zshrc     -> <repo dir>/.zshrc
+
+
 ## Submodules ##
 ### Adding new submodule ###
 Adding a new Git submodule is easy.
