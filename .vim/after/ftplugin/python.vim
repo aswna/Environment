@@ -7,4 +7,4 @@ set nosmartindent
 set cindent
 set cinwords=if,elif,else,for,while,try,except,finally,def,class
 
-set textwidth=79
+setlocal textwidth=79
