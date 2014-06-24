@@ -25,11 +25,19 @@ let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
 " Python (PyLama can use pep8, PyFlakes, PyLint, McCabe and pep257)
 let g:syntastic_python_pylama_args = '-l pep8,pyflakes,pep257,mccabe,pylint'
 let g:syntastic_python_checkers = ['python', 'frosted', 'pylama', 'py3kwarn']
+
 " Use local pylintrc file if available.
+let s:pylintrc_file = ''
 if filereadable('.pylintrc')
-    let g:syntastic_python_pylint_args = '--rcfile=.pylintrc'
+    let s:pylintrc_file = '.pylintrc'
 elseif filereadable('pylintrc')
-    let g:syntastic_python_pylint_args = '--rcfile=pylintrc'
+    let s:pylintrc_file = 'pylintrc'
+endif
+
+if s:pylintrc_file != ''
+    let g:syntastic_python_pylint_args = '--rcfile=' . s:pylintrc_file
+    " Ignore "line too long" error from pep8 hoping that Pylint already checks that.
+    let g:syntastic_python_pylama_args .= ' --ignore=E501'
 endif
 
 " Shell
