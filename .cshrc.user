@@ -1,11 +1,5 @@
 #echo " Starting (~/.cshrc.user)"
 
-if ($?JOB_NAME) then
-  #echo "Sun/Oracle Grid Engine spooled job $JOB_NAME"
-  # No need to continue.
-  exit 0
-endif
-
 #set autocorrect
 #set autoexpand
 
@@ -72,17 +66,6 @@ if (-r $HOME/.tcshrc.complete ) then
 endif
 #echo "  Got completions"
 
-# Used for overriding the prompt
-if ( $?CLEARCASE_ROOT ) then
-  setenv CCVIEW `basename $CLEARCASE_ROOT`
-else
-  setenv CCVIEW ""
-endif
-
-# Dynamically set screen window title. When no view is set
-# then use machine name (%m) as screen window title.
-setenv SCREEN_WINDOW_TITLE  `echo "$CCVIEW" | sed 's/^$/%m/'`
-
 if (-r $HOME/.cshrc.user.private ) then
   # private stuff (*_proxy settings, even more customizes SCREEN_WINDOW_TITLE)
   source $HOME/.cshrc.user.private
@@ -94,18 +77,10 @@ setenv TERMINFO $HOME/.terminfo
 setenv TERM xterm-256color
 
 if ( "$shell" =~ *tcsh ) then
-  if ( "$CCVIEW" == "" ) then
-    set prompt="%n@%m [%T] (%?) %~> "
-  else
-    set prompt="%n@%m [$CCVIEW] [%T] (%?) %~> "
-  endif
+  set prompt="%n@%m [%T] (%?) %~> "
 else
   # in csh (to make cwd up-to-date in the prompt)
-  if ( "$CCVIEW" == "" ) then
-    alias doprompt 'set prompt="`whoami`@`hostname` `pwd`> "'
-  else
-    alias doprompt 'set prompt="`whoami`@`hostname` [$CCVIEW] `pwd`> "'
-  endif
+  alias doprompt 'set prompt="`whoami`@`hostname` `pwd`> "'
   doprompt
   alias cd 'chdir \!*; doprompt'
 endif
