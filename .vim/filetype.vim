@@ -10,4 +10,6 @@ augroup filetypedetect
 
   au! BufRead,BufNewFile FT_config.lst setfiletype ftconfig
   au! BufRead,BufNewFile FT_parameter.lst setfiletype ftparam
+
+  au! BufRead,BufNewFile *\,cover setfiletype cover
 augroup END
