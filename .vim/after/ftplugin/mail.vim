@@ -6,5 +6,5 @@ else
 endif
 setlocal spell
 
-set textwidth=67
-set wrap
+setlocal textwidth=67
+setlocal wrap
