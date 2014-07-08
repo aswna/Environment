@@ -1,6 +1,6 @@
 " A statusbar function, that provides a visual scrollbar (based on the courtesy of A. Politz)
 func! MyStatusLine()
-  let my_statusline = "%<" . expand("%:p") . "\ %h%w%m%r%y\ [%{&ff}]\ " . '[%{(&fenc==""?&enc:&fenc)}] '
+  let my_statusline = "%<" . expand("%:p") . " %m%r%w%h%q%y[%{&ff}]" . '[%{(&fenc==""?&enc:&fenc)}] '
   let my_statusline = my_statusline . "%="
   let my_statusline = my_statusline . "%#warningmsg#"
   let my_statusline = my_statusline . "%{SyntasticStatuslineFlag()}"
