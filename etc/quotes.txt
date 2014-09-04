@@ -751,3 +751,14 @@ Any colour - so long as it's black. -- Henry Ford
 If there is any one secret of success, it lies in the ability to get the other person's point of view and see things from that person's angle as well as from your own. -- Henry Ford
 Before everything else, getting ready is the secret of success. -- Henry Ford
 There are no big problems, there are just a lot of little problems. -- Henry Ford
+Clean code always looks like it was written by someone who cares. -- Michael Feathers
+As the tests get more specific, the code gets more generic. -- Robert C. Martin (Uncle Bob)
+LeBlanc's law: Later equals never. -- Robert C. Martin (Uncle Bob)
+The only way to make the deadline -- the only way to go fast -- is to keep the code as clean as possible at all times. -- Robert C. Martin (Uncle Bob)
+The first rule of functions is that they should be small. -- Robert C. Martin (Uncle Bob)
+A function should do one thing, and one thing only. -- Robert C. Martin (Uncle Bob)
+Functions should do something, or answer something, but not both. -- Robert C. Martin (Uncle Bob)
+Truth can only be found in one place: the code. -- Robert C. Martin (Uncle Bob)
+Clean code is not written by following a set of rules. You don't become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines. -- Robert C. Martin (Uncle Bob)
+Duplication is the primary enemy of a well-designed system. -- Robert C. Martin (Uncle Bob)
+Duplication may be the root of all evil in software. -- Robert C. Martin (Uncle Bob)
