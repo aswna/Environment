@@ -30,9 +30,14 @@ def parse_arguments():
     parser = argparse.ArgumentParser(
         description=description,
         formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('-s', '--screen', action='store_true',
-                        help='use degree sign for the buggy GNU Screen status'
-                             'line (default: %(default)s)')
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('-s', '--screen', action='store_true',
+                       help='use degree sign for the buggy GNU Screen 4.00 '
+                            'status line (default: %(default)s)')
+    group.add_argument('-n', '--no-degree-sign', action='store_true',
+                       help='do not use degree sign at all (for the buggy '
+                            'GNU Screen 4.01 status line, '
+                            'default: %(default)s)')
     parser.add_argument('-l', '--location', default='pws:IBUDAPES26',
                         help='location identifier (default: %(default)s)')
     parser.add_argument('-L', '--language', default='EN',
@@ -41,16 +46,19 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def get_degree_sign(degree_sign_for_screen):
-    if degree_sign_for_screen:
-        return '\xb0'
+def get_degree_sign(do_not_print_degree_sign, degree_sign_for_screen):
+    if do_not_print_degree_sign:
+        return ''
     else:
-        return '\xc2\xb0'
+        if degree_sign_for_screen:
+            return '\xb0'
+        else:
+            return '\xc2\xb0'
 
 
 def main():
     args = parse_arguments()
-    degree_sign = get_degree_sign(args.screen)
+    degree_sign = get_degree_sign(args.no_degree_sign, args.screen)
 
     response = None
     try:
