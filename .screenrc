@@ -12,7 +12,7 @@ autodetach on
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Backtick
 # Execute every 30 minutes.
-backtick 10 1800 1800 zsh -i -c '$HOME/bin/wunderground.py -s'
+backtick 10 1800 1800 zsh -c '$HOME/bin/wunderground.py -s'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j / Alt-Left changes to previous window
@@ -28,7 +28,7 @@ bindkey ^[[1;3C next
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 # -i should not be necessary. Default Python does not have curses installed in corporate
 # environment.
-blankerprg zsh -i -c '$HOME/bin/quote.py'
+blankerprg zsh -c '$HOME/bin/quote.py'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
