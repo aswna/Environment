@@ -22,6 +22,6 @@
 	co = checkout
 	st = status
 	stat = status
-	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	tree = log --pretty=format:'%C(auto)%h%d [%Cgreen%cr%Creset] %s %Cred{%Cblue%an%Cred}%Creset' --graph
 [push]
 	default = simple
