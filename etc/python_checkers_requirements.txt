@@ -1,0 +1,9 @@
+flake8
+pylint
+pep257
+pylama
+mock
+coverage
+nose
+nose-cov
+bashate
