@@ -25,3 +25,8 @@
 	tree = log --pretty=format:'%C(auto)%h%d [%Cgreen%cr%Creset] %s %Cred{%Cblue%an%Cred}%Creset' --graph
 [push]
 	default = simple
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
