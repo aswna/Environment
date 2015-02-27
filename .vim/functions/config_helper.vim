@@ -11,4 +11,3 @@ function! SourceSiteConfig(scriptPath)
         execute "source " . l:siteConfFile
     endif
 endfunction
-
