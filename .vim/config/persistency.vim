@@ -5,17 +5,14 @@ set history=20000
 " commands, buffer changes.
 set autowriteall
 
-let s:my_tmp_dir = $HOME . "/tmp"
-let s:my_tmp_vim_dir = s:my_tmp_dir . "/vim"
+let s:my_tmp_vim_dir = $HOME . "/tmp/vim"
+call CreateDir(s:my_tmp_vim_dir)
 
 " For Unix and Win32, if a directory ends in two path separators "//"
 " or "\\", the swap file name will be built from the complete path
 " to the file with all path separators substituted to percent '%' signs.
 " This will ensure file name uniqueness in the preserve directory.
 let s:base_backup_directory=s:my_tmp_vim_dir . "//"
-let s:base_backup_directory=s:base_backup_directory . "," . s:my_tmp_dir . "//"
-let s:base_backup_directory=s:base_backup_directory . "," . "/var/tmp"   . "//"
-let s:base_backup_directory=s:base_backup_directory . "," . "/tmp"       . "//"
 
 " List of directories for the swap files.
 let &directory=s:base_backup_directory
@@ -31,3 +28,8 @@ if has("persistent_undo")
     let &undodir=&directory
     set undofile
 endif
+
+" List of directories for the view files.
+let s:my_view_dir = s:my_tmp_vim_dir . "/view"
+call CreateDir(s:my_view_dir)
+let &viewdir=s:my_view_dir . "//"
