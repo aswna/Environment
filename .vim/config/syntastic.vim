@@ -23,8 +23,8 @@ let g:syntastic_cpp_checkers = ['gcc', 'cpplint']
 let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
 
 " Python (PyLama can use pep8, PyFlakes, PyLint, McCabe and pep257)
-let g:syntastic_python_pylama_args = '-l pep8,pyflakes,pep257,mccabe,pylint'
-let g:syntastic_python_checkers = ['python', 'frosted', 'pylama', 'py3kwarn']
+let g:syntastic_python_pylama_args = '-l pep8,pyflakes,mccabe'
+let g:syntastic_python_checkers = ['python', 'frosted', 'pylama', 'pylint', 'py3kwarn']
 
 " Use local pylintrc file if available.
 let s:pylintrc_file = ''
@@ -32,6 +32,8 @@ if filereadable('.pylintrc')
     let s:pylintrc_file = '.pylintrc'
 elseif filereadable('pylintrc')
     let s:pylintrc_file = 'pylintrc'
+elseif filereadable('resources/pylintrc')
+    let s:pylintrc_file = 'resources/pylintrc'
 endif
 
 if s:pylintrc_file != ''
