@@ -2,3 +2,5 @@
 \.vim/\.netrwhist
 \.vim/spell/
 *\.pyc
+*\.svg
+*\.png
