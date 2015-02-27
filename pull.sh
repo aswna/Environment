@@ -2,6 +2,8 @@
 
 ### Pull all git submodules except for the modules described by EXCLUDE_MODULES.
 
+# Extended regular expression:
+EXCLUDE_MODULES="cecil"
 
 execute_git_pull()
 {
@@ -30,11 +32,9 @@ pull_all_submodules_in_repository()
     #checkout_master ${repo_dir}
     execute_git_pull ${repo_dir}
 
-    if [ -r .gitmodules ]
-    then
+    if [ -r .gitmodules ]; then
         echo "Found .gitmodules file..."
-        for submodule in $(sed -n 's/^\tpath = //p' .gitmodules)
-        do
+        for submodule in $(sed -n 's/^\tpath = //p' .gitmodules | egrep -v "${EXCLUDE_MODULES}"); do
             (pull_all_submodules_in_repository "${submodule}")
         done
     fi
