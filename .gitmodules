@@ -46,3 +46,12 @@
 [submodule ".vim/bundle/alternate.vim"]
 	path = .vim/bundle/alternate.vim
 	url = git://github.com/compactcode/alternate.vim.git
+[submodule ".vim/bundle/robotframework-vim"]
+	path = .vim/bundle/robotframework-vim
+	url = git://github.com/mfukar/robotframework-vim.git
+[submodule ".vim/bundle/vim-puppet"]
+	path = .vim/bundle/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
+[submodule ".vim/bundle/restore_view.vim"]
+	path = .vim/bundle/restore_view.vim
+	url = git://github.com/vim-scripts/restore_view.vim
