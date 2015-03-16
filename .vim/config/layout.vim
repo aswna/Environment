@@ -100,3 +100,5 @@ else
   highlight def link User2 TablineSel
   set tabline=%!MyTextModeTabLine()
 endif
+
+set foldmethod=marker
