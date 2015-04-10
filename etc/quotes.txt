@@ -1,51 +1,31 @@
 A brute force solution that works is better than an elegant solution that doesn't work. -- Steve C McConnell
 A controller that cannot control itself is worse than no controller at all: If you cannot manage yourself, you have no business managing others. -- Gerald Weinberg, Quality Software Management: First-order measurement, 1993
 Adapting old programs to fit new machines usually means adapting new machines to behave like old ones. -- Alan J. Perlis, Epigrams in Programming, 1982
-After all, C++ isn't a perfect match for Java's design aims either. -- Bjarne Stroustrup
 A good system can't have a weak command language. -- Alan J. Perlis, Epigrams in Programming, 1982
 A language that doesn't affect the way you think about programming, is not worth knowing. -- Alan J. Perlis, Epigrams in Programming, 1982
 A LISP programmer knows the value of everything, but the cost of nothing. -- Alan J. Perlis, Epigrams in Programming, 1982
-All new features added to C++ are intended to fix previously new features added to C++ -- David Jameson
 A mathematician is a device for turning coffee into theorems. -- Paul Erdos
 An adequate bootstrap is a contradiction in terms. -- Alan J. Perlis, Epigrams in Programming, 1982
 A programming language is low level when its programs require attention to the irrelevant. -- Alan J. Perlis, Epigrams in Programming, 1982
 A program without a loop and a structured variable isn't worth writing. -- Alan J. Perlis, Epigrams in Programming, 1982
-Arguing that Java is better than C++ is like arguing that grasshoppers taste better than tree bark. -- Thant Tessman
 Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long? -- Alan J. Perlis, Epigrams in Programming, 1982
 As Thomas Hobbes observed in the 17th century, life under mob rule is solitary, poor, nasty, brutish, and short. Life on a poorly run software project is solitary, poor, nasty, brutish, and hardly ever short enough. -- Steve C McConnell
 As Will Rogers would have said, "There is no such thing as a free variable." -- Alan J. Perlis, Epigrams in Programming, 1982
 A year spent in artificial intelligence is enough to make one believe in God. -- Alan J. Perlis, Epigrams in Programming, 1982
 Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defence against complexity. -- David Gelernter
 Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves. -- Alan J. Perlis, Epigrams in Programming, 1982
-Being really good at C++ is like being really good at using rocks to sharpen sticks. -- Thant Tessman
 Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy. -- Alan J. Perlis, Epigrams in Programming, 1982
 Bringing computers into the home won't change either one, but may revitalize the corner saloon. -- Alan J. Perlis, Epigrams in Programming, 1982
-C++: an octopus made by nailing extra legs onto a dog. -- Steve Taylor
 Certainly not every good program is object-oriented, and not every object-oriented program is good. -- Bjarne Stroustrup
-C++: glacial compiles, insane complexity, impenetrable errors, laughable cross-platform compat[ibility], basically useless tools. -- Aaron Boodman
-C++ has its place in the history of programming languages. Just as Caligula has his place in the history of the Roman Empire. -- Robert Firth
-C++ is a language strongly optimized for liars and people who go by guesswork and ignorance. -- Erik Naggum
-C++ is an insult to the human brain -- Niklaus Wirth
-c++ is a pile of crap. -- Theo de Raadt
-C is C++ without the BS. -- SocialPhatology
-C++ is history repeated as tragedy. Java is history repeated as farce. -- Scott McKay
-C++ is like jamming a helicopter inside a Miata and expecting some sort of improvement. -- Drew Olbrich
-C++ is more of a Rube-Goldberg type thing full of high-voltages, large chain-driven gears, sharp edges, exploding widgets, and spots to get your fingers crushed. And because of it's complexity many (if not most) of it's users don't know how it works, and can't tell ahead of time what's going to cause them to loose an arm. -- Grant Edwards
 C is not a big language, and it's not well served by a big book. -- Brian W. Kernighan and Dennis M. Ritchie, in The C Programming Language, Prentice Hall, 1988
-C++ is probably the only language where the error [message] can be longer than the program -- aiju
-C++ is the best example of second-system effect since OS/360. -- Henry Spencer
 "C is the Fortran of the 90s." Wrong. C is the Fortran of the 70s. -- Norman Diamond
-C++ is the only current language making COBOL look good. -- Bertrand Meyer
-C++ is to C as Lung Cancer is to Lung. -- Clayton Cramer
 Clearly, I reject the view that there is one way that is right for everyone and for every problem. -- Bjarne Stroustrup
 C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows away your whole leg. -- Bjarne Stroustrup
 Computation has made the tree flower. -- Alan J. Perlis, Epigrams in Programming, 1982
 Computer Science is embarrassed by the computer. -- Alan J. Perlis, Epigrams in Programming, 1982
 Computers don't introduce order anywhere as much as they expose opportunities. -- Alan J. Perlis, Epigrams in Programming, 1982
 Controlling complexity is the essence of computer programming. -- Brian Kernighan
-C++: Simula in wolf's clothing. -- Bjarne Stroustrup
 C: The language that combines the power of assembly language with the flexibility of assembly language. -- [unknown]
-C++ will do for C what Algol-68 did for Algol. -- David L Jones
 Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve. -- Alan J. Perlis, Epigrams in Programming, 1982
 Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. -- Brian W. Kernighan and P. J. Plauger in The Elements of Programming Style
 Defining OO as based on the use of class hierarchies and virtual functions is also practical in that it provides some guidance as to where OO is likely to be successful. -- Bjarne Stroustrup
@@ -69,28 +49,21 @@ Get into a rut early: Do the same process the same way. Accumulate idioms. Stand
 Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf. -- Alan J. Perlis, Epigrams in Programming, 1982
 God may not play dice with the universe, but something strange is going on with the prime numbers. -- Paul Erdos
 Good code is its own best documentation. As you're about to add a comment, ask yourself, 'How can I improve the code so that this comment isn't needed?' Improve the code and then document it to make it even clearer. -- Steve C McConnell
-Historically, languages designed for other people to use have been bad: Cobol, PL/I, Pascal, Ada, C++. The good languages have been those that were designed for their own creators: C, Perl, Smalltalk, Lisp. -- Paul Graham
 However, when Java is promoted as the sole programming language, its flaws and limitations become serious. -- Bjarne Stroustrup
-I believe C++ instills fear in programmers, fear that the interaction of some details causes unpredictable results. Its unmanageable complexity has spawned more fear-preventing tools than any other language, but the solution should have been to create and use a language that does not overload the whole goddamn human. -- Erik Naggum
-I consider C++ the most significant technical hazard to the survival of your project and do so without apologies. -- Alistair Cockburn
 If a listener nods his head when you're explaining your program, wake him up. -- Alan J. Perlis, Epigrams in Programming, 1982
 If a program manipulates a large amount of data, it does so in a small number of ways. -- Alan J. Perlis, Epigrams in Programming, 1982
 If builders built houses the way programmers built programs, the first woodpecker to come along would destroy civilization. -- Gerald Weinberg attributed with the quote in: Murali Chemuturi (2010) Mastering Software Quality Assurance: Best Practices, Tools and Technique for Software Developers. p.ix
-If C++ has taught me one thing, it's this: Just because the system is consistent doesn't mean it's not the work of Satan. -- Andrew Plotkin
 If I have not seen as far as others, it is because giants were standing on my shoulders. -- Hal Abelson
 I find languages that support just one programming paradigm constraining. -- Bjarne Stroustrup
 If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same. -- Alan J. Perlis, Epigrams in Programming, 1982
 If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other? -- Alan J. Perlis, Epigrams in Programming, 1982
 If you can imagine a society in which the computer-robot is the only menial, you can imagine anything. -- Alan J. Perlis, Epigrams in Programming, 1982
 If you have a procedure with ten parameters, you probably missed some. -- Alan J. Perlis, Epigrams in Programming, 1982
-If you like C++, you don't know C++. There's a mutual exclusion going on here, and I've yet to see a counter-example other than possibly a few of the members of the standards committee. -- ssylvan in reddit.
 If your computer speaks English, it was probably made in Japan. -- Alan J. Perlis, Epigrams in Programming, 1982
 If you're willing to restrict the flexibility of your approach, you can almost always do something better. -- John Carmack
-If you think C++ is not overly complicated, just what is a protected abstract virtual base pure virtual private destructor and when was the last time you needed one? -- Tom Cargill
 If you want to improve your software, don't test more; develop better. -- Steve C McConnell
 I hope we'll be able to solve these problems before we leave. -- Paul Erdos
 I invented the term Object-Oriented, and I can tell you I did not have C++ in mind. -- Alan Kay
-I may be biased, but I tend to find a much lower tendency among female programmers to be dishonest about their skills, and thus do not say they know C++ when they are smart enough to realize that that would be a lie for all but perhaps 5 people on this planet. -- Erik Naggum
 In a 5 year period we get one superb programming language. Only we can't control when the 5 year period will be. -- Alan J. Perlis, Epigrams in Programming, 1982
 In computing, invariants are ephemeral. -- Alan J. Perlis, Epigrams in Programming, 1982
 In computing, the mean time to failure keeps getting shorter. -- Alan J. Perlis, Epigrams in Programming, 1982
@@ -107,9 +80,7 @@ Interfaces keep things tidy, but don't accelerate growth: Functions do. -- Alan 
 In the long run every program becomes rococo - then rubble. -- Alan J. Perlis, Epigrams in Programming, 1982
 Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to see it as a soap bubble? -- Alan J. Perlis, Epigrams in Programming, 1982
 It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing thoughts, devoting attention to detail and learning to be self-critical? -- Alan J. Perlis, Epigrams in Programming, 1982
-It has been discovered that C++ provides a remarkable facility for concealing the trival details of a program -- such as where its bugs are. -- David Keppel
 I think it is inevitable that people program poorly. Training will not substantially help matters. We have to learn to live with it. -- Alan Perlis
-I think maybe the guy who invented C++ doesn't know the difference between increment and excrement. -- smcameron
 It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. -- Alan J. Perlis, Epigrams in Programming, 1982
 It is easier to change the specification to fit the program than vice versa. -- Alan J. Perlis, Epigrams in Programming, 1982
 It is easier to write an incorrect program than understand a correct one. -- Alan J. Perlis, Epigrams in Programming, 1982
@@ -127,10 +98,7 @@ It's time for software development to grow up. -- Steve C McConnell
 I would encourage nonproprietary standards for tools and libraries. -- Bjarne Stroustrup
 Java is, in many ways, C++--. -- Michael Feldman
 Java, the best argument for Smalltalk since C++. -- Frank Winkler
-[keeping somebody] from using C++ makes me feel like I saved a life -- aiju
-Life is too long to know C++ well. -- Erik Naggum
 Like punning, programming is a play on words. -- Alan J. Perlis, Epigrams in Programming, 1982
-{Major-Willard} C++ damages the brain ... -- EWD
 Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity. -- Alan J. Perlis, Epigrams in Programming, 1982
 Making something variable is easy. Controlling duration of constancy is the trick. -- Alan J. Perlis, Epigrams in Programming, 1982
 Mathematicians stand on each others' shoulders and computer scientists stand on each others' toes. -- Richard Hamming
@@ -142,7 +110,6 @@ Never trouble trouble till trouble troubles you. -- John Adams
 Nobody really knows what the Bourne shell's grammar is. Even examination of the source code is little help. -- Tom Duff
 Nothing is more dangerous than an idea if it's the only one you have. -- Emil-Auguste Chartier, Propos sur la religion, 1938
 Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble. -- Alan J. Perlis, Epigrams in Programming, 1982
-*Oh, definitely. C++ may not be the worst programming language ever created, but without a doubt it's the worst ever to be taken seriously. -- Mason Wheeler
 Once you understand how to write a program get someone else to write it. -- Alan J. Perlis, Epigrams in Programming, 1982
 One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely. -- Alan J. Perlis, Epigrams in Programming, 1982
 One can't proceed from the informal to the formal by formal means. -- Alan J. Perlis, Epigrams in Programming, 1982
@@ -153,8 +120,6 @@ Optimization hinders evolution. -- Alan J. Perlis, Epigrams in Programming, 1982
 Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies. -- Alan J. Perlis, Epigrams in Programming, 1982
 People who passionately want to believe that the world is basically simple react to this with a fury that goes beyond what I consider appropriate for discussing a programming language. -- Bjarne Stroustrup
 Perhaps if we wrote programs from childhood on, as adults we'd be able to read them. -- Alan J. Perlis, Epigrams in Programming, 1982
-Personally, I look forward to better tools for analyzing C++ source code. -- Bjarne Stroustrup
-PL/I and Ada started out with all the bloat, were very daunting languages, and got bad reputations (deservedly). C++ has shown that if you slowly bloat up a language over a period of years, people don't seem to mind as much. -- James Hague
 Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis. -- Alan J. Perlis, Epigrams in Programming, 1982
 Programming is an unnatural act. -- Alan J. Perlis, Epigrams in Programming, 1982
 Prolonged contact with the computer turns mathematicians into clerks and vice versa. -- Alan J. Perlis, Epigrams in Programming, 1982
@@ -186,7 +151,6 @@ The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - 
 The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones. -- Alan J. Perlis, Epigrams in Programming, 1982
 The job of the average manager requires a shift in focus every few minutes. The job of the average software developer requires that the developer not shift focus more often than every few hours. -- Steve C McConnell
 The key to performance is elegance, not battalions of special cases. -- Jon Bentley and Doug McIlroy
-The last good thing written in C++ was the Pachelbel Canon. -- Jerry Olson
 The most effective debugging tool is still careful thought, coupled with judiciously placed print statements. -- Brian W. Kernighan, in the paper Unix for Beginners (1979)
 The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standarization of real computers would be a disaster - and so it probably won't happen. -- Alan J. Perlis, Epigrams in Programming, 1982
 The most reliable components are the ones you leave out. -- Gordon Bell
@@ -194,7 +158,6 @@ The only constructive theory connecting neuroscience and psychology will arise f
 The problem is not the problem. The problem is your attitude about the problem. -- Captain Jack Sparrow
 The problem with quick and dirty, as some people have said, is that the dirty remains long after the quick has been forgotten. -- Steve C McConnell
 The proof of a system's value is its existence. -- Alan J. Perlis, Epigrams in Programming, 1982
-There are only two things wrong with C++: The initial concept and the implementation. -- Bertrand Meyer
 There are three signs of senility. The first sign is that a man forgets his theorems. The second sign is that he forgets to zip up. The third sign is that he forgets to zip down. -- Paul Erdos
 There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies. -- C.A.R. Hoare, The 1980 ACM Turing Award Lecture
 There are two ways to write error-free programs; only the third one works. -- Alan J. Perlis, Epigrams in Programming, 1982
@@ -204,10 +167,8 @@ The string is a stark data structure and everywhere it is passed there is much d
 The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics. -- Alan J. Perlis, Epigrams in Programming, 1982
 Think of all the psychic energy expended in seeking a fundamental distinction between "algorithm" and "program". -- Alan J. Perlis, Epigrams in Programming, 1982
 Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm. -- Alan J. Perlis, Epigrams in Programming, 1982
-This evolution may compromise Java's claim of being simpler than C++, but my guess is that the effort will make Java a better language than it is today. -- Bjarne Stroustrup
 Though the Chinese should adore APL, it's FORTRAN they put their money on. -- Alan J. Perlis, Epigrams in Programming, 1982
 Thus, the standard library will serve as both a tool and as a teacher. -- Bjarne Stroustrup
-To me C++ seems to be a language that has sacrificed orthogonality and elegance for random expediency. -- Meilir Page-Jones
 To understand a program you must become both the machine and the program. -- Alan J. Perlis, Epigrams in Programming, 1982
 Unix is a junk OS designed by a committee of PhDs. -- Dave Cutler
 Unix is simple. It just takes a genius to understand its simplicity. -- Dennis Ritchie
@@ -225,7 +186,6 @@ We will never run out of things to program as long as there is a single program 
 What is the difference between a Turing machine and the modern computer? It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak. -- Alan J. Perlis, Epigrams in Programming, 1982
 When a professor insists computer science is X but not Y, have compassion for his graduate students. -- Alan J. Perlis, Epigrams in Programming, 1982
 Whenever I solve a difficult problem with C++, I feel like I've won a bar fight. -- Michael Fogus
-Whenever the C++ language designers had two competing ideas as to how they should solve some problem, they said, "OK, we'll do them both". So the language is too baroque for my taste. -- Donald E Knuth
 Whenever two programmers meet to criticize their programs, both are silent. -- Alan J. Perlis, Epigrams in Programming, 1982
 When in doubt, use brute force. -- Ken Thompson
 When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck. -- James Whitcomb Riley
@@ -235,10 +195,7 @@ When we write programs that "learn", it turns out that we do and they don't. -- 
 When you have eliminated the impossible, whatever remains, however improbable, must be the truth. -- Sherlock Holmes
 Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication. -- Alan J. Perlis, Epigrams in Programming, 1982
 Why did the Roman Empire collapse? What is Latin for office automation? -- Alan J. Perlis, Epigrams in Programming, 1982
-With C++, it's possible to make code that isn't understandable by anyone, with C, this is very hard. -- Mike Abrash
 Within a computer natural language is unnatural. -- Alan J. Perlis, Epigrams in Programming, 1982
-Within C++, there is a much smaller and cleaner language struggling to get out. -- Bjarne Stroustrup
-With the increasing importance of standards for system-level objects such as COM and CORBA, it is particularly important that the C++ bindings to those be clean, well documented, and simple to use. -- Bjarne Stroustrup
 You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN. -- Alan J. Perlis, Epigrams in Programming, 1982
 You can't communicate complexity, only an awareness of it. -- Alan J. Perlis, Epigrams in Programming, 1982
 You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program. -- Alan J. Perlis, Epigrams in Programming, 1982
@@ -502,7 +459,6 @@ There are features that should not be used. There are concepts that should not b
 PROBLEMS Problems worthy of attack prove their worth by hitting back. -- P. Hein (in "Grooks")
 THE ROAD TO WISDOM The road to wisdom? - Well, it's plain and simple to express: Err and err and err again but less and less and less. -- P. Hein (in "Grooks")
 The one who insists on never uttering an error must remain silent. -- W. Heisenberg
-The speed of a non-working program is irrelevant. -- S. Heller (in "Efficient C/C++ Programming")
 Refactoring provides enough energy to a system for it to relax into a new and more comfortable state, a new local minimum. The effect of refactoring commonality is to tame the complexity of your system. -- K. Henney (in Minimalism: The Imperial Clothing Crisis)
 A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join and flow with it. -- F. Herbert (The First Law of Mentat in "Dune")
 It's [programming] the only job I can think of where I get to be both an engineer and an artist. There's an incredible, rigorous, technical element to it, which I like because you have to do very precise thinking. On the other hand, it has a wildly creative side where the boundaries of imagination are the only real limitation. -- A. Hertzfeld (original Mac programmer)
@@ -667,8 +623,6 @@ Being forced to write comments actually improves code, because it is easier to f
 [teaching]is rather artificial. The world is complicated and messy, with lots of loose ends, and the teacher's job is to impose order on the confusion, to convert a chaotic set of episodes into a coherent narrative. -- I. Stewart (in "Letters to a Young Mathematician")
 Don't get suckered in by the comments -- they can be terribly misleading: Debug only the code. -- D. Storer
 Design and programming are human activities; forget that and all is lost. -- B. Stroustrup
-It is my firm belief that all successful languages are grown and not merely designed from first principles -- B. Stroustrup (in "The Design and Evolution of C++")
-More good code has been written in languages denounced as "bad" than in languages proclaimed "wonderful" -- much more. -- B. Stroustrup (in The Design and Evolution of C++)
 The most important single aspect of software development is to be clear about what you are trying to build. -- B. Stroustrup
 There are only two kinds of programming languages: those people always bitch about and those nobody uses. -- B. Stroustrup
 I have learned throughout my life as a composer chiefly through my mistakes and pursuits of false assumptions, not my exposure to founts of wisdom and knowledge. -- I. Stravinsky
