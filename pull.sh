@@ -1,52 +1,62 @@
 #!/bin/bash
 
-### Pull all git submodules except for the modules described by EXCLUDE_MODULES.
 
-# Extended regular expression:
-EXCLUDE_MODULES="cecil"
-
-execute_git_pull()
+update_all_submodules_in_repository()
 {
-    repo_dir="$1"
+    repo_dir="${1}"
+
+    update_repository_with_submodules "${repo_dir}"
+    for submodule in $(sed -n 's/^\tpath = //p' .gitmodules); do
+        update_submodules_in_repository "${submodule}"
+    done
+}
+
+
+update_submodules_in_repository()
+{
+    repo_dir="${1}"
+    old_pwd="$(pwd)"
+
     echo
-    echo "Pull in ${repo_dir}"
-    git pull
+    echo "Working in ${repo_dir}"
+
+    cd "${repo_dir}"
+    init_and_update_submodules
+    checkout_master
+    pull_repository
+    cd "${old_pwd}"
+
+    echo
+}
+
+
+init_and_update_submodules()
+{
+    echo "git submodules update"
+    git submodule update --init --recursive
 }
 
 
 checkout_master()
 {
-    repo_dir="$1"
-    echo
-    echo "Checkout master in ${repo_dir}"
+    echo "git checkout master"
     git checkout master
 }
 
 
-pull_all_submodules_in_repository()
+pull_repository()
 {
-    old_pwd=`pwd`
-    repo_dir="$1"
-    cd ${repo_dir}
-
-    #checkout_master ${repo_dir}
-    execute_git_pull ${repo_dir}
-
-    if [ -r .gitmodules ]; then
-        echo "Found .gitmodules file..."
-        for submodule in $(sed -n 's/^\tpath = //p' .gitmodules | egrep -v "${EXCLUDE_MODULES}"); do
-            (pull_all_submodules_in_repository "${submodule}")
-        done
-    fi
-
-    cd ${old_pwd}
+    echo "git pull"
+    git pull
 }
 
 
 get_status()
 {
+    echo
     git status
 }
 
-pull_all_submodules_in_repository `pwd`
+
+update_all_submodules_in_repository "$(pwd)"
 get_status
