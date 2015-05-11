@@ -5,7 +5,7 @@ update_all_submodules_in_repository()
 {
     repo_dir="${1}"
 
-    update_repository_with_submodules "${repo_dir}"
+    update_submodules_in_repository "${repo_dir}"
     for submodule in $(sed -n 's/^\tpath = //p' .gitmodules); do
         update_submodules_in_repository "${submodule}"
     done
