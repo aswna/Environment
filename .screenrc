@@ -47,7 +47,7 @@ hardstatus alwayslastline
 
 # See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
 # [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue][date and time in green]
-hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%= %{= Kw}%-w%{= Kr}%n %t%{= Kw}%+w %=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %c]'
+hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%= %{= Kw}%-w%{= Kr}%n %t%{= Kw}%+w %=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %0c]'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
