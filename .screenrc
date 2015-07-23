@@ -39,7 +39,7 @@ defflow auto
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Set default lines of scrollback.
-defscrollback 10000
+defscrollback 100000
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Hardware-Status-Line
 # Use the hardware status line.
