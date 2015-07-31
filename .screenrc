@@ -30,6 +30,9 @@ bindkey ^[[1;3C next
 # environment.
 blankerprg zsh -c '$HOME/bin/quote.py'
 
+# Execute screen-saver instead of locking
+bind 'x' blanker
+
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
 compacthist on
