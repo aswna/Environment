@@ -42,6 +42,9 @@ if s:pylintrc_file != ''
     let g:syntastic_python_pylama_args .= ' --ignore=E501'
 endif
 
+" Java
+let g:syntastic_java_javac_config_file_enabled=1
+
 " Shell
 let g:syntastic_sh_checkers = ['sh', 'bashate', 'checkbashisms']
 
