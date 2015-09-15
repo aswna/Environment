@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/restore_view.vim"]
 	path = .vim/bundle/restore_view.vim
 	url = git://github.com/vim-scripts/restore_view.vim
+[submodule ".vim/bundle/starsearch.vim"]
+	path = .vim/bundle/starsearch.vim
+	url = git://github.com/darfink/starsearch.vim.git
