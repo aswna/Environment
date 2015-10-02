@@ -169,3 +169,7 @@ set pastetoggle=<F7>
 
 " Open file name under the cursor on a new tab.
 map <F8> gf
+
+" Apply YCM FixIt
+map <F9> :YcmCompleter FixIt<CR>
+map <F10> :YcmDiag<CR>

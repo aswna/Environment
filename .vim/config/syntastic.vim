@@ -15,16 +15,14 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 " C
 let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
-let g:syntastic_c_include_dirs = ['/usr/include/mysql']
 let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-summary --no-tree --terse --file'
 
 " C++
-let g:syntastic_cpp_checkers = ['gcc', 'cpplint']
-let g:syntastic_cpp_include_dirs = g:syntastic_c_include_dirs
+let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'cpplint']
 
 " Python (PyLama can use pep8, PyFlakes, PyLint, McCabe and pep257)
 let g:syntastic_python_pylama_args = '-l pep8,pyflakes,mccabe'
-let g:syntastic_python_checkers = ['python', 'frosted', 'pylama', 'pylint', 'py3kwarn']
+let g:syntastic_python_checkers = ['python', 'frosted', 'pylama', 'pylint', 'pep257', 'py3kwarn']
 
 " Use local pylintrc file if available.
 let s:pylintrc_file = ''
