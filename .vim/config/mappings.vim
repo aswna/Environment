@@ -151,6 +151,10 @@ nnoremap <leader>q :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>e :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>w :YcmCompleter GoToDeclaration<CR>
 
+" Switch from C/C++ source code file (foo.cc) to header file (foo.h) and
+" vice versa.
+map <Leader>h :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cc,<CR>
+
 " Execute macro q
 map <F1> @q
 
