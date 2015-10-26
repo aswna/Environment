@@ -12,7 +12,9 @@ function! MyTextModeTabLabel(n, maxlength)
     endif
   else
     " regular files
-    let tablabel = fnamemodify(name, ':t')
+    " mark whether the buffer is modified
+    let m = getbufvar(buflist[winnr - 1], "&mod") ? '*' : ''
+    let tablabel = m . fnamemodify(name, ':t')
   endif
   let tablabel = strpart(tablabel, 0, a:maxlength)
   return tablabel
