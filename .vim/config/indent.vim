@@ -5,4 +5,4 @@ set autoindent
 set smartindent
 
 "set cindent
-set cino=g2,h2,i0,N-s
+set cino=g2,h2,i0,N-s,t0
