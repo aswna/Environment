@@ -1,3 +1,11 @@
+nnoremap <leader>q :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>e :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>w :YcmCompleter GoToDeclaration<CR>
+
+map <F9> :YcmCompleter FixIt<CR>
+map <F10> :YcmDiag<CR>
+
+
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "let g:syntastic_debug = 1

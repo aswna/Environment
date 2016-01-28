@@ -4,12 +4,5 @@ endif
 
 augroup filetypedetect
   " local filetype changes go here
-  au! BufRead,BufNewFile prototype          setfiletype prototype
-  au! BufRead,BufNewFile *.prototype        setfiletype prototype
-  au! BufRead,BufNewFile prototype.template setfiletype prototype
-
-  au! BufRead,BufNewFile FT_config.lst setfiletype ftconfig
-  au! BufRead,BufNewFile FT_parameter.lst setfiletype ftparam
-
   au! BufRead,BufNewFile *\,cover setfiletype cover
 augroup END
