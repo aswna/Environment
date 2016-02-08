@@ -95,7 +95,7 @@ endif
 " Several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
 
 " Map space to center on line
-nmap <space> z<CR>
+nmap <Space> z<CR>
 
 " Make Y consistent with C and D.  See :help Y.
 nnoremap Y y$
@@ -106,7 +106,7 @@ nnoremap k gk
 
 " No need to press Shift, real optimization for almost all Vim commands.
 nnoremap ; :
-nnoremap <leader>; ;
+nnoremap <Leader>; ;
 
 " Toggle show/hide invisible chars
 nnoremap <silent> <Leader>i :set list!<CR>
@@ -121,18 +121,14 @@ let g:last_fold_column_width = 4  " Pick a sane default for the foldcolumn
 " make p in Visual mode replace the selected text with the yank register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
-" Quickly get out of insert mode without your fingers having to leave the home row
-" Probably we should use CTRL-[.
-inoremap jk <Esc>
-
 " Quote word under cursor
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+nnoremap <Leader>" viw<Esc>a"<Esc>hbi"<Esc>lel
+nnoremap <Leader>' viw<Esc>a'<Esc>hbi'<Esc>lel
 
 " Quote current selection
 " TODO: This only works for selections that are created "forwardly"
-vnoremap <leader>" <esc>a"<esc>gvo<esc>i"<esc>gvo<esc>ll
-vnoremap <leader>' <esc>a'<esc>gvo<esc>i'<esc>gvo<esc>ll
+vnoremap <Leader>" <Esc>a"<Esc>gvo<Esc>i"<Esc>gvo<Esc>ll
+vnoremap <Leader>' <Esc>a'<Esc>gvo<Esc>i'<Esc>gvo<Esc>ll
 
 nnoremap <silent> <C-Left>  :tabprevious<CR>
 nnoremap <silent> <C-Right> :tabnext<CR>
@@ -146,6 +142,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Insert blank lines before/after current position
+map [<Space> m`O<Esc>``
+map ]<Space> m`o<Esc>``
 
 " Switch from C/C++ source code file (foo.cc) to header file (foo.h) and
 " vice versa.
