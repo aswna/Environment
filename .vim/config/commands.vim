@@ -15,3 +15,5 @@ command! -nargs=0 W w
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | 0r # | Gdd | diffthis | wincmd p | diffthis | wincmd p
 endif
+
+command! -range -nargs=0 -bar JsonTool <line1>,<line2>!python -m json.tool
