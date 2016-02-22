@@ -159,7 +159,7 @@ The problem is not the problem. The problem is your attitude about the problem. 
 The problem with quick and dirty, as some people have said, is that the dirty remains long after the quick has been forgotten. -- Steve C McConnell
 The proof of a system's value is its existence. -- Alan J. Perlis, Epigrams in Programming, 1982
 There are three signs of senility. The first sign is that a man forgets his theorems. The second sign is that he forgets to zip up. The third sign is that he forgets to zip down. -- Paul Erdos
-There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies. -- C.A.R. Hoare, The 1980 ACM Turing Award Lecture
+There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult. -- C.A.R. Hoare, The 1980 ACM Turing Award Lecture
 There are two ways to write error-free programs; only the third one works. -- Alan J. Perlis, Epigrams in Programming, 1982
 There will always be things we wish to say in our programs that in all known languages can only be said poorly. -- Alan J. Perlis, Epigrams in Programming, 1982
 The standard library saves programmers from having to reinvent the wheel. -- Bjarne Stroustrup
