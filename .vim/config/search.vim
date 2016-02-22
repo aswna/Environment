@@ -6,8 +6,8 @@ set incsearch
 " case characters.
 set smartcase
 
-" Ignore case in search patterns.  Also used when searching in the tags file.
-set ignorecase
+" Do not ignore case in search patterns.
+set noignorecase
 
 " When there is a previous search pattern, highlight all its matches.
 set hlsearch
