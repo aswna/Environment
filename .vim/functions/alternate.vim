@@ -4,5 +4,3 @@ function! OpenAlternateFile()
     execute 'edit ' . alternate_filename
   endif
 endfunction
-
-map <silent> <leader>t :call OpenAlternateFile()<CR>

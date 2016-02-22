@@ -1,11 +1,3 @@
-nnoremap <leader>q :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>e :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>w :YcmCompleter GoToDeclaration<CR>
-
-map <F9> :YcmCompleter FixIt<CR>
-map <F10> :YcmDiag<CR>
-
-
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "let g:syntastic_debug = 1
@@ -18,8 +10,6 @@ let g:syntastic_style_warning_symbol = 'w▸'
 let g:syntastic_auto_loc_list = 1
 
 let g:syntastic_stl_format = '[%E{Err: %e}%B{, }%W{Warn: %w}]'
-
-let g:ycm_autoclose_preview_window_after_completion = 1
 
 " C
 let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
