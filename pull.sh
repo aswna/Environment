@@ -24,6 +24,7 @@ update_submodules_in_repository()
     init_and_update_submodules
     checkout_master
     pull_repository
+    reset_submodules
     cd "${old_pwd}"
 
     echo
@@ -48,6 +49,13 @@ pull_repository()
 {
     echo "git pull"
     git pull
+}
+
+
+reset_submodules()
+{
+    echo "git submodule reset"
+    git submodule foreach git reset --hard
 }
 
 
