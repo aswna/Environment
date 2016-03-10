@@ -6,7 +6,7 @@ func! MyStatusLine()
   let my_statusline = my_statusline . "%{SyntasticStatuslineFlag()}"
   let my_statusline = my_statusline . "%*"
   let my_statusline = my_statusline . "V:%b[0x%B]"
-  let my_statusline = my_statusline . "\ C:%c%V\ L:%l/%L\ (%p%%)\ "
+  let my_statusline = my_statusline . "\ C:%c%V\ L:%l/%L\ [%o] (%p%%)\ "
 
   let bar_width = 10
 
