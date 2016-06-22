@@ -13,8 +13,24 @@ import random
 QUOTE_FILE_PATH = '~/etc/quotes.txt'
 MAX_TEXT_WIDTH = 62
 
+NON_BREAKABLE_SPACE_CHARACTER = '~'
+
 CURSOR_VISIBILITY_INVISIBLE = 0
 CURSOR_VISIBILITY_NORMAL = 1
+
+
+def main():
+    """ Select random quote from file and print it centered on screen. """
+    stdscr = init_curses()
+
+    selected_line = get_random_line(QUOTE_FILE_PATH)
+    max_text_width = get_max_text_width(stdscr)
+    selected_line_split = split_line(selected_line, max_text_width)
+
+    print_centered(stdscr, selected_line_split)
+
+    wait_for_keypress(stdscr)
+    end_curses(stdscr)
 
 
 def init_curses():
@@ -28,25 +44,6 @@ def init_curses():
     curses.curs_set(CURSOR_VISIBILITY_INVISIBLE)
 
     return stdscr
-
-
-def end_curses(stdscr):
-    """ End our curses session. """
-    curses.curs_set(CURSOR_VISIBILITY_NORMAL)
-
-    curses.nocbreak()
-    curses.echo()
-    stdscr.keypad(False)
-
-    curses.endwin()
-
-
-def wait_for_keypress(stdscr):
-    """ Wait for keypress in stdscr curses session. """
-    try:
-        stdscr.getch()
-    except KeyboardInterrupt:
-        pass
 
 
 def get_random_line(file_path):
@@ -68,6 +65,11 @@ def get_random_line(file_path):
     return lines[index]
 
 
+def get_max_text_width(stdscr):
+    (_rows, columns) = stdscr.getmaxyx()
+    return min(MAX_TEXT_WIDTH, columns - 1)
+
+
 def split_line(original_line, max_length):
     """ Split the original line to an array of lines with max_length specified.
 
@@ -83,7 +85,7 @@ def split_line(original_line, max_length):
         word_length = len(word)
         if line_length + 1 + word_length <= max_length:
             # word fits on this line, append this word to the end of line
-            line = line + ' ' + word
+            line += ' ' + word
             if line.startswith(' '):
                 line = line.lstrip()
         else:
@@ -97,6 +99,12 @@ def split_line(original_line, max_length):
         array_of_lines_to_return.append(line)
 
     return array_of_lines_to_return
+
+
+def print_centered(stdscr, lines):
+    """ Print given lines centered on stdscr curses session. """
+    vertical_offset = calculate_vertical_offset(stdscr, lines)
+    print_lines_centered_at_vertical_offset(stdscr, lines, vertical_offset)
 
 
 def calculate_vertical_offset(stdscr, lines):
@@ -114,30 +122,31 @@ def print_lines_centered_at_vertical_offset(stdscr, lines, vertical_offset):
     (rows, columns) = stdscr.getmaxyx()
     for line in lines:
         horizontal_offset = int((columns - len(line)) / 2)
-        stdscr.addstr(vertical_offset, horizontal_offset, line)
+        stdscr.addstr(vertical_offset,
+                      horizontal_offset,
+                      line.replace(NON_BREAKABLE_SPACE_CHARACTER, ' '))
         vertical_offset += 1
         if vertical_offset >= rows:
             break
 
 
-def print_centered(stdscr, lines):
-    """ Print given lines centered on stdscr curses session. """
-    vertical_offset = calculate_vertical_offset(stdscr, lines)
-    print_lines_centered_at_vertical_offset(stdscr, lines, vertical_offset)
+def wait_for_keypress(stdscr):
+    """ Wait for keypress in stdscr curses session. """
+    try:
+        stdscr.getch()
+    except KeyboardInterrupt:
+        pass
 
 
-def main():
-    """ Select random quote from file and print it centered on screen. """
-    stdscr = init_curses()
-    (_rows, columns) = stdscr.getmaxyx()
-    max_text_width = min(MAX_TEXT_WIDTH, columns - 1)
+def end_curses(stdscr):
+    """ End our curses session. """
+    curses.curs_set(CURSOR_VISIBILITY_NORMAL)
 
-    selected_line = get_random_line(QUOTE_FILE_PATH)
-    selected_line_split = split_line(selected_line, max_text_width)
+    curses.nocbreak()
+    curses.echo()
+    stdscr.keypad(False)
 
-    print_centered(stdscr, selected_line_split)
-    wait_for_keypress(stdscr)
-    end_curses(stdscr)
+    curses.endwin()
 
 
 if __name__ == '__main__':
