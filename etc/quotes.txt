@@ -125,8 +125,8 @@ Programming is an unnatural act. -- Alan~J.~Perlis, Epigrams in Programming, 198
 Prolonged contact with the computer turns mathematicians into clerks and vice versa. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Property is a nuisance. -- Paul~Erdos
 Purely applicative languages are poorly applicable. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-qmon is for sissies, real men use command-line tools, really manly men use qconf -[admr]attr, [Chuck Norris / Jack Bower] uses qconf -purge -- Daniel~Templeton
-Quality is value to some person(s). -- Gerald~Weinberg cited in Matthew Heusser, Govind Kulkarni (2011) How to Reduce the Cost of Software Testing. p.95
+qmon is for sissies, real men use command-line tools, really manly men use qconf -[admr]attr, [Chuck~Norris / Jack~Bower] uses qconf -purge -- Daniel~Templeton
+Quality is value to some person(s). -- Gerald~Weinberg cited in Matthew~Heusser, Govind~Kulkarni (2011) How to Reduce the Cost of Software Testing. p.95
 Recursion is the root of computation since it trades description for time. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Simplicity does not precede complexity, but follows it. -- Alan~J.~Perlis, Epigrams in Programming, 1982
@@ -265,7 +265,7 @@ If you're not failing every now and again, it's a sign you're not doing anything
 More is different. -- P.~Anderson (attacking the reductionist hypothesis in science, by concluding that quantitatively larger systems can be qualitatively different)
 Today, most software exists, not to solve a problem, but to interface with other software. -- I.~O.~Angell
 All programmers are playwrights and all computers are lousy actors. -- Anonymous
-Any programming problem can be solved by adding a level of indirection. (also see "Any performance problem..." by M. Haertel). -- Anonymous
+Any programming problem can be solved by adding a level of indirection. (also see "Any performance problem..." by M.~Haertel). -- Anonymous
 Bad code isn't bad, its just misunderstood. -- Anonymous
 Debugging is anticipated with distaste, performed with reluctance, and bragged about forever. -- Anonymous
 Experience is a poor teacher: it gives its tests before it teaches its lessons. -- Anonymous
@@ -305,7 +305,7 @@ Those who know, do. Those who understand, teach. -- Aristotle
 We are what we repeatedly do. Excellence, then, is not an act, but a habit. -- Aristotle
 The most exciting phrase to hear in science -- the one that heralds new discoveries -- is not "Eureka!" but "That's funny...". -- I.~Asimov
 The Analytical Engine weaves Algebraical patterns just as the Jacquard loom weaves flowers and leaves. -- A.~Augusta, Countess of Lovelace, on Babbage's Analytical Engine
-On two occasions, I have been asked [by members of Parliament], "Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?" I am not able to rightly apprehend the kind of confusion of ideas that could provoke such a question. -- C.~Babage
+On two occasions, I have been asked [by members of Parliament], "Pray, Mr.~Babbage, if you put into the machine wrong figures, will the right answers come out?" I am not able to rightly apprehend the kind of confusion of ideas that could provoke such a question. -- C.~Babbage
 I, myself, have had many failures and I've learned that if you are not failing a lot, you are probably not being as creative as you could be -- you aren't stretching your imagination. -- J.~Backus
 A prudent question is one-half of wisdom. -- F.~Bacon
 I can only think that the book is read because it deals with the difficulties of schooling, which do not change. Please note: the difficulties, not the problems. Problems are solved or disappear with the revolving times. Difficulities remain. It will always be difficult to teach well, to learn accurately; to read, write, and count readily and competently; to acquire a sense of history and start one's education or anothers. -- J.~Barzun ("Begin Here", pp 14),
@@ -361,8 +361,8 @@ Doing more things faster is no substitute for doing the right things. -- S.~R.~C
 The generation of random numbers is too important to be left to chance. -- R.~Coveyou
 If you don't think carefully, you might believe that programming is just typing statements in a programming language. -- W.~Cunningham
 Who dares to teach must never cease to learn. -- J.C.~Dana
-Every now and then go away, have a little relaxation, for when you come back to your work your judgment will be surer. Go some distance away because then the work appears smaller and more of it can be taken in at a glance and a lack of harmony and proportion is more readily seen. -- L.~Da~Vinci
-Simplicity is the ultimate sophistication. -- L.~Da~Vinci
+Every now and then go away, have a little relaxation, for when you come back to your work your judgment will be surer. Go some distance away because then the work appears smaller and more of it can be taken in at a glance and a lack of harmony and proportion is more readily seen. -- L.~da~Vinci
+Simplicity is the ultimate sophistication. -- L.~da~Vinci
 If you cannot describe what you are doing as a process, you don't know what you're doing. -- W.~E.~Deming
 Question authority; but, raise your hand first. -- A.~Dershowitz
 One can think effectively only when one is willing to endure suspense and to undergo the trouble of searching. -- J.~Dewey
@@ -471,7 +471,7 @@ What is the central core of the subject [computer science]? What is it that dist
 You cannot teach beginners top-down programming, because they don't know which end is up. -- C.A.R.~Hoare
 All thought is a kind of computation. -- D.~Hobbes
 The problem is never how to get new, innovative thoughts into your mind, but how to get old ones out! -- D.~Hock (founder of VISA)
-Using a language we may create models of phenomena of interest, and by using models, phenomena may be studied for purposes of understanding or prediction. Models may be used for analysis focussed on a close examination of individual parts of the model and for synthesis aimed at understanding the interplay of the parts, that is, understanding the model as a whole. A novel is like a model of the real world expressed in a written language like English. In a novel, the characters may be analyzed and the interaction between people may be displayed and studied. (in "Dreams of Calculus: Perspectives on Mathematics Education") -- J.~Hoffman, C. Johnson, A. Logg
+Using a language we may create models of phenomena of interest, and by using models, phenomena may be studied for purposes of understanding or prediction. Models may be used for analysis focussed on a close examination of individual parts of the model and for synthesis aimed at understanding the interplay of the parts, that is, understanding the model as a whole. A novel is like a model of the real world expressed in a written language like English. In a novel, the characters may be analyzed and the interaction between people may be displayed and studied. (in "Dreams of Calculus: Perspectives on Mathematics Education") -- J.~Hoffman, C.~Johnson, A.~Logg
 The ability to simplify means to eliminate the unnecessary so that the necessary may speak. -- H.~Hofmann (in "Introduction to the Bootstrap")
 This sequence [of languages, SP/1 through SP/8] solves one of the perennial problems of introductory programming. As J.J. Horning once put it, the subject requires that everything must be taught first. -- R.~Holt, D.~Wortman, D.~Barnard and J.~Cordy (quoting J.J.~Horning) in "SP/k: A System for Teaching Computer Programming", CACM 20/5 (May 77) pg. 303
 A ship in port is safe, but that is not what ships are built for. I want all the youngsters to sail out to sea and be good ships. -- G.~Hopper
@@ -488,12 +488,12 @@ The only problem with Microsoft is they just have no taste. They have absolutely
 Before software can be reusable it first has to be usable. -- R.~Johnson
 The fastest algorithm can frequently be replaced by one that is almost as fast and much easier to understand. -- D.~Jones
 To teach is to learn twice. -- J.~Joubert
-The honest truth is that having a lot of people staring at the code does not find the really nasty bugs. The really nasty bugs are found by a couple of really smart people who just kill themselves. (also see "Given enough eyeballs..." by E. Raymond). -- B.~Joy
+The honest truth is that having a lot of people staring at the code does not find the really nasty bugs. The really nasty bugs are found by a couple of really smart people who just kill themselves. (also see "Given enough eyeballs..." by E.~Raymond). -- B.~Joy
 We don't manage our time as well as we manage our space. There's an overhead of starting and an overhead of stopping a project because you kind of lose your momentum. And you've got to bracket and put aside all the things you're already doing. So you need reasonably large blocks of uninterrupted time if you're going to be successful at doing some of these things. That's why hackers tend to stay up late. If you stay up late and you have another hour of work to do, you can just stay up another hour later without running into a wall and having to stop. Whereas it might take three or four hours if you start over, you might finish if you just work that extra hour. If you're a morning person, the day always intrudes a fixed amount of time in the future. So it's much less efficient. Which is why I think computer people tend to be night people -- because a machine doesn't get sleepy. -- B.~Joy
 In the particular is contained the universal. -- J.~Joyce
 Mistakes are the portals of discovery. -- J.~Joyce
 90% of code written today is getting around other people's mistakes. -- A.~Kay
-Computers are to computing as instruments are to music. Software is the score whose interpretations amplifies our reach and lifts our spirits. Leonardo da Vinci called music the shaping of the invisible, and his phrase is even more apt as a description of software. -- A.~Kay
+Computers are to computing as instruments are to music. Software is the score whose interpretations amplifies our reach and lifts our spirits. Leonardo da~Vinci called music the shaping of the invisible, and his phrase is even more apt as a description of software. -- A.~Kay
 [In a programming language] Simple things should be simple and complex things should be possible. -- A.~Kay
 The best way to predict the future is to invent it. -- A.~Kay
 Until real software engineering is developed, the next best practice is to develop with a dynamic system that has extreme late binding in all aspects. -- A.~Kay
@@ -502,7 +502,7 @@ Should array indices start at 0 or 1? My compromise of 0.5 was rejected without,
 If you have a large number of unrelated ideas, you have to get quite a distance away from them to get a view of all of them, and this is the role of abstraction. If you look at each too closely you see too many details. If you get far away things may appear simpler because you can only see the large, broad outlines; you do not get lost in petty details. -- J.~Kemeny (co-creator of the BASIC programming language)
 Act in haste and repent at leisure; code too soon and debug forever. -- R.~Kennington
 Everyone knows that debugging is twice as hard as writing a program in the first place. So if you are as clever as you can be when you write it, how will you ever debug it? -- B.~Kernighan
-Another effective [debugging] technique is to explain your code to someone else. This will often cause you to explain the bug to yourself. Sometimes it takes no more than a few sentences, followed by an embarrassed "Never mind, I see what's wrong. Sorry to bother you." This works remarkably well; you can even use non-programmers as listeners. One university computer center kept a teddy bear near the help desk. Students with mysterious bugs were required to explain them to the bear before they could speak to a human counselor. -- B.~Kernighan & D.~Pike (in "The Practice of Programming" pp. 123)
+Another effective [debugging] technique is to explain your code to someone else. This will often cause you to explain the bug to yourself. Sometimes it takes no more than a few sentences, followed by an embarrassed "Never mind, I see what's wrong. Sorry to bother you." This works remarkably well; you can even use non-programmers as listeners. One university computer center kept a teddy bear near the help desk. Students with mysterious bugs were required to explain them to the bear before they could speak to a human counselor. -- B.~Kernighan & R.~Pike (in "The Practice of Programming" pp. 123)
 The only way to learn a new programming language is by writing programs in it. -- B.~Kernighan & D.~Ritchie
 A charlatan makes obscure what is clear; a thinker makes clear what is obscure. -- H.~Kingsmill
 Beware of bugs in the above code; I have only proved it correct, not tried it. -- D.~Knuth
@@ -579,9 +579,9 @@ Fancy optimizers have fancy bugs. -- R.~Pike
 Thinking and spoken discourse are the same thing, except that what we call thinking is, precisely, the inward dialogue carried on by the mind with itself without spoken sound. -- Plato
 The mind is not a vessel to be filled, but a fire to be ignited. -- Plutarch (See W.B.~Yeats: Education...)
 Life is good only for two things: to study mathematics and to teach it. -- M.~Poisson
-Computers in the future may weigh no more than 1.5 tons. -- Popular Science (1959)
+Computers in the future may weigh no more than 1.5 tons. -- Popular~Science (1959)
 Knowledge of a subject means knowledge of the language of that subject, which includes not only what its words mean, but far more important, how its words mean. As one learns the language of a subject, one is also learning what the subject is. It cannot be said often enough that what we call a subject consists mostly, if not entirely, of its language. If you eliminate all the words of a subject, you have eliminated the subject. Biology is not plants and animals. It is language about plants and animals. History is not events. It is language describing and interpreting events. Astronomy is not planets and stars. It is a way of talking about planets and stars. -- N.~Postman
-Gates has always understood Moore's Law better than anyone else in the industry. If you can make something run at all, get it out there -- it may be slow and clunky, but hardware improvements will bail you out. If you wait until it's running perfectly on the hardware already in the field, it will be obsolete before it's released. This philosophy built Microsoft and is the main reason Microsoft won the war IBM declared back in the OS/2 days. -- J.~Pournelle (Dr. Dobbs Journal, Feb. 2004, pp. 89)
+Gates has always understood Moore's Law better than anyone else in the industry. If you can make something run at all, get it out there -- it may be slow and clunky, but hardware improvements will bail you out. If you wait until it's running perfectly on the hardware already in the field, it will be obsolete before it's released. This philosophy built Microsoft and is the main reason Microsoft won the war IBM declared back in the OS/2 days. -- J.~Pournelle (Dr.~Dobbs~Journal, Feb. 2004, pp. 89)
 The voyage of discovery is not in seeking new landscapes but in having new eyes. -- M.~Proust
 I really hate this darn machine; I wish that they would sell it. It won't do what I want it to, but only what I tell it. -- Programmer's Lament
 Given enough eyeballs, all bugs are shallow (e.g., given a large enough beta-tester and co-developer base, almost every problem will be characterized quickly and the fix obvious to someone). (also see "The honest truth..." by B. Joy). -- E.~Raymond (Lesson 8 in The Cathedral and the Bazaar)
@@ -653,14 +653,14 @@ I have never learned anything except from people younger than myself. -- O.~Wild
 As soon as we started programming, we found out to our surprise that it wasn't as easy to get programs right as we had thought. Debugging had to be discovered. I can remember the exact instant when I realized that a large part of my life from then on was going to be spent in finding mistakes in my own programs. -- M.~Wilkes
 Furious activity is no substitute for understanding. -- H.~H.~Williams
 From a programmer's point of view, the user is a peripheral that types when you issue a read request. -- P.~Williams
-He knows the course forwards and backwards. He teaches it backwards -- S.~Willoughby (commenting on Garrett Birkhoff's freshman calculus course at Harvard in "The Other End of the Log: Memoirs of an Education Rebel")
+He knows the course forwards and backwards. He teaches it backwards -- S.~Willoughby (commenting on Garrett~Birkhoff's freshman calculus course at Harvard in "The Other End of the Log: Memoirs of an Education Rebel")
 Complexity has and will maintain a strong fascination for many people. It is true that we live in a complex world and strive to solve inherently complex problems, which often do require complex mechanisms. However, this should not diminish our desire for elegant solutions, which convince by their clarity and effectiveness. Simple, elegant solutions are more effective, but they are harder to find than complex ones, and they require more time, which we too often believe to be unaffordable -- N.~Wirth
 Increasingly, people seem to misinterpret complexity as sophistication, which is baffling -- the incomprehensible should cause suspicion rather than admiration. Possibly this trend results from a mistaken belief that using a somewhat mysterious device confers an aura of power on the user. -- N.~Wirth
 Software gets slower faster than hardware gets faster. (Or, sometimes known by] Grove [the head of Intel] giveth and Gates [the head of Microsoft] taketh away.) -- N.~Wirth
 Don't ask what it means, but rather how it is used. -- L.~Wittgenstein
 If we spoke a different language, we would perceive a somewhat different world. -- L.~Wittgenstein
 The limits of your language are the limits of your world. -- L.~Wittgenstein
-More bugs have been introduced into programs through premature optimization than any other cause, including pure stupidity. (sometimes quoted as, "More computing sins are committed in the name of efficiency (without necessarily achieving it) than for any other single reason -- including blind stupidity.") -- W. Wulf
+More bugs have been introduced into programs through premature optimization than any other cause, including pure stupidity. (sometimes quoted as, "More computing sins are committed in the name of efficiency (without necessarily achieving it) than for any other single reason -- including blind stupidity.") -- W.~Wulf
 Education is not the filling of a pail, but the lighting of a fire. -- W.B.~Yeats (See Plutarch: The mind...)
 Cutler, armed with a schedule [for finishing MS Windows NT], was urging the team to "eat its own dog food." Part macho stunt and part common sense, the "dog food diet" was the cornerstone of Cutler's philosophy. "We're going to run on the program we build," he insisted. Eating dog food meant there would be no escape from facing the flaws and imperfections of NT. Even while immersed in his own piece of NT, a code writer would confront all of its weaknesses. By controlling the operations of a code writer's computer, NT would define the quality of his life. If at first NT tasted no better than dog food, all the better. Code writers would feel an urgent need to raise the dietary level by quickly fixing the errant code and writing more durable code in the first place. -- G.~P.~Zachary (in "Show-Stopper: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft")
 Technical skill is mastery of complexity, while creativity is mastery of simplicity. -- E.~C.~Zeeman
@@ -725,6 +725,6 @@ Quality is free, but only to those who are willing to pay heavily for it. -- Tom
 While the machines have changed enormously, the business of software development has been rather static. -- Tom~DeMarco (Peopleware: Productive Projects and Teams, 1987)
 The manager's function is not to make people work, but to make it possible for people to work. -- Tom~DeMarco (Peopleware: Productive Projects and Teams, 1987)
 You can have quality software, or you can have pointer arithmetic; but you cannot have both at the same time. -- Bertrand~Meyer, 1989
-What's the earliest date by which you can't prove you won't be finished? -- Tom~West, Eagle Project, Data General (quoted by Tracy Kidder in The Soul Of a New Machine)
+What's the earliest date by which you can't prove you won't be finished? -- Tom~West, Eagle~Project, Data~General (quoted by Tracy~Kidder in The Soul Of a New Machine)
 If you don't run experiments before you start designing a new system, your entire system will be an experiment! -- Mike~Williams
 If you don't know what you're doing, don't do it on a large scale. -- Tom~Gilb
