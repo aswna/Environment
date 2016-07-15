@@ -2,9 +2,15 @@
 let g:ycm_global_ycm_extra_conf = '~/etc/.ycm_extra_conf.py'
 
 " Use clang-based semantic completer and other syntastic checkers
-let g:ycm_register_as_syntastic_checker = 1
-let g:ycm_open_loclist_on_ycm_diags = 1
-let g:ycm_show_diagnostics_ui = 1
+if &diff
+    let g:ycm_register_as_syntastic_checker = 0
+    let g:ycm_open_loclist_on_ycm_diags = 0
+    let g:ycm_show_diagnostics_ui = 0
+else
+    let g:ycm_register_as_syntastic_checker = 1
+    let g:ycm_open_loclist_on_ycm_diags = 1
+    let g:ycm_show_diagnostics_ui = 1
+endif
 
 " '<Leader>d' is already used
 let g:ycm_key_detailed_diagnostics = '<Leader><Leader>d'
