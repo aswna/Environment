@@ -1,5 +1,5 @@
 " Number of command-lines to be remembered.
-set history=20000
+set history=10000
 
 " Write the contents of the file, if it has been modified, in case of several
 " commands, buffer changes.
