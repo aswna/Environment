@@ -63,6 +63,8 @@ ignorecase on
 # Set inter-character timeout used for keymapping to 0 (f.i.: Esc should not behave like Alt).
 maptimeout 0
 
+# mousetrack on
+
 # See http://www.gnu.org/software/screen/manual/screen.html#Shell
 # Set the default program for new windows.
 # If the command begins with a '-' character, the shell will be started as a login-shell.
