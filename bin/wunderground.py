@@ -14,6 +14,8 @@ BUGS
   http://savannah.gnu.org/bugs/?18505, http://savannah.gnu.org/bugs/?36172.
 """
 
+from __future__ import print_function
+
 import argparse
 import json
 import urllib2
@@ -71,10 +73,12 @@ def main():
         parsed_json = json.loads(json_string)
 
         temp_c = parsed_json['current_observation']['temp_c']
-        weather = parsed_json['current_observation']['weather']
+        weather = parsed_json['current_observation']['weather'].encode('utf-8')
 
-        print('%s%sC (%s)' % (str(temp_c), degree_sign,
-                              weather.encode('utf-8')))
+        string_to_display = '{}{}C'.format(temp_c, degree_sign)
+        if weather:
+            string_to_display += ' ({})'.format(weather)
+        print(string_to_display)
 
         response.close()
     else:
