@@ -151,7 +151,7 @@ map <silent> <leader>t :call OpenAlternateFile()<CR>
 
 " Switch from C/C++ source code file (foo.cc) to header file (foo.h) and
 " vice versa.
-map <Leader>h :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cc,<CR>
+map <Leader>h :e %:p:s,\.h$,.X123X,:s,\.cc$,.h,:s,.X123X$,.cc,<CR>
 
 nnoremap <leader>q :YcmCompleter GoTo<CR>
 nnoremap <leader>w :YcmCompleter GoToDeclaration<CR>
