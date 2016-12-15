@@ -22,9 +22,11 @@ let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-sum
 " C++
 let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'cpplint']
 
-" Python (PyLama can use pep8, PyFlakes, PyLint, McCabe and pep257)
+" Python (PyLama supports pep8, PyFlakes, PyLint, McCabe, pep257, pydocstyle,
+" isort and pycodestyle)
 let g:syntastic_python_pylama_args = '-l pep8,pyflakes,mccabe'
-let g:syntastic_python_checkers = ['python', 'frosted', 'pylama', 'pylint', 'pep257', 'py3kwarn']
+" let g:syntastic_python_checkers = ['python', 'frosted', 'isort',                'pylama', 'pylint',                         'py3kwarn']
+let g:syntastic_python_checkers = ['python', 'frosted', 'isort', 'pycodestyle', 'pylama', 'pylint', 'pep257', 'pydocstyle', 'py3kwarn']
 
 " Use local pylintrc file if available.
 let s:pylintrc_file = ''
