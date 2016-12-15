@@ -23,10 +23,9 @@ let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-sum
 let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'cpplint']
 
 " Python (PyLama supports pep8, PyFlakes, PyLint, McCabe, pep257, pydocstyle,
-" isort and pycodestyle)
-let g:syntastic_python_pylama_args = '-l pep8,pyflakes,mccabe'
-" let g:syntastic_python_checkers = ['python', 'frosted', 'isort',                'pylama', 'pylint',                         'py3kwarn']
-let g:syntastic_python_checkers = ['python', 'frosted', 'isort', 'pycodestyle', 'pylama', 'pylint', 'pep257', 'pydocstyle', 'py3kwarn']
+" isort and pycodestyle) Note: pep8 => pycodestyle, pep257 => pydocstyle
+let g:syntastic_python_pylama_args = '-l pycodestyle,pyflakes,mccabe'
+let g:syntastic_python_checkers = ['python', 'frosted', 'isort', 'pylama', 'pylint', 'pydocstyle', 'py3kwarn']
 
 " Use local pylintrc file if available.
 let s:pylintrc_file = ''
@@ -40,7 +39,7 @@ endif
 
 if s:pylintrc_file != ''
     let g:syntastic_python_pylint_args = '--rcfile=' . s:pylintrc_file
-    " Ignore "line too long" error from pep8 hoping that Pylint already checks that.
+    " Ignore "line too long" error from pep8/pycodestyle hoping that Pylint already checks that
     let g:syntastic_python_pylama_args .= ' --ignore=E501'
 endif
 
