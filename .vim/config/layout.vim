@@ -41,11 +41,13 @@ set colorcolumn=+1
 set wildmenu
 
 if !&scrolloff
-  set scrolloff=1
+  set scrolloff=5
 endif
+
 if !&sidescrolloff
   set sidescrolloff=5
 endif
+
 set display+=lastline
 
 set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:·
