@@ -112,7 +112,7 @@ nnoremap <Leader>; ;
 nnoremap <silent> <Leader>i :set list!<CR>
 
 " Toggle line numbers
-nnoremap <silent> <Leader>N :setlocal number!<CR>
+nnoremap <silent> <Leader>N :call LineNumbersToggle()<CR>
 
 " Toggle the foldcolumn
 nnoremap <silent> _f :call FoldColumnToggle()<CR>
