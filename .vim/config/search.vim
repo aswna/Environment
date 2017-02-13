@@ -6,8 +6,8 @@ set incsearch
 " case characters.
 set smartcase
 
-" Do not ignore case in search patterns.
-set noignorecase
+" Ignore case in search patterns by default.
+set ignorecase
 
 " When there is a previous search pattern, highlight all its matches.
 set hlsearch
