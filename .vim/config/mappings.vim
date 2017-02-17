@@ -94,8 +94,8 @@ endif
 
 " Several mappings are stolen from https://github.com/nvie/vimrc/blob/master/vimrc
 
-" Map space to center on line
-nmap <Space> z<CR>
+" Map space to cursor line to top of window, cursor on first non-blank and flash :)
+nmap <Space> z<CR>:call FlashCursorLine()<CR>
 
 " Make Y consistent with C and D.  See :help Y.
 nnoremap Y y$
