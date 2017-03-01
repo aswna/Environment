@@ -729,3 +729,12 @@ What's the earliest date by which you can't prove you won't be finished? -- Tom~
 If you don't run experiments before you start designing a new system, your entire system will be an experiment! -- Mike~Williams
 If you don't know what you're doing, don't do it on a large scale. -- Tom~Gilb
 In reality, programming languages are how programmers express and communicate ideas - and the audience for those ideas is other programmers, not computers. The reason: the computer can take care of itself, but programmers are always working with other programmers, and poorly communicated ideas can cause expensive flops. -- Guido~van~Rossum (King's Day Speech, 2016)
+A scientist's aim in a discussion with his colleagues is not to persuade, but to clarify. -- Leo~Szilard
+If one knows only what one is told, one does not know enough to be able to arrive at a well-balanced decision. -- Leo~Szilard
+If you want to succeed in the world, you don't have to be much cleverer than other people. You just have to be one day earlier. -- Leo~Szilard
+Don't lie if you don't have to. -- Leo~Szilard
+Pronouncement of experts to the effect that something cannot be done has always irritated me. -- Leo~Szilard
+I'm all in favor of the democratic principle that one idiot is as good as one genius, but I draw the line when someone takes the next step and concludes that two idiots are better than one genius. -- Leo~Szilard
+Three stages of truth for scientists: It's not true. If it is true, it's not very important. We knew it all along. -- Leo~Szilard
+Do not destroy what you cannot create. -- Leo~Szilard
+Szilard had visited Luria's laboratory at the University of Indiana. "Doctor Szilard, I don't know how much to explain, I don't know what to assume..." - said Luria embarrassed by the presence of the great nuclear physicist. "You may assume infinite ignorance and unlimited intelligence." - Szilard replied promptly. -- Laura~Fermi
