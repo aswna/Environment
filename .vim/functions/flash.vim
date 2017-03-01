@@ -1,5 +1,5 @@
 function! FlashCursorLine()
-  for i in [1, 2, 3, 4, 5]
+  for i in [1, 2, 3]
     let l:sleep_time = 200 / l:i
     let time_to_sleep = l:sleep_time . " m"
     set cursorline
