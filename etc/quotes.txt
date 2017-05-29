@@ -619,7 +619,7 @@ Computers do not solve problems -- computers carry out solutions, specified by p
 EMACS could not have been reached by a process of careful design, because such processes arrive only at goals which are visible at the outset, and whose desirability is established on the bottom line at the outset. Neither I nor anyone else visualized an extensible editor until I had made one, nor appreciated its value until he had experienced it. EMACS exists because I felt free to make individually useful small improvements on a path whose end was not in sight. -- R.~Stallman
 Giving the Linus Torvalds Award to the Free Software Foundation is a bit like giving the Han Solo Award to the Rebel Alliance. -- R.~Stallman
 Being forced to write comments actually improves code, because it is easier to fix a crock than to explain it. -- G.~Steele
-[teaching]is rather artificial. The world is complicated and messy, with lots of loose ends, and the teacher's job is to impose order on the confusion, to convert a chaotic set of episodes into a coherent narrative. -- I.~Stewart (in "Letters to a Young Mathematician")
+[Teaching] is rather artificial. The world is complicated and messy, with lots of loose ends, and the teacher's job is to impose order on the confusion, to convert a chaotic set of episodes into a coherent narrative. -- I.~Stewart (in "Letters to a Young Mathematician")
 Don't get suckered in by the comments -- they can be terribly misleading: Debug only the code. -- D.~Storer
 Design and programming are human activities; forget that and all is lost. -- B.~Stroustrup
 The most important single aspect of software development is to be clear about what you are trying to build. -- B.~Stroustrup
@@ -743,3 +743,4 @@ Education is the most powerful weapon which you can use to change the world. -- 
 I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear. -- Nelson~Mandela
 It always seems impossible until it's done. -- Nelson~Mandela
 Do not judge me by my successes, judge me by how many times I fell down and got back up again. -- Nelson~Mandela
+If you optimize everything, you will always be unhappy. -- Donald~Knuth
