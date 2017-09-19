@@ -6,6 +6,11 @@ allpartial off
 # If set to on, "alternate screen" support is enabled in virtual terminals, just like in xterm.
 altscreen on
 
+# https://bugs.launchpad.net/ubuntu/+source/screen/+bug/87967/comments/4
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+
 # See http://www.gnu.org/software/screen/manual/screen.html#Detach
 # Automatically detach the session on SIGHUP.
 autodetach on
@@ -36,6 +41,9 @@ bind 'x' blanker
 # See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
 compacthist on
+
+# erase background with current bg color
+defbce "on"
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Flow-Control
 defflow auto
@@ -73,6 +81,9 @@ shell -$SHELL
 # See http://www.gnu.org/software/screen/manual/screen.html#Startup-Message
 # Turn off startup message about copyright.
 startup_message off
+
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 
 # See http://www.gnu.org/software/screen/manual/screen.html#Bell
 # Turn off visual bell.
