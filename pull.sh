@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# git submodule update --init --recursive && git submodule foreach git reset --hard
+
+EXCLUDED_REPOS="YouCompleteMe"
 
 update_all_submodules_in_repository()
 {
     repo_dir="${1}"
 
     update_submodules_in_repository "${repo_dir}"
-    for submodule in $(sed -n 's/^\tpath = //p' .gitmodules); do
+    for submodule in $(sed -n 's/^\tpath = //p' .gitmodules | egrep -v ${EXCLUDED_REPOS}); do
         update_submodules_in_repository "${submodule}"
     done
 }
