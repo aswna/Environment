@@ -1,8 +1,12 @@
-# See http://www.gnu.org/software/screen/manual/screen.html#Redisplay
+# See https://www.gnu.org/software/screen/manual/screen.html#Monitor
+# This is how window names are displayed in the status bar.
+activity 'Activity in window %n %t'
+
+# See https://www.gnu.org/software/screen/manual/screen.html#Redisplay
 # Set all windows to partial refresh.
 allpartial off
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Redisplay
+# See https://www.gnu.org/software/screen/manual/screen.html#Redisplay
 # If set to on, "alternate screen" support is enabled in virtual terminals, just like in xterm.
 altscreen on
 
@@ -11,15 +15,15 @@ altscreen on
 # allow bold colors - necessary for some reason
 attrcolor b ".I"
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Detach
+# See https://www.gnu.org/software/screen/manual/screen.html#Detach
 # Automatically detach the session on SIGHUP.
 autodetach on
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Backtick
+# See https://www.gnu.org/software/screen/manual/screen.html#Backtick
 # Execute every 30 minutes.
 backtick 10 1800 1800 zsh -c '$HOME/bin/wunderground.py --no-degree-sign'
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Bindkey
+# See https://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j / Alt-Left changes to previous window
 bindkey ^[j prev
 bindkey ^[^[[D prev
@@ -30,7 +34,7 @@ bindkey ^[k next
 bindkey ^[^[[C next
 bindkey ^[[1;3C next
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
+# See https://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 # -i should not be necessary. Default Python does not have curses installed in corporate
 # environment.
 blankerprg zsh -c '$HOME/bin/quote.py'
@@ -38,54 +42,54 @@ blankerprg zsh -c '$HOME/bin/quote.py'
 # Execute screen-saver instead of locking
 bind 'x' blanker
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
+# See https://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Turn compacting "on" to hold more useful lines in your scrollback buffer.
 compacthist on
 
 # erase background with current bg color
 defbce "on"
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Flow-Control
+# See https://www.gnu.org/software/screen/manual/screen.html#Flow-Control
 defflow auto
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Scrollback
+# See https://www.gnu.org/software/screen/manual/screen.html#Scrollback
 # Set default lines of scrollback.
 defscrollback 100000
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Hardware-Status-Line
+# See https://www.gnu.org/software/screen/manual/screen.html#Hardware-Status-Line
 # Use the hardware status line.
 hardstatus alwayslastline
 
-# See http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
+# See https://www.gnu.org/software/screen/manual/screen.html#String-Escapes
 # [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue][date and time in green]
 hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%= %{= Kw}%-w%{= Kr}%n %t%{= Kw}%+w %=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %0c]'
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
+# See https://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Searching
+# See https://www.gnu.org/software/screen/manual/screen.html#Searching
 # Tell screen to ignore the case of characters in searches.
 ignorecase on
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Bindkey-Control
+# See https://www.gnu.org/software/screen/manual/screen.html#Bindkey-Control
 # Set inter-character timeout used for keymapping to 0 (f.i.: Esc should not behave like Alt).
 maptimeout 0
 
 # mousetrack on
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Shell
+# See https://www.gnu.org/software/screen/manual/screen.html#Shell
 # Set the default program for new windows.
 # If the command begins with a '-' character, the shell will be started as a login-shell.
 shell -$SHELL
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Startup-Message
+# See https://www.gnu.org/software/screen/manual/screen.html#Startup-Message
 # Turn off startup message about copyright.
 startup_message off
 
 # tell screen how to set colors. AB = background, AF=foreground
 termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 
-# See http://www.gnu.org/software/screen/manual/screen.html#Bell
+# See https://www.gnu.org/software/screen/manual/screen.html#Bell
 # Turn off visual bell.
 vbell off
 
