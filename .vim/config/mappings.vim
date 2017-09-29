@@ -11,11 +11,6 @@ if $TERM==#"vt100" || $TERM=~"screen-256color"
   noremap <Rigth> [C
   set <Left>=[D
   noremap <Left> [D
-  " Cannot be mapped in vim (?)
-  "set <C-Up>=OA
-  "noremap <C-Up> OA
-  "set <C-Down>=OB
-  "noremap <C-Down> OB
   set <C-Right>=OC
   noremap <C-Right> OC
   set <C-Left>=OD
@@ -36,6 +31,37 @@ if $TERM==#"vt100" || $TERM=~"screen-256color"
   " Ctrl-Up / Ctrl-Down: move the current tab to the left / right
   "nnoremap <silent> OA :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
   "nnoremap <silent> OB :execute 'silent! tabmove ' . tabpagenr()<CR>
+endif
+
+if $TERM==#"screen-256color-bce"
+  set <Up>=OA
+  noremap <Up> OA
+  set <Down>=OB
+  noremap <Down> OB
+  set <Right>=OC
+  noremap <Rigth> OC
+  set <Left>=OD
+  noremap <Left> OD
+  set <C-Right>=[1;5C
+  noremap <C-Right> [1;5C
+  set <C-Left>=[1;5D
+  noremap <C-Left> [1;5D
+  set <Insert>=[2~
+  noremap <Insert> [2~
+  set <Delete>=[3~
+  noremap <Delete> [3~
+  set <Home>=[1~
+  noremap <Home> [1~
+  set <End>=[4~
+  noremap <End> [4~
+  set <PageUp>=[5~
+  noremap <PageUp> [5~
+  set <PageDown>=[6~
+  noremap <PageDown> [6~
+
+  " Ctrl-Up / Ctrl-Down: move the current tab to the left / right
+  nnoremap <silent> [1;5A :-tabmove<CR>
+  nnoremap <silent> [1;5B :+tabmove<CR>
 endif
 
 if $TERM==#"vt100"
@@ -74,6 +100,33 @@ if $TERM=~"screen-256color"
   noremap <F3> [13~
   set <F4>=[14~
   noremap <F4> [14~
+  set <F5>=[15~
+  noremap <F5> [15~
+  set <F6>=[17~
+  noremap <F6> [17~
+  set <F7>=[18~
+  noremap <F7> [18~
+  set <F8>=[19~
+  noremap <F8> [19~
+  set <F9>=[20~
+  noremap <F9> [20~
+  set <F10>=[21~
+  noremap <F10> [21~
+  set <F11>=[23~
+  noremap <F11> [23~
+  set <F12>=[24~
+  noremap <F12> [24~
+endif
+
+if $TERM==#"screen-256color-bce"
+  set <F1>=OP
+  noremap <F1> OP
+  set <F2>=OQ
+  noremap <F2> OQ
+  set <F3>=OR
+  noremap <F3> OR
+  set <F4>=OS
+  noremap <F4> OS
   set <F5>=[15~
   noremap <F5> [15~
   set <F6>=[17~
