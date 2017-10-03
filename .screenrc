@@ -35,8 +35,6 @@ bindkey ^[^[[C next
 bindkey ^[[1;3C next
 
 # See https://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
-# -i should not be necessary. Default Python does not have curses installed in corporate
-# environment.
 blankerprg zsh -c '$HOME/bin/quote.py'
 
 # Execute screen-saver instead of locking
@@ -61,7 +59,7 @@ defscrollback 100000
 hardstatus alwayslastline
 
 # See https://www.gnu.org/software/screen/manual/screen.html#String-Escapes
-# [hostname in green][server load in blue][window list with active window title is highlighted in red][weather in blue][date and time in green]
+# [hostname in green][server load in blue][window list with active window title is highlighted in red, others are white][weather in blue][date and time in green]
 hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%= %{= Kw}%-w%{= Kr}%n %t%{= Kw}%+w %=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %0c]'
 
 # See https://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
@@ -75,6 +73,7 @@ ignorecase on
 # Set inter-character timeout used for keymapping to 0 (f.i.: Esc should not behave like Alt).
 maptimeout 0
 
+# Allows to switch region focus by clicking, but might interfere with the mouse handling of terminal
 # mousetrack on
 
 # See https://www.gnu.org/software/screen/manual/screen.html#Shell
