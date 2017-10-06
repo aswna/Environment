@@ -83,13 +83,10 @@ then install [pip][13] with the following command:
 
 After having pip, it is easy to install the Python syntax checkers. Namely
 
-    pip install flake8
-    pip install pylint
-    pip install pep257
-    pip install pylama
+    pip install -U flake8 frosted isort mccabe py3kwarn pycodestyle pydocstyle pyflakes pylama pylint
 
-Note: [flake8][14] installs [pep8][15], [pyflakes][16] and [mccabe][17]. [Pylama][18] is a wrapper
-around pep8, [pep257][19], pyflakes, pylint and maccabe. Pylama seems to be a better alternative
+Note: [flake8][14] installs [pycodestyle][15], [pyflakes][16] and [mccabe][17]. [Pylama][18] is a wrapper
+around pycodestyle, [pydocstyle][19], pyflakes, pylint, maccabe, and isort. Pylama seems to be a better alternative
 compared to flake8.
 
 ## Troubleshooting ##
@@ -165,9 +162,9 @@ Set the correct templates path explicitly.
 [12]: http://python-distribute.org/distribute_setup.py "distribute_setup.py"
 [13]: https://pypi.python.org/pypi/pip "pip"
 [14]: https://pypi.python.org/pypi/flake8 "flake8"
-[15]: https://pypi.python.org/pypi/pep8 "pep8"
+[15]: https://pypi.python.org/pypi/pycodestyle "pycodestyle"
 [16]: https://pypi.python.org/pypi/pyflakes "pyflakes"
 [17]: https://pypi.python.org/pypi/mccabe "mccabe"
 [18]: https://pypi.python.org/pypi/pylama "pylama"
-[19]: https://pypi.python.org/pypi/pep257 "pep257"
+[19]: https://pypi.python.org/pypi/pydocstyle "pydocstyle"
 [20]: https://github.com/seebi/dircolors-solarized "dircolors-solarized"

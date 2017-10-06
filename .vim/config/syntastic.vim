@@ -23,7 +23,9 @@ let g:syntastic_c_checkpatch_args = '--ignore CODE_INDENT,LEADING_SPACE --no-sum
 let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'cpplint']
 
 " Python (PyLama supports pep8, PyFlakes, PyLint, McCabe, pep257, pydocstyle,
-" isort and pycodestyle) Note: pep8 => pycodestyle, pep257 => pydocstyle
+" isort and pycodestyle)
+" Note: pep8 => pycodestyle,
+"       pep257 => pydocstyle
 let g:syntastic_python_pylama_args = '-l pycodestyle,pyflakes,mccabe'
 let g:syntastic_python_checkers = ['python', 'frosted', 'isort', 'pylama', 'pylint', 'pydocstyle', 'py3kwarn']
 
