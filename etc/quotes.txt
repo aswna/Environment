@@ -775,3 +775,5 @@ Rule of Extensibility: Developers should design for the future by making their p
 Make interfaces easy to use correctly and hard to use incorrectly. Adhere to the principle of least astonishment. Avoid gratuitous incompatibilities with the surrounding environment. Choose good names. Be consistent. -- Scott~Meyers (The Most Important Design Guideline, https://www.youtube.com/watch?v=5tg1ONG18H8)
 Make interfaces easy to use correctly and hard to use incorrectly. Document interfaces before implementing them. Employ progressive disclosure. -- Scott~Meyers (The Most Important Design Guideline, https://www.youtube.com/watch?v=5tg1ONG18H8)
 Make interfaces easy to use correctly and hard to use incorrectly. Introduce new types to prevent common errors. Consider explicitly defining all possible values for the type. Avoid overreliance on string. -- Scott~Meyers (The Most Important Design Guideline, https://www.youtube.com/watch?v=5tg1ONG18H8)
+All problems in computer science can be solved by another level of indirection. -- David~Wheeler
+Compatibility means deliberately repeating other people's mistakes. -- David~Wheeler
