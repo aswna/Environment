@@ -778,7 +778,7 @@ Make interfaces easy to use correctly and hard to use incorrectly. Introduce new
 All problems in computer science can be solved by another level of indirection. -- David~Wheeler
 Compatibility means deliberately repeating other people's mistakes. -- David~Wheeler
 All architecture is design but not all design is architecture. Architecture represents the significant design decisions that shape a system, where significant is measured by cost of change. -- Grady~Booch (2006) "On~design" cited in: Frank~Buschmann, Kevlin~Henney, Douglas~C.~Schmidt (2007) Pattern-Oriented Software Architecture, On Patterns and Pattern Languages. p.~214
-Architecture is the art of how to waste space. -- Philip~Johnson (Sometimes it is the art of how to waste time. -- Kevlin~Henney [https://youtu.be/yl25p91flLY?t=6m26s])
+Architecture is the art of how to waste space. -- Philip~Johnson ("... and sometimes it is the art of how to waste time." -- Kevlin~Henney [https://youtu.be/yl25p91flLY?t=6m26s])
 Some people, when confronted with a problem, think, "I know, I'll use regular expressions." Now they have two problems. -- Jamie~Zawinski (https://nedbatchelder.com/blog/201204/two_problems.html)
 Some people, when faced with a problem, think, "I know, I'll use binary." Now they have 10 problems. -- Ned~Batchelder (https://nedbatchelder.com/blog/201204/two_problems.html)
 Some people, when confronted with a problem, think "I know, I'll use multithreading". Nothhw tpe yawrve o oblems. -- Eirikr~Asheim (https://twitter.com/d6/statuses/160439872828620800)
@@ -801,3 +801,4 @@ Some people, when confronted with a problem, think, "I know, I'll use Crowdsourc
 OO makes code understandable by encapsulating moving parts. FP [Functional Programming] makes code understandable by minimizing moving parts. -- Michael~Feathers (https://twitter.com/mfeathers/status/29581296216)
 No matter what language you work in, programming in a functional style provides benefits. You should do it whenever it is convenient, and you should think hard about the decision when it isn't convenient. -- John~Carmack (https://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php)
 Programming in a functional style makes the state presented to your code explicit, which makes it much easier to reason about, and, in a completely pure system, makes thread race conditions impossible. -- John~Carmack (https://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php)
+A good architecture allows major decisions to be deferred. -- Robert~C.~Martin (Ruby Midwest 2011 - Keynote: Architecture the Lost Years, https://youtu.be/WpkDN78P884)
