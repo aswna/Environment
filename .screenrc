@@ -59,8 +59,8 @@ defscrollback 100000
 hardstatus alwayslastline
 
 # See https://www.gnu.org/software/screen/manual/screen.html#String-Escapes
-# [hostname in green][server load in blue][window list with active window title is highlighted in red, others are white][weather in blue][date and time in green]
-hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%= %{= Kw}%-w%{= Kr}%n %t%{= Kw}%+w %=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %0c]'
+# [hostname in green][server load in blue][window list with active window title is standing out in red, others are white][weather in blue][date and time in green]
+hardstatus string '%{= Kg}[%H]%{= Kb}[%l]%{= Kw}[%= %{= Kw}%-w%{= Kr}%{+s}%n %t%{-s}%{= Kw}%+w %=%{= Kw}]%{= Kb}[%10`]%{= Kg}[%Y-%m-%d %0c]'
 
 # See https://www.gnu.org/software/screen/manual/screen.html#Screen-Saver
 idle 600
