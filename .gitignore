@@ -1,7 +1,8 @@
-*site*
-\.vim/\.netrwhist
-\.vim/spell/
+*\.png
 *\.pyc
 *\.svg
-*\.png
+*site*
+\.vim/doc/
+\.vim/\.netrwhist
+\.vim/spell/
 tags
