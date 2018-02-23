@@ -656,7 +656,7 @@ From a programmer's point of view, the user is a peripheral that types when you 
 He knows the course forwards and backwards. He teaches it backwards -- S.~Willoughby (commenting on Garrett~Birkhoff's freshman calculus course at Harvard in "The Other End of the Log: Memoirs of an Education Rebel")
 Complexity has and will maintain a strong fascination for many people. It is true that we live in a complex world and strive to solve inherently complex problems, which often do require complex mechanisms. However, this should not diminish our desire for elegant solutions, which convince by their clarity and effectiveness. Simple, elegant solutions are more effective, but they are harder to find than complex ones, and they require more time, which we too often believe to be unaffordable -- N.~Wirth
 Increasingly, people seem to misinterpret complexity as sophistication, which is baffling -- the incomprehensible should cause suspicion rather than admiration. Possibly this trend results from a mistaken belief that using a somewhat mysterious device confers an aura of power on the user. -- N.~Wirth
-Software gets slower faster than hardware gets faster. (Or, sometimes known by] Grove [the head of Intel] giveth and Gates [the head of Microsoft] taketh away.) -- N.~Wirth
+Software gets slower faster than hardware gets faster. (Or, sometimes known by: Grove [the head of Intel] giveth and Gates [the head of Microsoft] taketh away.) -- N.~Wirth
 Don't ask what it means, but rather how it is used. -- L.~Wittgenstein
 If we spoke a different language, we would perceive a somewhat different world. -- L.~Wittgenstein
 The limits of your language are the limits of your world. -- L.~Wittgenstein
