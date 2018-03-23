@@ -41,7 +41,7 @@ set colorcolumn=+1
 set wildmenu
 
 if !&scrolloff
-  set scrolloff=3
+  set scrolloff=2
 endif
 
 if !&sidescrolloff
