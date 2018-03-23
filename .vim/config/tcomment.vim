@@ -1,10 +1,10 @@
 if v:version >= 700
     try
-        call tcomment#DefineType('json', {'col': 1, 'commentstring': '# %s'})
+        call tcomment#type#Define('json', {'col': 1, 'commentstring': '# %s'})
     catch
     endtry
     " try
-    "     call tcomment#DefineType('<filetype>', '# %s')
+    "     call tcomment#type#Define('<filetype>', '# %s')
     " catch
     " endtry
 endif
