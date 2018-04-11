@@ -22,8 +22,9 @@ import urllib2
 
 from wunderground_site import API_KEY
 
-URL_TEMPLATE = ('http://api.wunderground.com/api/'
-                '%s/geolookup/conditions/lang:%s/q/%s.json')
+URL_TEMPLATE = (
+    'http://api.wunderground.com/api/%s/conditions/lang:%s/q/%s.json'
+)
 
 
 def parse_arguments():
@@ -39,7 +40,7 @@ def parse_arguments():
                        help='do not use degree sign at all (for the buggy '
                             'GNU Screen 4.01 status line, '
                             'default: %(default)s)')
-    parser.add_argument('-l', '--location', default='pws:IBUDAPES26',
+    parser.add_argument('-l', '--location', default='Hungary/Budapest',
                         help='location identifier (default: %(default)s)')
     parser.add_argument('-L', '--language', default='EN',
                         help='language code (default: %(default)s)')
@@ -72,7 +73,7 @@ def main():
         json_string = response.read()
         parsed_json = json.loads(json_string)
 
-        temp_c = parsed_json['current_observation']['temp_c']
+        temp_c = parsed_json['current_observation']['feelslike_c']
         weather = parsed_json['current_observation']['weather'].encode('utf-8')
 
         string_to_display = '{}{}C'.format(temp_c, degree_sign)
