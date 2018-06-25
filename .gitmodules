@@ -53,3 +53,9 @@
 	path = .vim/bundle/ingo-library
 	url = git://github.com:vim-scripts/ingo-library.git
 	ignore = dirty
+[submodule ".vim/bundle/vim-abolish"]
+	path = .vim/bundle/vim-abolish
+	url = git://github.com/tpope/vim-abolish.git
+[submodule ".vim/bundle/vim-repeat"]
+	path = .vim/bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
