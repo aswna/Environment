@@ -6,3 +6,6 @@ nnoremap <leader>} viw<esc>a}<esc>hbi{<esc>lel
 " TODO: This only works for selections that are created "forwardly"
 vnoremap <leader>{ <esc>a}<esc>gvo<esc>i{<esc>gvo<esc>ll
 vnoremap <leader>} <esc>a}<esc>gvo<esc>i{<esc>gvo<esc>ll
+
+let g:sh_fold_enabled=1
+setlocal foldmethod=syntax
