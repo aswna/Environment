@@ -164,9 +164,6 @@ nnoremap <Leader>; ;
 " Toggle show/hide invisible chars
 nnoremap <silent> <Leader>i :set list!<CR>
 
-" Toggle line numbers
-nnoremap <silent> <Leader>N :call LineNumbersToggle()<CR>
-
 " Toggle the foldcolumn
 nnoremap <silent> _f :call FoldColumnToggle()<CR>
 let g:last_fold_column_width = 4  " Pick a sane default for the foldcolumn
@@ -215,15 +212,20 @@ nnoremap <leader>r :YcmCompleter GoToReferences<CR>
 map <F1> @q
 
 " Open new tab with the next file
-map <silent> <F2> :tabnew<CR>:silent! n<CR>
+nnoremap <silent> <F2> :tabnew<CR>:silent! n<CR>
+inoremap <silent> <F2> <Esc>:tabnew<CR>:silent! n<CR>
 
 " Using <F3> to toggle spellcheck (Vim version >= 7)
-inoremap <silent> <F3> <c -O>:set spell!<CR>
-map <silent> <F3> :set spell!<CR>
+nnoremap <silent> <F3> :set spell!<CR>
+inoremap <silent> <F3> <Esc>:set spell!<CR>a
 
 " Using <F4> to toggle hlsearch
-inoremap <silent> <F4> <c -O>:set hlsearch!<CR>
-map <silent> <F4> :set hlsearch!<CR>
+nnoremap <silent> <F4> :set hlsearch!<CR>
+inoremap <silent> <F4> <Esc>:set hlsearch!<CR>a
+
+" Using <F5> to toggle line numbers
+nnoremap <silent> <F5> :call LineNumbersToggle()<CR>
+inoremap <silent> <F5> <Esc>:call LineNumbersToggle()<CR>a
 
 set pastetoggle=<F7>
 
@@ -231,4 +233,4 @@ set pastetoggle=<F7>
 map <F8> gf
 
 map <F9> :YcmCompleter FixIt<CR>
-map <F10> :YcmDiag<CR>
+map <F12> :YcmDiag<CR>
