@@ -46,7 +46,7 @@ if s:pylintrc_file != ''
 endif
 
 " Shell
-let g:syntastic_sh_checkers = ['sh', 'bashate', 'shellcheck', 'checkbashisms']
+let g:syntastic_sh_checkers = ['sh', 'shellcheck', 'bashate', 'checkbashisms']
 
 " Tcl
 let g:syntastic_tcl_checkers = ['nagelfar']
