@@ -197,16 +197,16 @@ nnoremap <C-l> <C-w>l
 map [<Space> m`O<Esc>``
 map ]<Space> m`o<Esc>``
 
-map <silent> <leader>t :call OpenAlternateFile()<CR>
+map <silent> <Leader>t :call OpenAlternateFile()<CR>
 
 " Switch from C/C++ source code file (foo.cc) to header file (foo.h) and
 " vice versa.
 map <Leader>h :e %:p:s,\.h$,.X123X,:s,\.cc$,.h,:s,.X123X$,.cc,<CR>
 
-nnoremap <leader>q :YcmCompleter GoTo<CR>
-nnoremap <leader>w :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>e :YcmCompleter GetType<CR>
-nnoremap <leader>r :YcmCompleter GoToReferences<CR>
+nnoremap <Leader>q :YcmCompleter GoTo<CR>
+nnoremap <Leader>w :YcmCompleter GoToDeclaration<CR>
+nnoremap <Leader>e :YcmCompleter GetType<CR>
+nnoremap <Leader>r :YcmCompleter GoToReferences<CR>
 
 " Execute macro q
 map <F1> @q
