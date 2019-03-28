@@ -805,3 +805,4 @@ A good architecture allows major decisions to be deferred. -- Robert~C.~Martin (
 Nobody actually creates perfect code the first time around, except me. But there's only one of me. -- Linus~Torvalds (Tech Talk: Linus~Torvalds on git, Google, 3 March 2007.)
 There's clearly a balance between "octopus merges are fine" and "Christ, that's not an octopus, that's a Cthulhu merge". -- Linus~Torvalds (https://marc.info/?l=linux-kernel&m=139033182525831)
 It is difficult to get a man to understand something, when his salary depends on his not understanding it. -- Upton~Sinclair (I, Candidate for Governor: And How I Got Licked, 1935)
+Make it correct, make it clear, make it concise, make it fast. In that order." -- Wes~Dyer
