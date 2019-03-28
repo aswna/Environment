@@ -9,3 +9,5 @@ set shiftwidth=4
 
 " In Insert mode: use the appropriate number of spaces to insert a <Tab>.
 set expandtab
+
+set smarttab
