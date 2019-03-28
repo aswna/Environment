@@ -66,10 +66,10 @@ colorscheme solarized
 highlight! link SignColumn Error
 
 " GUI font setting
-if $OSTYPE==#"linux"
-  set guifont=DejaVu\ Sans\ Mono\ 10
-elseif $OS==#"Windows_NT"
+if $OS==#"Windows_NT"
   set guifont=Consolas:h11:cANSI
+else "linux"
+  set guifont=DejaVu\ Sans\ Mono\ 12
 endif
 
 " Last window will have a status line always.
@@ -89,7 +89,7 @@ if has("gui_running")
   set guioptions-=R " remove right-hand scrollbar in vertically split window
   set guioptions-=r " remove right-hand scrollbar
   set guioptions-=b " remove bottom (horizontal) scrollbar
-  set guioptions-=m " remove menu bar
+  "set guioptions-=m " remove menu bar
   set guioptions-=T " remove tool bar
 
   set guitablabel=%{GuiTabLabel()}
