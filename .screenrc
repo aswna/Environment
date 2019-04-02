@@ -21,7 +21,7 @@ autodetach on
 
 # See https://www.gnu.org/software/screen/manual/screen.html#Backtick
 # Execute every 30 minutes.
-backtick 10 1800 1800 zsh -c '$HOME/bin/wunderground.py --no-degree-sign'
+backtick 10 1800 1800 zsh -c '$HOME/bin/weather.py --no-degree-sign'
 
 # See https://www.gnu.org/software/screen/manual/screen.html#Bindkey
 # Alt-j / Alt-Left changes to previous window
