@@ -73,9 +73,10 @@ def main():
         temp_c = parsed_json['main']['temp']
         weather = parsed_json['weather'][0]['description']
 
-        string_to_display = '{}{}C'.format(temp_c, degree_sign)
+        string_to_display = '{:.1f}{}C'.format(temp_c, degree_sign)
         if weather:
-            string_to_display += ' ({})'.format(weather)
+            string_to_display += ' ({})'.format(
+                ' '.join(word.capitalize() for word in weather.split()))
         print(string_to_display)
 
         response.close()
