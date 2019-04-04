@@ -806,3 +806,5 @@ Nobody actually creates perfect code the first time around, except me. But there
 There's clearly a balance between "octopus merges are fine" and "Christ, that's not an octopus, that's a Cthulhu merge". -- Linus~Torvalds (https://marc.info/?l=linux-kernel&m=139033182525831)
 It is difficult to get a man to understand something, when his salary depends on his not understanding it. -- Upton~Sinclair (I, Candidate for Governor: And How I Got Licked, 1935)
 Make it correct, make it clear, make it concise, make it fast. In that order." -- Wes~Dyer
+Hofstadter's~Law: It always takes longer than you expect, even when you take into account Hofstadter's~Law. -- Douglas~Hofstadter in his book Godel,~Escher,~Bach: An~Eternal~Golden~Braid (1979)
+Phil's~Law: You're not as smart as you think you are, even when you take into account Phil's~Law -- Phil~Nash (https://youtu.be/fbkfH0IZW8g)
