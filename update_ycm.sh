@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer --go-completer
+python3 ./install.py --clang-completer --java-completer
