@@ -81,7 +81,7 @@ set tabpagemax=20
 " The line with tab page labels will be always displayed.
 set showtabline=2
 
-setlocal statusline=%!MyStatusLine()
+set statusline=%!MyStatusLine()
 
 if has("gui_running")
   set guioptions-=L " remove left-hand scrollbar in vertically split window
