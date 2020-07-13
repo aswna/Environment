@@ -269,7 +269,7 @@ Any programming problem can be solved by adding a level of indirection. (also se
 Bad code isn't bad, its just misunderstood. -- Anonymous
 Debugging is anticipated with distaste, performed with reluctance, and bragged about forever. -- Anonymous
 Experience is a poor teacher: it gives its tests before it teaches its lessons. -- Anonymous
-If I had eight hours to chop down a tree, I would spend 6 hours sharpening an axe. -- Anonymous
+Give me six hours to chop down a tree and I will spend the first four sharpening the axe. -- Abraham~Lincoln
 If you understand what you're doing, you're not learning anything. -- Anonymous
 In theory, there is no difference between theory and practice, but not in practice. -- Anonymous
 It is easier to measure something than to understand what you have measured. -- Anonymous
@@ -808,3 +808,4 @@ It is difficult to get a man to understand something, when his salary depends on
 Make it correct, make it clear, make it concise, make it fast. In that order." -- Wes~Dyer
 Hofstadter's~Law: It always takes longer than you expect, even when you take into account Hofstadter's~Law. -- Douglas~Hofstadter in his book Godel,~Escher,~Bach: An~Eternal~Golden~Braid (1979)
 Phil's~Law: You're not as smart as you think you are, even when you take into account Phil's~Law -- Phil~Nash (https://youtu.be/fbkfH0IZW8g)
+By failing to prepare, you are preparing to fail. -- Benjamin~Franklin
