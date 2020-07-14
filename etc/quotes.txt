@@ -810,3 +810,4 @@ Hofstadter's~Law: It always takes longer than you expect, even when you take int
 Phil's~Law: You're not as smart as you think you are, even when you take into account Phil's~Law -- Phil~Nash (https://youtu.be/fbkfH0IZW8g)
 By failing to prepare, you are preparing to fail. -- Benjamin~Franklin
 Tell me and I forget. Teach me and I remember. Involve me and I learn. -- Benjamin~Franklin
+Well done is better than well said. -- Benjamin~Franklin
