@@ -26,8 +26,8 @@ let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'cpplint']
 " isort and pycodestyle)
 " Note: pep8 => pycodestyle,
 "       pep257 => pydocstyle
-let g:syntastic_python_pylama_args = '-l pycodestyle,pyflakes,mccabe'
-let g:syntastic_python_checkers = ['python', 'frosted', 'isort', 'flake8', 'pylama', 'pylint', 'pydocstyle', 'py3kwarn']
+let g:syntastic_python_pylama_args = '-l pyflakes,mccabe'
+let g:syntastic_python_checkers = ['python', 'frosted', 'isort', 'flake8', 'pylama', 'pycodestyle', 'pylint', 'pydocstyle', 'py3kwarn']
 
 " Use local pylintrc file if available.
 let s:pylintrc_file = ''

@@ -69,7 +69,7 @@ highlight! link SignColumn Error
 if $OS==#"Windows_NT"
   set guifont=Consolas:h11:cANSI
 else "linux"
-  set guifont=DejaVu\ Sans\ Mono\ 12
+  set guifont=DejaVu\ Sans\ Mono\ 14
 endif
 
 " Last window will have a status line always.

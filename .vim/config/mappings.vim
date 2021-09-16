@@ -198,6 +198,8 @@ map [<Space> m`O<Esc>``
 map ]<Space> m`o<Esc>``
 
 map <silent> <Leader>t :call OpenAlternateFile()<CR>
+" Switch from .../Thing.cc to .../test/TestThing.cc (or vice versa).
+map <silent> <Leader>g :e %:p:s,\(.*\)/test/Test\(.*\).cc$,\1/\2.cc.X123,:s,\(.*\)/\(.*\).cc$,\1/test/Test\2.cc,:s,\(.*\).X123$,\1,<CR>
 
 " Switch from C/C++ source code file (foo.cc) to header file (foo.h) and
 " vice versa.
