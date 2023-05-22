@@ -1,61 +1,61 @@
 [submodule "zsh"]
 	path = zsh
-	url = git://github.com/crashmaster/zsh.git
+	url = https://github.com/crashmaster/zsh.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-scripts-matchit"]
 	path = .vim/bundle/vim-scripts-matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
+	url = https://github.com/vim-scripts/matchit.zip.git
 	ignore = dirty
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
-	url = git://github.com/SirVer/ultisnips.git
+	url = https://github.com/SirVer/ultisnips.git
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe.git
+	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
 [submodule ".vim/bundle/tcomment_vim"]
 	path = .vim/bundle/tcomment_vim
-	url = git://github.com/tomtom/tcomment_vim.git
+	url = https://github.com/tomtom/tcomment_vim.git
 [submodule ".vim/bundle/gundo.vim"]
 	path = .vim/bundle/gundo.vim
-	url = git://github.com/sjl/gundo.vim.git
+	url = https://github.com/sjl/gundo.vim.git
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
-	url = git://github.com/honza/vim-snippets.git
+	url = https://github.com/honza/vim-snippets.git
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
-	url = git://github.com/seebi/dircolors-solarized.git
+	url = https://github.com/seebi/dircolors-solarized.git
 [submodule ".vim/bundle/alternate.vim"]
 	path = .vim/bundle/alternate.vim
-	url = git://github.com/compactcode/alternate.vim.git
+	url = https://github.com/compactcode/alternate.vim.git
 [submodule ".vim/bundle/robotframework-vim"]
 	path = .vim/bundle/robotframework-vim
-	url = git://github.com/mfukar/robotframework-vim.git
+	url = https://github.com/mfukar/robotframework-vim.git
 [submodule ".vim/bundle/starsearch.vim"]
 	path = .vim/bundle/starsearch.vim
-	url = git://github.com/darfink/starsearch.vim.git
+	url = https://github.com/darfink/starsearch.vim.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
-	url = git://github.com/elzr/vim-json.git
+	url = https://github.com/elzr/vim-json.git
 [submodule ".vim/bundle/SyntaxRange"]
 	path = .vim/bundle/SyntaxRange
-	url = git://github.com:vim-scripts/SyntaxRange.git
+	url = https://github.com/vim-scripts/SyntaxRange.git
 	ignore = dirty
 [submodule ".vim/bundle/ingo-library"]
 	path = .vim/bundle/ingo-library
-	url = git://github.com:vim-scripts/ingo-library.git
+	url = https://github.com/vim-scripts/ingo-library.git
 	ignore = dirty
 [submodule ".vim/bundle/vim-abolish"]
 	path = .vim/bundle/vim-abolish
-	url = git://github.com/tpope/vim-abolish.git
+	url = https://github.com/tpope/vim-abolish.git
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
