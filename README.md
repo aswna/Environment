@@ -11,8 +11,8 @@ In this file [GitHub Flavored Markdown][9] is used.
 ## Cloning repository ##
 See more info about [cloning on GitHub][10]. See below Submodules section, too.
 
-### For read-only access it is easy to use the git:// URL. ###
-    git clone git://github.com/aswna/Environment.git
+### For read-only access it is easy to use the https:// URL. ###
+    git clone https://github.com/aswna/Environment.git
 
 ### For read/write access it is best to setup ssh keys and use SSH. ###
     git clone git@github.com:aswna/Environment.git
