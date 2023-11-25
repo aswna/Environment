@@ -1,96 +1,162 @@
+1. One man's constant is another man's variable. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+3. Syntactic sugar causes cancer of the semicolon. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+4. Every program is a part of some other program and rarely fits. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+5. If a program manipulates a large amount of data, it does so in a small number of ways. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+7. It is easier to write an incorrect program than understand a correct one. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+8. A programming language is low level when its programs require attention to the irrelevant. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+11. If you have a procedure with ten parameters, you probably missed some. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+12. Recursion is the root of computation since it trades description for time. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+14. In the long run every program becomes rococo - then rubble. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+15. Everything should be built top-down, except the first time. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+17. If a listener nods his head when you're explaining your program, wake him up. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+18. A program without a loop and a structured variable isn't worth writing. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+19. A language that doesn't affect the way you think about programming, is not worth knowing. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+20. Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+21. Optimization hinders evolution. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+22. A good system can't have a weak command language. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+23. To understand a program you must become both the machine and the program. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+26. There will always be things we wish to say in our programs that in all known languages can only be said poorly. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+27. Once you understand how to write a program get someone else to write it. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+30. In programming, everything we do is a special case of something more general -- and often we know it too quickly. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+31. Simplicity does not precede complexity, but follows it. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+33. The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+34. The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+35. Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+37. The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standarization of real computers would be a disaster - and so it probably won't happen. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+38. Structured Programming supports the law of the excluded middle. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+40. There are two ways to write error-free programs; only the third one works. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+41. Some programming languages manage to absorb change, but withstand progress. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+42. You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+43. In software systems, it is often the early bird that makes the worm. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+44.Sometimes I think the only universal in the computing field is the fetch-execute cycle. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+46. Like punning, programming is a play on words. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+47. As Will Rogers would have said, "There is no such thing as a free variable." -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+48. The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+50. When we understand knowledge-based systems, it will be as before -- except our fingertips will have been singed. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+51. Bringing computers into the home won't change either one, but may revitalize the corner saloon. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+52. Systems have sub-systems and sub-systems have sub- systems and so on ad infinitum - which is why we're always starting over. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+53. So many good ideas are never heard from again once they embark in a voyage on the semantic gulf. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+54. Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+55. A LISP programmer knows the value of everything, but the cost of nothing. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+56. Software is under a constant tension. Being symbolic it is arbitrarily perfectible; but also it is arbitrarily changeable. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+57. It is easier to change the specification to fit the program than vice versa. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+58. Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+59. In English every word can be verbed. Would that it were so in our programming languages. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+60. In seeking the unattainable, simplicity only gets in the way. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+61. In programming, as in everything else, to be in error is to be reborn. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+62. In computing, invariants are ephemeral. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+63. When we write programs that "learn", it turns out that we do and they don't. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+65. Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+66. Making something variable is easy. Controlling duration of constancy is the trick. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+67. Think of all the psychic energy expended in seeking a fundamental distinction between "algorithm" and "program". -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+68. If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+69. In a 5 year period we get one superb programming language. Only we can't control when the 5 year period will be. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+70. Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+71. Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+72. An adequate bootstrap is a contradiction in terms. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+73. It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+74. Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to see it as a soap bubble? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+75. Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+76. It is the user who should parameterize procedures, not their creators. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+77. The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+78. If your computer speaks English, it was probably made in Japan. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+79. A year spent in artificial intelligence is enough to make one believe in God. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+80. Prolonged contact with the computer turns mathematicians into clerks and vice versa. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+81. In computing, turning the obvious into the useful is a living definition of the word "frustration". -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+82. We are on the verge: Today our program proved Fermat's next-to-last theorem. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+83. What is the difference between a Turing machine and the modern computer? It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+84. Motto for a research laboratory: What we work on today, others will first think of tomorrow. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+85. Though the Chinese should adore APL, it's FORTRAN they put their money on. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+86. We kid ourselves if we think that the ratio of procedure to data in an active data-base system can be made arbitrarily small or even kept small. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+87. We have the mini and the micro computer. In what semantic niche would the pico computer fall? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+88. It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+89. One does not learn computing by using a hand calculator, but one can forget arithmetic. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+90. Computation has made the tree flower. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+91. The computer reminds one of Lon Chaney -- it is the machine of a thousand faces. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+92. The computer is the ultimate polluter: its feces are indistinguishable from the food it produces. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+93. When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+94. Interfaces keep things tidy, but don't accelerate growth: Functions do. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+95. Don't have good ideas if you aren't willing to be responsible for them. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+96. Computers don't introduce order anywhere as much as they expose opportunities. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+97. When a professor insists computer science is X but not Y, have compassion for his graduate students. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+98. In computing, the mean time to failure keeps getting shorter. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+99. In man-machine symbiosis, it is man who must adjust: The machines can't. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+100. We will never run out of things to program as long as there is a single program around. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+101. Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+102. One can't proceed from the informal to the formal by formal means. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+103. Purely applicative languages are poorly applicable. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+104. The proof of a system's value is its existence. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+105. You can't communicate complexity, only an awareness of it. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+106. It's difficult to extract sense from strings, but they're the only communication coin we can count on. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+107. The debate rages on: is PL/I Bachtrian or Dromedary? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+108. Whenever two programmers meet to criticize their programs, both are silent. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+109. Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+110. Editing is a rewording activity. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+111. Why did the Roman Empire collapse? What is Latin for office automation? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+112. Computer Science is embarrassed by the computer. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+113. The only constructive theory connecting neuroscience and psychology will arise from the study of software. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+114. Within a computer natural language is unnatural. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+115. Most people find the concept of programming obvious, but the doing impossible. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+116. You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+117. It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing thoughts, devoting attention to detail and learning to be self-critical? -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+118. If you can imagine a society in which the computer- robot is the only menial, you can imagine anything. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+119. Programming is an unnatural act. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+120. Adapting old programs to fit new machines usually means adapting new machines to behave like old ones. -- Alan~J.~Perlis, Epigrams in Programming, 1982 (https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+I think it is inevitable that people program poorly. Training will not substantially help matters. We have to learn to live with it. -- Alan~Perlis
+We toast the Lisp programmer who pens his thoughts within nests of parentheses. -- Alan~Perlis
+A good programming language is a conceptual universe for thinking about programming. -- A.~Perlis
+I think that it's extraordinarily important that we in computer science keep fun in computing. When it started out, it was an awful lot of fun. Of course, the paying customers got shafted every now and then, and after a while we began to take their complaints seriously. We began to feel as if we really were responsible for the successful, error-free perfect use of these machines. I don't think we are. I think we're responsible for stretching them, setting them off in new directions, and keeping fun in the house. I hope the field of computer science never loses its sense of fun. -- A.~Perlis
 A brute force solution that works is better than an elegant solution that doesn't work. -- Steve~C~McConnell
 A controller that cannot control itself is worse than no controller at all: If you cannot manage yourself, you have no business managing others. -- Gerald~Weinberg, Quality Software Management: First-order measurement, 1993
-Adapting old programs to fit new machines usually means adapting new machines to behave like old ones. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-A good system can't have a weak command language. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-A language that doesn't affect the way you think about programming, is not worth knowing. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-A LISP programmer knows the value of everything, but the cost of nothing. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 A mathematician is a device for turning coffee into theorems. -- Paul~Erdos
-An adequate bootstrap is a contradiction in terms. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-A programming language is low level when its programs require attention to the irrelevant. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-A program without a loop and a structured variable isn't worth writing. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long? -- Alan~J.~Perlis, Epigrams in Programming, 1982
 As Thomas Hobbes observed in the 17th century, life under mob rule is solitary, poor, nasty, brutish, and short. Life on a poorly run software project is solitary, poor, nasty, brutish, and hardly ever short enough. -- Steve~C~McConnell
-As Will Rogers would have said, "There is no such thing as a free variable." -- Alan~J.~Perlis, Epigrams in Programming, 1982
-A year spent in artificial intelligence is enough to make one believe in God. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defence against complexity. -- David~Gelernter
-Because of its vitality, the computing field is always in desperate need of new cliches: Banality soothes our nerves. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Bringing computers into the home won't change either one, but may revitalize the corner saloon. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Certainly not every good program is object-oriented, and not every object-oriented program is good. -- Bjarne~Stroustrup
 C is not a big language, and it's not well served by a big book. -- Brian~W.~Kernighan and Dennis~M.~Ritchie, in The C Programming Language, Prentice Hall, 1988
 "C is the Fortran of the 90s." Wrong. C is the Fortran of the 70s. -- Norman~Diamond
 Clearly, I reject the view that there is one way that is right for everyone and for every problem. -- Bjarne~Stroustrup
 C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows away your whole leg. -- Bjarne~Stroustrup
-Computation has made the tree flower. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Computer Science is embarrassed by the computer. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Computers don't introduce order anywhere as much as they expose opportunities. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Controlling complexity is the essence of computer programming. -- Brian~Kernighan
 C: The language that combines the power of assembly language with the flexibility of assembly language. -- [unknown]
-Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. -- Brian~W.~Kernighan and P.J.~Plauger in The Elements of Programming Style
 Defining OO as based on the use of class hierarchies and virtual functions is also practical in that it provides some guidance as to where OO is likely to be successful. -- Bjarne~Stroustrup
 Deleted code is debugged code. -- Jeff~Sickel
 Deletion is the most important tool of software design. -- [unknown]
-Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Don't have good ideas if you aren't willing to be responsible for them. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Early in the project you can have firm cost and schedule targets or a firm feature set, but not both. -- Steve~C~McConnell
-Editing is a rewording activity. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Every program is a part of some other program and rarely fits. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Everything should be built top-down, except the first time. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Finally I'm becoming stupider no more. -- Paul~Erdos
 First, I'd like to see the basic tools such as compilers, debuggers, profilers, database interfaces, GUI builders, CAD tools, and so forth fully support the ISO standard. -- Bjarne~Stroustrup
 First, solve the problem. Then, write the code. -- John~Johnson
-Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 God may not play dice with the universe, but something strange is going on with the prime numbers. -- Paul~Erdos
 Good code is its own best documentation. As you're about to add a comment, ask yourself, 'How can I improve the code so that this comment isn't needed?' Improve the code and then document it to make it even clearer. -- Steve~C~McConnell
 However, when Java is promoted as the sole programming language, its flaws and limitations become serious. -- Bjarne~Stroustrup
-If a listener nods his head when you're explaining your program, wake him up. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-If a program manipulates a large amount of data, it does so in a small number of ways. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 If builders built houses the way programmers built programs, the first woodpecker to come along would destroy civilization. -- Gerald~Weinberg attributed with the quote in: Murali Chemuturi (2010) Mastering Software Quality Assurance: Best Practices, Tools and Technique for Software Developers. p.ix
 If I have not seen as far as others, it is because giants were standing on my shoulders. -- Hal~Abelson
 I find languages that support just one programming paradigm constraining. -- Bjarne~Stroustrup
-If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other? -- Alan~J.~Perlis, Epigrams in Programming, 1982
-If you can imagine a society in which the computer-robot is the only menial, you can imagine anything. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-If you have a procedure with ten parameters, you probably missed some. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-If your computer speaks English, it was probably made in Japan. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 If you're willing to restrict the flexibility of your approach, you can almost always do something better. -- John~Carmack
 If you want to improve your software, don't test more; develop better. -- Steve~C~McConnell
 I hope we'll be able to solve these problems before we leave. -- Paul~Erdos
 I invented the term Object-Oriented, and I can tell you I did not have C++ in mind. -- Alan~Kay
-In a 5 year period we get one superb programming language. Only we can't control when the 5 year period will be. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In computing, invariants are ephemeral. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In computing, the mean time to failure keeps getting shorter. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In computing, turning the obvious into the useful is a living definition of the word "frustration". -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In English every word can be verbed. Would that it were so in our programming languages. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 In essence, the problem is that, "if it walks like a duck and quacks like a duck", it could be a dragon doing a duck impersonation. You may not always want to let dragons into a pond, even if they can impersonate a duck. -- Alex~Martelli
-In man-machine symbiosis, it is man who must adjust: The machines can't. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In programming, as in everything else, to be in error is to be reborn. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In programming, everything we do is a special case of something more general -- and often we know it too quickly. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In seeking the unattainable, simplicity only gets in the way. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Inside every large problem is a small problem struggling to get out. -- Niklaus~Wirth
-In software systems, it is often the early bird that makes the worm. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Interfaces keep things tidy, but don't accelerate growth: Functions do. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-In the long run every program becomes rococo - then rubble. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to see it as a soap bubble? -- Alan~J.~Perlis, Epigrams in Programming, 1982
-It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing thoughts, devoting attention to detail and learning to be self-critical? -- Alan~J.~Perlis, Epigrams in Programming, 1982
-I think it is inevitable that people program poorly. Training will not substantially help matters. We have to learn to live with it. -- Alan~Perlis
-It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-It is easier to change the specification to fit the program than vice versa. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-It is easier to write an incorrect program than understand a correct one. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 It is easy to study the rules of overloading and of templates without noticing that together they are one of the keys to elegant and efficient type-safe containers. -- Bjarne~Stroustrup
 It is nice to know that the computer understands the problem. But I would like to understand it too. -- Eugene~Wigner
-It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-It is the user who should parameterize procedures, not their creators. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 It's better to wait for a productive programmer to become available than it is to wait for the first available programmer to become productive. -- Steve~C~McConnell
-It's difficult to extract sense from strings, but they're the only communication coin we can count on. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 It's hard enough to find an error in your code when you're looking for it; it's even harder when you've assumed your code is error-free. -- Steve~C~McConnell
 It's not that Perl programmers are idiots, it's that the language rewards idiotic behavior in a way that no other language or tool has ever done. -- Erik~Naggum, comp.lang.lisp
 It's OK to figure out murder mysteries, but you shouldn't need to figure out code. You should be able to read it. -- Steve~C~McConnell
@@ -98,107 +164,43 @@ It's time for software development to grow up. -- Steve~C~McConnell
 I would encourage nonproprietary standards for tools and libraries. -- Bjarne~Stroustrup
 Java is, in many ways, C++--. -- Michael~Feldman
 Java, the best argument for Smalltalk since C++. -- Frank~Winkler
-Like punning, programming is a play on words. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Making something variable is easy. Controlling duration of constancy is the trick. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Mathematicians stand on each others' shoulders and computer scientists stand on each others' toes. -- Richard~Hamming
-Most people find the concept of programming obvious, but the doing impossible. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Motto for a research laboratory: What we work on today, others will first think of tomorrow. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 My brain is open. -- Paul~Erdos
 My list of basic tools is a partial answer to the question about what has changed: Over the past few years, large numbers of programmers have come to depend on elaborate tools to interface code with systems facilities. -- Bjarne~Stroustrup
 Never trouble trouble till trouble troubles you. -- John~Adams
 Nobody really knows what the Bourne shell's grammar is. Even examination of the source code is little help. -- Tom~Duff
 Nothing is more dangerous than an idea if it's the only one you have. -- Emil-Auguste~Chartier, Propos sur la religion, 1938
-Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Once you understand how to write a program get someone else to write it. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-One can't proceed from the informal to the formal by formal means. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-One does not learn computing by using a hand calculator, but one can forget arithmetic. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-One man's constant is another man's variable. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 One of my most productive days was throwing away 1000 lines of code. -- Ken~Thompson
-Optimization hinders evolution. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Over the centuries the Indians developed sign language for communicating phenomena of interest. Programmers from different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.) could use one that doesn't require them to carry a blackboard on their ponies. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 People who passionately want to believe that the world is basically simple react to this with a fury that goes beyond what I consider appropriate for discussing a programming language. -- Bjarne~Stroustrup
-Perhaps if we wrote programs from childhood on, as adults we'd be able to read them. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Programming is an unnatural act. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Prolonged contact with the computer turns mathematicians into clerks and vice versa. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Property is a nuisance. -- Paul~Erdos
-Purely applicative languages are poorly applicable. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 qmon is for sissies, real men use command-line tools, really manly men use qconf -[admr]attr, [Chuck~Norris / Jack~Bower] uses qconf -purge -- Daniel~Templeton
 Quality is value to some person(s). -- Gerald~Weinberg cited in Matthew~Heusser, Govind~Kulkarni (2011) How to Reduce the Cost of Software Testing. p.95
-Recursion is the root of computation since it trades description for time. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Simplicity does not precede complexity, but follows it. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Simplicity is prerequisite for reliability. -- Edsger~W.~Dijkstra
-Software is under a constant tension. Being symbolic it is arbitrarily perfectible; but also it is arbitrarily changeable. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-So many good ideas are never heard from again once they embark in a voyage on the semantic gulf. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Some programming languages manage to absorb change, but withstand progress. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Sometimes I think the only universal in the computing field is the fetch-execute cycle. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Structured Programming supports the law of the excluded muddle. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Syntactic sugar causes cancer of the semicolon. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum -- which is why we're always starting over. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Television is something the Russians invented to destroy American education. -- Paul~Erdos
-The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 The cheapest, fastest, and most reliable components are those that aren't there. -- Gordon~Bell
-The computer is the ultimate polluter: its feces are indistinguishable from the food it produces. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-The computer reminds one of Lon Chaney -- it is the machine of a thousand faces. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 The computing scientist's main challenge is not to get confused by the complexities of his own making. -- E.W.~Dijkstra
-The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-The debate rages on: is PL/I Bachtrian or Dromedary? -- Alan~J.~Perlis, Epigrams in Programming, 1982
-The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 The job of the average manager requires a shift in focus every few minutes. The job of the average software developer requires that the developer not shift focus more often than every few hours. -- Steve~C~McConnell
 The key to performance is elegance, not battalions of special cases. -- Jon~Bentley and Doug~McIlroy
 The most effective debugging tool is still careful thought, coupled with judiciously placed print statements. -- Brian~W.~Kernighan, in the paper Unix for Beginners (1979)
-The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standarization of real computers would be a disaster - and so it probably won't happen. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 The most reliable components are the ones you leave out. -- Gordon~Bell
-The only constructive theory connecting neuroscience and psychology will arise from the study of software. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 The problem is not the problem. The problem is your attitude about the problem. -- Captain~Jack~Sparrow
 The problem with quick and dirty, as some people have said, is that the dirty remains long after the quick has been forgotten. -- Steve~C~McConnell
-The proof of a system's value is its existence. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 There are three signs of senility. The first sign is that a man forgets his theorems. The second sign is that he forgets to zip up. The third sign is that he forgets to zip down. -- Paul~Erdos
 There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult. -- C.A.R.~Hoare, The 1980 ACM Turing Award Lecture
-There are two ways to write error-free programs; only the third one works. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-There will always be things we wish to say in our programs that in all known languages can only be said poorly. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 The standard library saves programmers from having to reinvent the wheel. -- Bjarne~Stroustrup
-The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Think of all the psychic energy expended in seeking a fundamental distinction between "algorithm" and "program". -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Though the Chinese should adore APL, it's FORTRAN they put their money on. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Thus, the standard library will serve as both a tool and as a teacher. -- Bjarne~Stroustrup
-To understand a program you must become both the machine and the program. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Unix is a junk OS designed by a committee of PhDs. -- Dave~Cutler
 Unix is simple. It just takes a genius to understand its simplicity. -- Dennis~Ritchie
 UNIX was not designed to stop its users from doing stupid things, as that would also stop them from doing clever things. -- Doug~Gwyn
-We are on the verge: Today our program proved Fermat's next-to-last theorem. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 We are uncovering better ways of developing software by doing it and helping others do it. -- Manifesto for Agile Software Development, 2001
 [...] we have come to value: 1. Individuals and interactions over processes and tools. -- Manifesto for Agile Software Development, 2001
 [...] we have come to value: 2. Working software over comprehensive documentation. -- Manifesto for Agile Software Development, 2001
 [...] we have come to value: 3. Customer collaboration over contract negotiation. -- Manifesto for Agile Software Development, 2001
 [...] we have come to value: 4. Responding to change over following a plan. -- Manifesto for Agile Software Development, 2001
-We have the mini and the micro computer. In what semantic niche would the pico computer fall? -- Alan~J.~Perlis, Epigrams in Programming, 1982
-We kid ourselves if we think that the ratio of procedure to data in an active data-base system can be made arbitrarily small or even kept small. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-We toast the Lisp programmer who pens his thoughts within nests of parentheses. -- Alan~Perlis
-We will never run out of things to program as long as there is a single program around. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-What is the difference between a Turing machine and the modern computer? It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-When a professor insists computer science is X but not Y, have compassion for his graduate students. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 Whenever I solve a difficult problem with C++, I feel like I've won a bar fight. -- Michael~Fogus
-Whenever two programmers meet to criticize their programs, both are silent. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 When in doubt, use brute force. -- Ken~Thompson
 When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck. -- James~Whitcomb~Riley
-When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-When we understand knowledge-based systems, it will be as before -- except our fingertips will have been singed. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-When we write programs that "learn", it turns out that we do and they don't. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 When you have eliminated the impossible, whatever remains, however improbable, must be the truth. -- Sherlock~Holmes
-Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Why did the Roman Empire collapse? What is Latin for office automation? -- Alan~J.~Perlis, Epigrams in Programming, 1982
-Within a computer natural language is unnatural. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-You can't communicate complexity, only an awareness of it. -- Alan~J.~Perlis, Epigrams in Programming, 1982
-You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program. -- Alan~J.~Perlis, Epigrams in Programming, 1982
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software. -- Principles behind the Agile Manifesto
 2. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage. -- Principles behind the Agile Manifesto
 3. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale. -- Principles behind the Agile Manifesto
@@ -308,7 +310,7 @@ The Analytical Engine weaves Algebraical patterns just as the Jacquard loom weav
 On two occasions, I have been asked [by members of Parliament], "Pray, Mr.~Babbage, if you put into the machine wrong figures, will the right answers come out?" I am not able to rightly apprehend the kind of confusion of ideas that could provoke such a question. -- C.~Babbage
 I, myself, have had many failures and I've learned that if you are not failing a lot, you are probably not being as creative as you could be -- you aren't stretching your imagination. -- J.~Backus
 A prudent question is one-half of wisdom. -- F.~Bacon
-I can only think that the book is read because it deals with the difficulties of schooling, which do not change. Please note: the difficulties, not the problems. Problems are solved or disappear with the revolving times. Difficulities remain. It will always be difficult to teach well, to learn accurately; to read, write, and count readily and competently; to acquire a sense of history and start one's education or anothers. -- J.~Barzun ("Begin Here", pp 14),
+I can only think that the book is read because it deals with the difficulties of schooling, which do not change. Please note: the difficulties, not the problems. Problems are solved or disappear with the revolving times. Difficulties remain. It will always be difficult to teach well, to learn accurately; to read, write, and count readily and competently; to acquire a sense of history and start one's education or anothers. -- J.~Barzun ("Begin Here", pp 14),
 The American university is built on two false premises: that all teachers must add to the existing stock of knowledge by research, and that all self-respecting institutions fulfill this role only by employing productive scholars... Of course, the teacher must keep reading and thinking abreast of his time, but this does not mean that he must write and publish. The confusion hides a further absurd assumption, which is that when a man writes a scholarly book that reaches a dozen specialists he adds immeasurably to the world's knowledge; whereas if he imparts his thoughts and his reading to one hundred and fifty students every year, he is wasting his time and leaving the world in darkness. One is tempted to ask what blinkered pedant ever launched the notion that students in coming to college seceded from the human race and may therefore be safely left out when knowledge is being broadcast. -- J.~Barzun ("Teacher in America"),
 The sole justification of teaching, of the school itself, is that the student comes out of it able to do something he could not do before. I say do and not know, because knowledge that doesn't lead to doing something new or doing something better is not knowledge at all. -- J.~Barzun ("Begin Here", pp 112),
 The truth is, when all is said and done, one does not teach a subject, one teaches a student how to learn it. Teaching may look like administering a dose, but even a dose must be worked on by the body if it is to cure. Each individual must cure his or her own ignorance. -- J.~Barzun ("Begin Here", pp 35),
@@ -546,7 +548,7 @@ You have to honor failure, because failure is just the negative space around suc
 Computing is not about computers any more. It is about living. -- N.~Negroponte
 Between 1892, say, and 1904 movies were made by the cameraman because he understood the equipment. And that is exactly where we are now [in software design]. In 1904 they invented the director. What was the director? The director was the guy who didn't have to know how to load a camera, didn't have to know how to sew costumes, didn't have to play a violin, dance, fence, or hang the lights. But, he had to know how to make those effects come together in a unified experience... Why are video games so much better designed than office software? Video games are designed by people who love to play video games. Office software is designed by people who want to do something else on the weekend... What does show business teach you? It teaches you that design is war; it is a power struggle between the producers, directors, authors, everybody who's going to be involved. The software business is about the politics of standardization and almost nothing else. -- T.~Nelson (transcribed from a talk at Engelbart's Unfinished Revolution a Stanford University Symposium, http://cs.brown.edu/memex/ACM_HypertextTestbed/papers/64.html)
 In mathematics you don't understand things. You just get used to them. -- J.~von~Neumann
-Millions for compilers, but hardly a penny for understanding human programming language use. Now, programming languages are obviously symmetrical, the computer on one side, the human on the other. In an appropriate science of computer languages, one would expect that half the effort would be on the computer side, understanding how to translate the languages into executable form, and half on the human side, understanding how to design languages that are easy or productive to use. Yet, we do not even have an enumeration of all the psychologicial functions programing languages serve for the user. Of course, there is lots of programming language design, but it comes from computer scientists. And though technical papers on languages contain main appeals to ease of use and learning, they patently contain almost no psychological evidence nor any appeal to psychological science. -- A.~Newell and S.~Card
+Millions for compilers, but hardly a penny for understanding human programming language use. Now, programming languages are obviously symmetrical, the computer on one side, the human on the other. In an appropriate science of computer languages, one would expect that half the effort would be on the computer side, understanding how to translate the languages into executable form, and half on the human side, understanding how to design languages that are easy or productive to use. Yet, we do not even have an enumeration of all the psychological functions programming languages serve for the user. Of course, there is lots of programming language design, but it comes from computer scientists. And though technical papers on languages contain main appeals to ease of use and learning, they patently contain almost no psychological evidence nor any appeal to psychological science. -- A.~Newell and S.~Card
 There is no reason anyone would want a computer in their home. -- K.~Olsen (Founder and President, Digital Equipment Corporation), 1977
 The best performance improvement is the transition from the nonworking state to the working state -- J.~Osterhout
 Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration. ... [we should] explore and embrace techniques to reduce complexity. -- R.~Ozzie
@@ -570,8 +572,6 @@ When teaching a rapidly changing technology, perspective is more important than 
 When building a complex system, having crackerjack programmers (who can make any design work, even a bad one) can be a liability. The result, after lots of effort, is a working system that cannot be easily maintained or upgraded. Good -- but not great -- programmers would fail early, causing a realization that the system must be redesigned, and then reimplemented. The extra cost is paid once, early in the system's cycle (when it is cheap), instead of repeatedly paid late in the system's cycle (when it is more expensive). -- R.~Pattis
 Don't tell people how to do things. Tell them what to do and let them surprise you with their results. -- G.~Patton
 The best way to get a good idea is to get a lot of ideas. -- L.~Pauling
-A good programming language is a conceptual universe for thinking about programming. -- A.~Perlis
-I think that it's extraordinarily important that we in computer science keep fun in computing. When it started out, it was an awful lot of fun. Of course, the paying customers got shafted every now and then, and after a while we began to take their complaints seriously. We began to feel as if we really were responsible for the successful, error-free perfect use of these machines. I don't think we are. I think we're responsible for stretching them, setting them off in new directions, and keeping fun in the house. I hope the field of computer science never loses its sense of fun. -- A.~Perlis
 Computers are useless. They only give you answers. -- P.~Picasso
 I am always doing that which I cannot do, in order that I may learn how to do it. -- P.~Picasso
 Fancy algorithms are slow when N is small, and N is usually small. -- R.~Pike
