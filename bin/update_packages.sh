@@ -17,11 +17,14 @@ apt upgrade
 title "apt dist-upgrade"
 apt dist-upgrade
 
+title "apt autoremove"
+apt autoremove
+
 title "apt list upgradable"
 apt list --upgradable
 
 title "apt upgrade upgradeable"
-apt upgrade $(apt list --upgradable 2>/dev/null | awk -F/ '/\//{print $1}' | sort -u)
+apt upgrade $(apt list --upgradable 2>/dev/null | awk -F/ '/\//{print $1}' | uniq)
 
 title "apt autoremove"
 apt autoremove
