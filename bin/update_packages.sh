@@ -12,7 +12,7 @@ main()
 
     local packages
     packages=$(apt list --upgradable 2>/dev/null | awk -F/ '/\//{print $1}' | uniq)
-    execute_with_retry "apt upgrade upgradeable"    apt upgrade ${packages}
+    execute_with_retry "apt upgrade upgradable"     apt upgrade ${packages}
 
     execute_with_retry "apt autoremove"             apt autoremove
     execute_with_retry "apt autoclean"              apt autoclean
@@ -51,7 +51,7 @@ execute_with_retry()
 title()
 {
     echo
-    echo "=== ${*}"
+    echo "=== ${*} --- $(date +'%Y-%m-%d %H:%M:%S')"
 }
 
 main
