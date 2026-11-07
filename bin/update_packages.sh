@@ -4,24 +4,18 @@ set -euo pipefail
 
 main()
 {
-    execute_with_retry "apt update"                 apt update
-    execute_with_retry "apt upgrade"                apt upgrade
-    execute_with_retry "apt dist-upgrade"           apt dist-upgrade
-    execute_with_retry "apt autoremove"             apt autoremove
-    execute_with_retry "apt list upgradable"        apt list --upgradable
+    execute_with_retry "apt update"                 apt-get update
+    execute_with_retry "apt full-upgrade"           apt-get full-upgrade
+    # result should be empty
+    execute_with_retry "apt --just-print upgrade"   apt-get --just-print upgrade
 
-    local packages
-    packages=$(apt list --upgradable 2>/dev/null | awk -F/ '/\//{print $1}' | uniq)
-    execute_with_retry "apt upgrade upgradable"     apt upgrade ${packages}
+    execute_with_retry "apt autoremove (purge)"     apt-get --purge autoremove
+    execute_with_retry "apt autoclean"              apt-get autoclean
 
-    execute_with_retry "apt autoremove"             apt autoremove
-    execute_with_retry "apt autoclean"              apt autoclean
     execute_with_retry "update grub"                update-grub
-    execute_with_retry "apt autoremove (purge)"     apt --purge autoremove
 
     execute_with_retry "snap refresh list"          snap refresh --list
     execute_with_retry "snap refresh"               snap refresh
-    execute_with_retry "snap refresh list"          snap refresh --list
 
     title "OK"
 }
@@ -31,6 +25,11 @@ execute_with_retry()
     title "${1}"
     shift
     # echo "cmd: ${*}"
+
+    if [ -z "${1:-}" ] || ! command -v "${1:-}" &>/dev/null; then
+        echo "    (skipped: command '${1:-}' not found)"
+        return
+    fi
 
     local counter=1
     while true; do
