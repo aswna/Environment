@@ -17,6 +17,14 @@ main()
     execute_with_retry "snap refresh list"          snap refresh --list
     execute_with_retry "snap refresh"               snap refresh
 
+    execute_with_retry "flatpak update"             flatpak update -y
+    execute_with_retry "flatpak update appstream"   flatpak update --appstream -y
+    execute_with_retry "flatpak uninstall unused"   flatpak uninstall --unused -y
+
+    # execute_with_retry "fwupd refresh"              fwupdmgr refresh --force
+    # execute_with_retry "fwupd get-updates"          fwupdmgr get-updates
+    # execute_with_retry "fwupd update"               fwupdmgr update -y
+
     title "OK"
 }
 
